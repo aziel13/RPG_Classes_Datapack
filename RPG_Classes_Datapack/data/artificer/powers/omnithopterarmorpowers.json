@@ -4,6 +4,17 @@
 
     "type": "origins:multiple",
 
+    "startupdisableElytra": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:toggle",
+            "power": "*.*_iron_omnithopter_armor_flight_power"
+        },
+        "execute_chosen_when_orb": true
+
+    },
+
     "armor_power_checker": {
 
 
@@ -40,7 +51,7 @@
                                     {
 
                                         "type": "origins:nbt",
-                                        "nbt": "{CustomModelData: 10000}"
+                                        "nbt": "{CustomModelData: 1}"
 
                                     }
 
