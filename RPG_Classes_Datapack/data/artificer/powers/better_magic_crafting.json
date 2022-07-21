@@ -1,0 +1,16 @@
+{
+  "type": "origins:multiple",
+  "betterpotions": {
+  "type": "origins_classes:potion_bonus"
+  },
+  "betterenchantments": {
+    "type": "origins_classes:modify_enchanting_level",
+    "modifier": {
+      "value": 10.0,
+      "operation": "addition"
+    }
+  },
+  "name": "Magic Mastery",
+  "description": "You are an expert at crafting magic. you have better enchanting and a bonus to making potions"
+
+}

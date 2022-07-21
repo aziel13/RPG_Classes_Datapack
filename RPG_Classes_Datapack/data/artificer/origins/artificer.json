@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "artificer:crafting",
+        "artificer:better_magic_crafting",
+        "artificer:summon_artificer_tools",
+        "artificer:essencetank",
+        "artificer:soldering_beam_tool",
+        "artificer:craftomnithopterchestplate",
+        "artificer:omnithopterarmorpowers"
+    ],
+    "icon": "book",
+    "order": 10,
+    "impact": 0,
+    "name": "Artificer",
+    "description": "Artificers are masters of magical crafting. They tinkerer with the fundimentals of magic through magical devices"
+}

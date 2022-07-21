@@ -1,0 +1,12 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:crafting_table"
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+    "name": "Crafting On The Road",
+    "description": "Due to your specialization in magic crafting, your able to summon a crafting GUI by using <origins.primary_active>"
+}

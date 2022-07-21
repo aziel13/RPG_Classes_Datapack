@@ -1,0 +1,79 @@
+{
+	"name": "Mycorrhiznth Navigators organel of gravitational rearangement",
+	"description": "Mycorrhiznth Navigators organel of gravitational rearangement gives them limited control of their personal direction of gravity, allowing them to either glide or walk up walls",
+
+	"type": "origins:multiple",
+
+	"mode": {
+		"type": "origins:toggle",
+			"key": {
+				"key": "key.origins.primary_active",
+				"continuous": false
+			}
+	},
+	"switchsound": {
+
+		"type": "origins:active_self",
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": true
+		},
+		"entity_action": {
+
+			"type": "origins:play_sound",
+			"sound": "entity.endermite.ambient"
+
+		}
+
+	},
+
+	"changecenterofgravity": {
+		"type": "origins:climbing",
+		"hold_condition": {
+			"type": "origins:and",
+			"conditions":[
+				{
+					"type": "origins:power_active",
+					"power": "*:*_mode"
+				},
+				{
+					"type": "origins:collided_horizontally"
+				}
+			]
+		},
+		"condition": {
+
+			"type": "origins:and",
+			"conditions":[
+				{
+					"type": "origins:power_active",
+					"power": "*:*_mode"
+				},
+				{
+					"type": "origins:collided_horizontally"
+				}
+
+			]
+		}
+	},
+
+	"glidefieldoff": {
+
+		"type": "origins:prevent_elytra_flight",
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_mode"
+		}
+	},
+
+	"glidefield": {
+
+		"type": "origins:elytra_flight",
+		"render_elytra": false
+	}
+
+}

@@ -1,0 +1,67 @@
+{
+    "name": "Magical Conductor",
+    "description": "Your body needs magic to live! Wearing any type of armor that isn't gold will slowly wither you away.\nSince golden armor is very weak, you've come up with a solution. By using gold blocks instead of gold ingots, you can make a reinforced golden armor piece.",
+
+    "type": "origins:multiple",
+
+    "armor_power_checker": {
+
+
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type":"origins:ingredient",
+                                "ingredient":{
+                                    "item":"minecraft:elytra"
+                                }
+
+                            },
+                            {
+
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type":"origins:ingredient",
+                                        "ingredient":{
+                                            "item":"minecraft:iron_chestplate"
+                                        }
+
+                                    },
+                                    {
+
+                                        "type": "origins:nbt",
+                                        "nbt": "{CustomModelData: 10000}"
+
+                                    }
+
+                                ]
+
+                            }
+
+                        ]
+
+                    },
+                    "inverted": true
+                }
+            ]
+
+
+        }
+
+    },
+
+    "iron_omnithopter_armor_flight_power": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "origins:multiple",
+  "name": "Mycorrhiznth Navigator Oranel of Gravitational Rearrangement reverse gravity",
+  "description": "Mycorrhiznth Navigators organel of gravitational rearrangement can be used to temporarily invert the direction they fall",
+
+  "toggleeffect":{
+
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_mode"
+          },
+          "if_action": {
+            "type": "origins:toggle",
+            "power": "*:*_gravmodeon"
+          },
+          "else_action": {
+            "type": "origins:toggle",
+            "power": "*:*_gravmodeon"
+          }
+        }
+      ]
+    }
+
+  },
+
+  "gravmodeon": {
+    "type": "origins:launch",
+    "cooldown": 300,
+    "hud_render": {
+      "bar_index": 4
+    },
+    "sound": "minecraft:entity.endermite.ambient",
+    "speed": 1,
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
+  }
+}

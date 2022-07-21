@@ -1,0 +1,30 @@
+{   "type": "origins:multiple",
+    "add_recipie_ironomnithopterchestplate": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:ironomnithopterchestplate",
+        "result": {
+            "item": "iron_chestplate",
+            "amount": 1,
+            "tag": "{display:{Name:'{\"text\":\"Iron Omnithopter Chestplate\",\"color\":\"gold\",\"italic\":false}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"},{tag:{CustomModelData:10000}}]}"
+
+        }
+    },
+    "add_recipie_diamondomnithopterchestplate": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:diamondomnithopterchestplate",
+        "result": {
+            "item": "diamond_chestplate",
+            "amount": 1,
+            "tag": "{display:{Name:'{\"text\":\"Diamond Omnithopter Chestplate\",\"color\":\"gold\",\"italic\":false}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-595215901,378225688,-1438167054,-2112069410],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1310447846,334571566,-1361639662,-1995530679],Slot:\"chest\"}]}"
+        }
+    },
+    "add_recipie_netheriteomnithopterchestplate": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:netheriteomnithopterchestplate",
+        "result": {
+            "item": "netherite_chestplate",
+            "amount": 1,
+            "tag": "{display:{Name:'{\"text\":\"Netherite Omnithopter Chestplate\",\"color\":\"gold\",\"italic\":false}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536036501,378225528,-1726061264,-2126179276],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1812783646,343960766,-1634273626,-1199220679],Slot:\"chest\"}]}"
+        }
+    }
+}

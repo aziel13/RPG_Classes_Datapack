@@ -1,0 +1,15 @@
+{
+	"type": "origins:multiple",
+
+	"particleemitter": {
+		"type": "origins:particle",
+		"particle": "minecraft:mycelium_dust_particle",
+		"frequency": 1,
+		"condition": {
+			"type": "origins:fall_flying"
+		}
+	}
+
+}
+
+}
