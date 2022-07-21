@@ -1,0 +1,286 @@
+{
+    "name": "Craft Netherite Omnithopter Chestplate",
+    "description": "Your Diamand Omnithopter chestplate was good but now that you have netherite, you have an idea for the ultimate omnithopter artifact that can entirely negate fall damage and gravity, while retaining the ability to switch to gliding",
+
+    "type": "origins:multiple",
+
+    "netheriteomnithopterarmorglide": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false
+    },
+
+    "netheriteomnithopterarmorflight": {
+
+        "type": "origins:creative_flight"
+    },
+
+
+    "netheriteomnithopterarmorfallimmunity": {
+
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        }
+
+    },
+
+
+    "startuprevokenetheriteglideronstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "type": "origins:revoke_power",
+                    "power": "*:*_netheriteomnithopterarmorglide",
+                    "source": "artificer:artificer"
+                }
+            }
+        }
+    },
+
+    "startuprevokenetheriteflightonstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "type": "origins:revoke_power",
+                    "power": "*:*_netheriteomnithopterarmorflight",
+                    "source": "artificer:artificer"
+                }
+            }
+        }
+    },
+    
+    "startuprevokenetheritefallonstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_netheriteomnithopterarmorfallimmunity",
+                "source": "artificer:artificer"
+            }
+        }
+    },
+
+    "armor_power_checker": {
+
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "chest",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:netherite_chestplate"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:nbt",
+                                            "nbt": "{CustomModelData: 55170}"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_netheriteomnithopterarmorglide"
+                                    },
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_netheriteomnithopterarmorflight"
+                                    }
+                                ],"inverted": true
+
+                            }
+                        ]
+
+                    },
+                    "action":
+                    {
+
+                        "type": "origins:and",
+                        "actions":  [
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_netheriteomnithopterarmorglide",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_netheriteomnithopterarmorflight",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_netheriteomnithopterarmorfallimmunity",
+                                "source": "artificer:artificer"
+
+                            }
+                        ]
+
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "chest",
+                                "item_condition": {
+                                        "type": "origins:and",
+                                        "conditions": [
+                                            {
+                                                "type": "origins:ingredient",
+                                                "ingredient": {
+                                                    "item": "minecraft:netherite_chestplate"
+                                                }
+                                            },
+                                            {
+                                                "type": "origins:nbt",
+                                                "nbt": "{CustomModelData: 55170}"
+                                            }
+                                        ]
+                                },
+                                "inverted": true
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_netheriteomnithopterarmorglide"
+                                    },
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_netheriteomnithopterarmorflight"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:power_active",
+                                "power": "*:*_netheriteomnithopterarmorfallimmunity"
+                            }
+                        ]
+                    },
+                    "action":{
+
+                        "type": "origins:and",
+                        "actions":  [
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_netheriteomnithopterarmorglide",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_netheriteomnithopterarmorflight",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_netheriteomnithopterarmorfallimmunity",
+                                "source": "artificer:artificer"
+
+                            }
+                        ]
+
+                    }
+
+                }
+
+            ]
+
+        }
+    },
+
+    "swithflightmode": {
+
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_netheriteomnithopterarmorflight"
+            },
+            "if_action":
+            {
+                "type": "origins:toggle",
+                "power": "*:*_netheriteomnithopterarmorflight"
+            },
+            "else_action":
+            {
+                "type": "origins:toggle",
+                "power": "*:*_netheriteomnithopterarmorflight"
+            }
+
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.saveToolbarActivator",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:netherite_chestplate"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{CustomModelData: 55170}"
+                    }
+                ]
+            }
+        }
+
+    }
+
+}

@@ -184,16 +184,116 @@
       },
       "interval":10,
       "condition":{
-         "type":"origins:and",
-         "conditions":[
-            {
-               "type":"origins:on_block",
-               "block_condition":{
-                  "type":"origins:in_tag",
-                  "tag":"artificer:power_sources"
+
+
+         "type": "origins:block_in_radius",
+         "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+
+               {
+                  "type": "origins:material",
+                  "material": "solid_organic"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "moss_block"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "cactus"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "sponge"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "nether_shoots"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "plant"
+               },
+               {
+                  "type": "origins:material",
+                  "material": "underwater_plant"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:diamond_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:emerald_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_diamond_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_emerald_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_coal_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_iron_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_copper_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_redstone_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:amethyst_block"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:coal_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:iron_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:copper_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:nether_quartz_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:nether_gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:redstone_ore"
                }
-            }
-         ]
+            ]
+         },
+         "radius": 2,
+         "shape": "sphere",
+         "comparison": ">=",
+         "compare_to": 1
+
       }
    },
    "emit_on_manaconvert":{

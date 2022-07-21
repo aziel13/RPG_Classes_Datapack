@@ -5,7 +5,7 @@
         "result": {
             "item": "iron_chestplate",
             "amount": 1,
-            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Omnithopter Chestplate\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A chestplate\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" with \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" mechanical wings\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:1}"
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Omnithopter Chestplate\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A chestplate\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" with \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" mechanical wings\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:63912}"
 
         }
     },
@@ -15,7 +15,7 @@
         "result": {
             "item": "diamond_chestplate",
             "amount": 1,
-            "tag": "{display:{Name:'{\"text\":\"Diamond Omnithopter Chestplate\",\"color\":\"gold\",\"italic\":false}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:3s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-595215901,378225688,-1438167054,-2112069410],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1310447846,334571566,-1361639662,-1995530679],Slot:\"chest\"}]}"
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:9,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"}],Enchantments:[{id:\"unbreaking\",lvl:3}],display:{Name:'{\"text\":\"Diamond Omnithopter Chestplate\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A chestplate\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" with \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" mechanical wings\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:7307}"
         }
     },
     "add_recipie_netheriteomnithopterchestplate": {
@@ -24,7 +24,7 @@
         "result": {
             "item": "netherite_chestplate",
             "amount": 1,
-            "tag": "{display:{Name:'{\"text\":\"Netherite Omnithopter Chestplate\",\"color\":\"gold\",\"italic\":false}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536036501,378225528,-1726061264,-2126179276],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1812783646,343960766,-1634273626,-1199220679],Slot:\"chest\"}]}"
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:4,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"}],Enchantments:[{id:\"unbreaking\",lvl:5}],display:{Name:'{\"text\":\"Netherite Omnithopter Chestplate\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A chestplate\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" with \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" mechanical wings\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:55170}"
         }
     }
 }

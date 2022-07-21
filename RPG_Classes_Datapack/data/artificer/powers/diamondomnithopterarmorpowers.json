@@ -1,0 +1,169 @@
+{
+    "name": "Craft Iron Omnithopter Chestplate",
+    "description": "Your Iron Omnithopter was useful but its inconvient that you can only glide. You have an idea now that you have diamonds for the next version that has powered wings, giving you the ability to flap them to gain height",
+
+    "type": "origins:multiple",
+
+    "diamondomnithopterarmorglidepower": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false
+    },
+
+    "diamondomnithopterarmorflappower": {
+
+        "type": "origins:launch",
+        "cooldown": 30,
+        "hud_render": {
+            "bar_index": 4
+        },
+        "sound": "minecraft:entity.phantom.flap",
+        "speed": 1,
+        "key": {
+            "key": "key.jump"
+        }
+    },
+
+
+    "startuprevokediamondglideonstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_diamondomnithopterarmorglidepower",
+                "source": "artificer:artificer"
+            }
+        },
+        "execute_chosen_when_orb": true
+    },
+
+    "startuprevokdiamondeflaponstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_diamondomnithopterarmorflappower",
+                "source": "artificer:artificer"
+            }
+        },
+        "execute_chosen_when_orb": true
+    },
+
+    "armor_power_checker": {
+
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "chest",
+                        "item_condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:diamond_chestplate"
+                                    }
+                                },
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{CustomModelData: 7307}"
+                                }
+                            ]
+                        }
+                    },
+                    "action":
+                    {
+
+                        "type": "origins:and",
+                        "actions":  [
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_diamondomnithopterarmorglidepower",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_diamondomnithopterarmorflappower",
+                                "source": "artificer:artificer"
+
+                            }
+                        ]
+
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "chest",
+                                "item_condition": {
+                                        "type": "origins:and",
+                                        "conditions": [
+                                            {
+                                                "type": "origins:ingredient",
+                                                "ingredient": {
+                                                    "item": "minecraft:diamond_chestplate"
+                                                }
+                                            },
+                                            {
+                                                "type": "origins:nbt",
+                                                "nbt": "{CustomModelData: 7307}"
+                                            }
+                                        ]
+                                },
+                                "inverted": true
+                            },
+                            {
+                                "type": "origins:power_active",
+                                "power": "*:*_diamondomnithopterarmorglidepower"
+                            },
+                            {
+                                "type": "origins:power_active",
+                                "power": "*:*_diamondomnithopterarmorflappower"
+                            }
+                        ]
+                    },
+                    "action":{
+
+                        "type": "origins:and",
+                        "actions":  [
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_diamondomnithopterarmorglidepower",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_diamondomnithopterarmorflappower",
+                                "source": "artificer:artificer"
+
+                            }
+                        ]
+
+                    }
+
+                }
+
+            ]
+
+        }
+    }
+}

@@ -6,7 +6,10 @@
         "artificer:essencetank",
         "artificer:soldering_beam_tool",
         "artificer:craftomnithopterchestplate",
-        "artificer:omnithopterarmorpowers"
+        "artificer:ironomnithopterarmorpowers",
+        "artificer:diamondomnithopterarmorpowers",
+        "artificer:netheritedomnithopterarmorpowers"
+
     ],
     "icon": "book",
     "order": 10,
