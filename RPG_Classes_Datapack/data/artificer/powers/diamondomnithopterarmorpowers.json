@@ -3,10 +3,24 @@
     "description": "Your Iron Omnithopter was useful but its inconvient that you can only glide. You have an idea now that you have diamonds for the next version that has powered wings, giving you the ability to flap them to gain height",
 
     "type": "origins:multiple",
-
+    "mode": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.saveToolbarActivator",
+            "continuous": false
+        }
+    },
     "diamondomnithopterarmorglidepower": {
         "type": "origins:elytra_flight",
         "render_elytra": false
+    },
+
+    "diamondomnithopterarmorhover": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:fall_flying",
+            "inverted": true
+        }
     },
 
     "diamondomnithopterarmorflappower": {

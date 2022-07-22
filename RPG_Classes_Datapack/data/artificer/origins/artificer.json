@@ -1,14 +1,15 @@
 {
     "powers": [
-        "artificer:crafting",
-        "artificer:better_magic_crafting",
         "artificer:summon_artificer_tools",
         "artificer:essencetank",
         "artificer:soldering_beam_tool",
         "artificer:craftomnithopterchestplate",
         "artificer:ironomnithopterarmorpowers",
         "artificer:diamondomnithopterarmorpowers",
-        "artificer:netheritedomnithopterarmorpowers"
+        "artificer:netheritedomnithopterarmorpowers",
+        "artificer:craftmagicboots",
+        "artificer:ironbootshookfunctionality"
+
 
     ],
     "icon": "book",

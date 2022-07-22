@@ -14,7 +14,6 @@
         "type": "origins:creative_flight"
     },
 
-
     "netheriteomnithopterarmorfallimmunity": {
 
         "type": "origins:invulnerability",
@@ -24,8 +23,6 @@
         }
 
     },
-
-
     "startuprevokenetheriteglideronstart": {
 
         "type": "origins:action_on_callback",
@@ -33,12 +30,11 @@
             "type": "origins:delay",
             "ticks": 20,
             "action": {
-                "type": "origins:apply_effect",
-                "effect": {
-                    "type": "origins:revoke_power",
-                    "power": "*:*_netheriteomnithopterarmorglide",
-                    "source": "artificer:artificer"
-                }
+
+                "type": "origins:revoke_power",
+                "power": "*:*_netheriteomnithopterarmorglide",
+                "source": "artificer:artificer"
+
             }
         }
     },
@@ -50,21 +46,19 @@
             "type": "origins:delay",
             "ticks": 20,
             "action": {
-                "type": "origins:apply_effect",
-                "effect": {
+
                     "type": "origins:revoke_power",
                     "power": "*:*_netheriteomnithopterarmorflight",
                     "source": "artificer:artificer"
-                }
+
             }
         }
     },
-    
+
     "startuprevokenetheritefallonstart": {
 
         "type": "origins:action_on_callback",
         "entity_action_gained": {
-
             "type": "origins:delay",
             "ticks": 20,
             "action": {
@@ -111,13 +105,15 @@
                                 "conditions": [
                                     {
                                         "type": "origins:power_active",
-                                        "power": "*:*_netheriteomnithopterarmorglide"
+                                        "power": "*:*_netheriteomnithopterarmorglide",
+                                        "inverted": true
                                     },
                                     {
                                         "type": "origins:power_active",
-                                        "power": "*:*_netheriteomnithopterarmorflight"
+                                        "power": "*:*_netheriteomnithopterarmorflight",
+                                        "inverted": true
                                     }
-                                ],"inverted": true
+                                ]
 
                             }
                         ]
@@ -241,15 +237,38 @@
                 "type": "origins:power_active",
                 "power": "*:*_netheriteomnithopterarmorflight"
             },
-            "if_action":
-            {
-                "type": "origins:toggle",
-                "power": "*:*_netheriteomnithopterarmorflight"
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:revoke_power",
+                        "power": "*:*_netheriteomnithopterarmorflight",
+                        "source": "artificer:artificer"
+                    },
+                    {
+
+                        "type": "origins:grant_power",
+                        "power": "*:*_netheriteomnithopterarmorglide",
+                        "source": "artificer:artificer"
+
+                    }
+                ]
             },
-            "else_action":
-            {
-                "type": "origins:toggle",
-                "power": "*:*_netheriteomnithopterarmorflight"
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:revoke_power",
+                        "power": "*:*_netheriteomnithopterarmorglide",
+                        "source": "artificer:artificer"
+                    },
+                    {
+
+                        "type": "origins:grant_power",
+                        "power": "*:*_netheriteomnithopterarmorflight",
+                        "source": "artificer:artificer"
+                    }
+                ]
             }
 
         },

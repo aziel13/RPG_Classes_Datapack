@@ -1,0 +1,58 @@
+{
+    "name": "Craft Iron Hook Boots",
+    "description": "You think you might be able to make a special pair of iron boots that lets you scale walls",
+
+    "type": "origins:multiple",
+
+    "climbwalls": {
+        "type": "origins:climbing",
+        "hold_condition": {
+            "type": "origins:and",
+            "conditions":[
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 68752}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:collided_horizontally"
+                }
+            ]
+        },
+        "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "chest",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:iron_boots"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{CustomModelData: 68752}"
+                    }
+                ]
+            }
+        }
+    }
+
+
+}
