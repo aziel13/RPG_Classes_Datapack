@@ -18,8 +18,36 @@
     "diamondomnithopterarmorhover": {
         "type": "origins:swimming",
         "condition": {
-            "type": "origins:fall_flying",
-            "inverted": true
+
+            "type": "origins:and",
+            "actions":  [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_diamondomnithopterarmorglidepower",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond_chestplate"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 7307}"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+
         }
     },
 
@@ -43,7 +71,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained": {
             "type": "origins:delay",
-            "ticks": 20,
+            "ticks": 5,
             "action": {
                 "type": "origins:revoke_power",
                 "power": "*:*_diamondomnithopterarmorglidepower",
@@ -58,7 +86,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained": {
             "type": "origins:delay",
-            "ticks": 20,
+            "ticks": 5,
             "action": {
                 "type": "origins:revoke_power",
                 "power": "*:*_diamondomnithopterarmorflappower",
@@ -179,5 +207,67 @@
             ]
 
         }
+    },
+
+    "swithflightmode": {
+
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_diamondomnithopterarmorglidepower"
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:revoke_power",
+                        "power": "*:*_diamondomnithopterarmorglidepower",
+                        "source": "artificer:artificer"
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+
+                        "type": "origins:grant_power",
+                        "power": "*:*_diamondomnithopterarmorglidepower",
+                        "source": "artificer:artificer"
+                    }
+                ]
+            }
+
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.saveToolbarActivator",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:diamond_chestplate"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{CustomModelData: 7307}"
+                    }
+                ]
+            }
+        }
+
     }
 }

@@ -28,7 +28,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained": {
             "type": "origins:delay",
-            "ticks": 20,
+            "ticks": 5,
             "action": {
 
                 "type": "origins:revoke_power",
@@ -44,7 +44,7 @@
         "type": "origins:action_on_callback",
         "entity_action_gained": {
             "type": "origins:delay",
-            "ticks": 20,
+            "ticks": 5,
             "action": {
 
                     "type": "origins:revoke_power",
