@@ -10,10 +10,10 @@
 			"item":"minecraft:piston"
 		},
 		"*":{
-			"item":"minecraft:iron_bars"
+			"item":"minecraft:crossbow"
 		},
 		"&":{
-			"item":"minecraft:white_carpet"
+			"item":"minecraft:white_banner"
 		},
 		"%":{
 			"item":"minecraft:tripwire_hook"

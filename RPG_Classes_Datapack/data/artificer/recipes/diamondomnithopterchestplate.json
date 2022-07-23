@@ -9,20 +9,20 @@
 		"#":{
 			"item":"minecraft:piston"
 		},
-		"*":{
-			"item":"minecraft:iron_bars"
-		},
-		"&":{
-			"item":"minecraft:white_carpet"
-		},
 		"%":{
-			"item":"minecraft:tripwire_hook"
+			"item":"minecraft:repeater"
 		},
 		"@":{
 			"item":"minecraft:diamond_chestplate"
 		},
 		"$":{
-			"item":"minecraft:slime_ball"
+			"item":"minecraft:white_banner"
+		},
+		"&":{
+			"item":"minecraft:dispenser"
+		},
+		"*":{
+			"item":"minecraft:firework_rocket"
 		}
 	},
 	"result":{

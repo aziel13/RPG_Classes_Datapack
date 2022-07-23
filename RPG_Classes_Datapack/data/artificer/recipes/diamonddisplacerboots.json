@@ -10,13 +10,13 @@
 			"item":"minecraft:piston"
 		},
 		"%":{
-			"item":"minecraft.observer"
+			"item":"minecraft:observer"
 		},
 		"@":{
 			"item":"minecraft:diamond_boots"
 		},
 		"$":{
-			"item":"minecraft.crossbow"
+			"item":"minecraft:crossbow"
 		},
 		"&":{
 			"item":"minecraft:slime_ball"

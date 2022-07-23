@@ -8,8 +8,13 @@
         "artificer:diamondomnithopterarmorpowers",
         "artificer:netheritedomnithopterarmorpowers",
         "artificer:craftmagicboots",
-        "artificer:ironbootshookfunctionality"
-
+        "artificer:craftmagichelms",
+        "artificer:craftmagicleggings",
+        "artificer:ironbootshookfunctionality",
+        "artificer:diamondbootsdisplacerfunctionality",
+        "artificer:netheritebootsantigravityfunctionality",
+        "artificer:irongrievesswiftfunctionality",
+        "artificer:artificer_item_testing"
 
     ],
     "icon": "book",

@@ -12,18 +12,19 @@
     },
     "diamondomnithopterarmorglidepower": {
         "type": "origins:elytra_flight",
-        "render_elytra": false
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
     },
 
     "diamondomnithopterarmorhover": {
-        "type": "origins:swimming",
+        "type": "origins:modify_falling",
+        "velocity": 0.001,
+        "take_fall_damage": false,
         "condition": {
-
             "type": "origins:and",
-            "actions":  [
+            "conditions": [
                 {
-                    "type": "origins:power_active",
-                    "power": "*:*_diamondomnithopterarmorglidepower",
+                    "type": "origins:on_block",
                     "inverted": true
                 },
                 {
@@ -45,9 +46,7 @@
                         ]
                     }
                 }
-
             ]
-
         }
     },
 
@@ -96,6 +95,21 @@
         "execute_chosen_when_orb": true
     },
 
+    "startuprevokdiamondehoveronstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 5,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_diamondomnithopterarmorhover",
+                "source": "artificer:artificer"
+            }
+        },
+        "execute_chosen_when_orb": true
+    },
+
     "armor_power_checker": {
 
         "type": "origins:action_over_time",
@@ -105,23 +119,51 @@
             "actions": [
                 {
                     "condition": {
-                        "type": "origins:equipped_item",
-                        "equipment_slot": "chest",
-                        "item_condition": {
-                            "type": "origins:and",
-                            "conditions": [
-                                {
-                                    "type": "origins:ingredient",
-                                    "ingredient": {
-                                        "item": "minecraft:diamond_chestplate"
-                                    }
-                                },
-                                {
-                                    "type": "origins:nbt",
-                                    "nbt": "{CustomModelData: 7307}"
+
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "chest",
+                                "item_condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:ingredient",
+                                            "ingredient": {
+                                                "item": "minecraft:diamond_chestplate"
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:nbt",
+                                            "nbt": "{CustomModelData: 7307}"
+                                        }
+                                    ]
                                 }
-                            ]
-                        }
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_diamondomnithopterarmorglidepower",
+                                        "inverted": true
+                                    },
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_diamondomnithopterarmorflappower",
+                                        "inverted": true
+                                    },
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_diamondomnithopterarmorhover",
+                                        "inverted": true
+                                    }
+                                ]
+
+                            }
+                        ]
+
                     },
                     "action":
                     {
@@ -171,9 +213,20 @@
                                 "inverted": true
                             },
                             {
-                                "type": "origins:power_active",
-                                "power": "*:*_diamondomnithopterarmorglidepower"
-                            },
+                                "type": "origins:and",
+                                "conditions": [
+
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_diamondomnithopterarmorglidepower"
+                                    },
+                                    {
+                                        "type": "origins:power_active",
+                                        "power": "*:*_diamondomnithopterarmorhover"
+                                    }
+
+                                ]
+                           },
                             {
                                 "type": "origins:power_active",
                                 "power": "*:*_diamondomnithopterarmorflappower"
@@ -195,6 +248,13 @@
 
                                 "type": "origins:revoke_power",
                                 "power": "*:*_diamondomnithopterarmorflappower",
+                                "source": "artificer:artificer"
+
+                            },
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_diamondomnithopterarmorhover",
                                 "source": "artificer:artificer"
 
                             }
@@ -222,6 +282,13 @@
                 "type": "origins:and",
                 "actions": [
                     {
+
+                        "type": "origins:grant_power",
+                        "power": "*:*_diamondomnithopterarmorhover",
+                        "source": "artificer:artificer"
+
+                    },
+                    {
                         "type": "origins:revoke_power",
                         "power": "*:*_diamondomnithopterarmorglidepower",
                         "source": "artificer:artificer"
@@ -235,6 +302,12 @@
 
                         "type": "origins:grant_power",
                         "power": "*:*_diamondomnithopterarmorglidepower",
+                        "source": "artificer:artificer"
+
+                    },
+                    {
+                        "type": "origins:revoke_power",
+                        "power": "*:*_diamondomnithopterarmorhover",
                         "source": "artificer:artificer"
                     }
                 ]

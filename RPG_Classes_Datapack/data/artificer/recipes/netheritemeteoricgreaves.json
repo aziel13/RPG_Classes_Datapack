@@ -3,30 +3,27 @@
 	"pattern":[
 		"%&%",
 		"*@*",
-		"$#$"
+		"*#*"
 	],
 	"key":{
 		"#":{
 			"item":"minecraft:piston"
 		},
 		"%":{
-			"item":"clock"
+			"item":"minecraft:repeater"
 		},
 		"@":{
-			"item":"minecraft:iron_boots"
-		},
-		"$":{
-			"item":"minecraft:slime_ball"
+			"item":"minecraft:netherite_leggings"
 		},
 		"&":{
-			"item":"minecraft:crossbow"
+			"item":"minecraft:dispenser"
 		},
 		"*":{
-			"item":"minecraft:tripwire_hook"
+			"item":"minecraft:firework_rocket"
 		}
 	},
 	"result":{
-		"item":"minecraft:iron_boots",
+		"item":"minecraft:netherite_leggings",
 		"count":1
 	}
 }

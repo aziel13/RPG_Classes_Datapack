@@ -6,7 +6,8 @@
 
     "ironomnithopterarmorglidepower": {
         "type": "origins:elytra_flight",
-        "render_elytra": false
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
     },
 
     "startuprevokeelytraonstart": {

@@ -6,7 +6,8 @@
 
     "netheriteomnithopterarmorglide": {
         "type": "origins:elytra_flight",
-        "render_elytra": false
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
     },
 
     "netheriteomnithopterarmorflight": {
@@ -23,6 +24,36 @@
         }
 
     },
+
+    "netheriteomnithopterarmorflappower": {
+
+        "type": "origins:launch",
+        "cooldown": 30,
+        "hud_render": {
+            "bar_index": 4
+        },
+        "sound": "minecraft:entity.phantom.flap",
+        "speed": 1,
+        "key": {
+            "key": "key.jump"
+        }
+    },
+
+    "startuprevoknetheriteflaponstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 5,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_netheriteomnithopterarmorflappower",
+                "source": "artificer:artificer"
+            }
+        },
+        "execute_chosen_when_orb": true
+    },
+
     "startuprevokenetheriteglideronstart": {
 
         "type": "origins:action_on_callback",
@@ -144,6 +175,13 @@
                                 "power": "*:*_netheriteomnithopterarmorfallimmunity",
                                 "source": "artificer:artificer"
 
+                            },
+                            {
+
+                                "type": "origins:grant_power",
+                                "power": "*:*_netheriteomnithopterarmorflappower",
+                                "source": "artificer:artificer"
+
                             }
                         ]
 
@@ -216,6 +254,13 @@
                                 "power": "*:*_netheriteomnithopterarmorfallimmunity",
                                 "source": "artificer:artificer"
 
+                            },
+                            {
+
+                                "type": "origins:revoke_power",
+                                "power": "*:*_netheriteomnithopterarmorflappower",
+                                "source": "artificer:artificer"
+
                             }
                         ]
 
@@ -251,6 +296,11 @@
                         "power": "*:*_netheriteomnithopterarmorglide",
                         "source": "artificer:artificer"
 
+                    },
+                    {
+                        "type": "origins:grant_power",
+                        "power": "*:*_netheriteomnithopterarmorflappower",
+                        "source": "artificer:artificer"
                     }
                 ]
             },
@@ -267,6 +317,13 @@
                         "type": "origins:grant_power",
                         "power": "*:*_netheriteomnithopterarmorflight",
                         "source": "artificer:artificer"
+                    },
+                    {
+
+                        "type": "origins:revoke_power",
+                        "power": "*:*_netheriteomnithopterarmorflappower",
+                        "source": "artificer:artificer"
+
                     }
                 ]
             }

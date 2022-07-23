@@ -1,0 +1,95 @@
+{
+    "name": "Craft Diamond Displacer Boots",
+    "description": "You think you might be able to make an improved version of your hook boots that lets you walk on water as well",
+
+    "type": "origins:multiple",
+
+    "climbwalls": {
+        "type": "origins:climbing",
+        "hold_condition": {
+            "type": "origins:and",
+            "conditions":[
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond_boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 46439}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:collided_horizontally"
+                }
+            ]
+        },
+        "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "feet",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:diamond_boots"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{CustomModelData: 46439}"
+                    }
+                ]
+            }
+        }
+    },
+
+    "waterwalking":{
+
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond_boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 46439}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                }
+
+            ]
+        }
+
+    }
+
+
+}

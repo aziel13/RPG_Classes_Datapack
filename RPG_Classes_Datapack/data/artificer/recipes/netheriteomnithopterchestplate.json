@@ -13,10 +13,10 @@
 			"item":"minecraft:netherite_ingot"
 		},
 		"$":{
-			"item":"minecraft:comparator"
+			"item":"minecraft:crossbow"
 		},
 		"&":{
-			"item":"minecraft:white_carpet"
+			"item":"minecraft:white_banner"
 		},
 		"%":{
 			"item":"minecraft:tripwire_hook"
