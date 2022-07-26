@@ -1,0 +1,145 @@
+{
+    "name": "Craft Diamond Lighting Greives",
+    "description": "You think you may be able to make a pair of greives that make you move faster and periodically shocks anything that you attack, doing more damage if they are wet",
+
+    "type": "origins:multiple",
+
+    "swiftwalk": {
+
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.4,
+            "name": "Increased speed"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:diamond_leggings"
+                        }
+                    },
+                    {
+                        "type": "origins:nbt",
+                        "nbt": "{CustomModelData: 46439}"
+                    }
+                ]
+            }
+        }
+
+    },
+
+    "swiftrun": {
+
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.4,
+            "name": "Increased speed"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond_leggings"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 46439}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:sprinting"
+                }
+            ]
+        }
+    },
+
+    "lightningrebuke": {
+        "type": "origins:modify_damage_taken",
+        "attacker_action":  {
+
+
+            "type": "origins:if_else",
+            "condition": {
+
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        }
+                    ]
+
+            },
+            "if_action": {
+                "type": "origins:damage",
+                "amount": 10,
+                "bypasses_armor":true,
+                "magic": true,
+                "unblockable": true,
+                "source": {
+                    "name": "lightningBolt.player"
+                }
+            },
+            "else_action": {
+                "type": "origins:damage",
+                "amount": 5,
+                "bypasses_armor":true,
+                "magic": true,
+                "unblockable": true,
+                "source": {
+                    "name": "lightningBolt.player"
+                }
+            }
+
+        },
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "legs",
+                "item_condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:diamond_leggings"
+                            }
+                        },
+                        {
+                            "type": "origins:nbt",
+                            "nbt": "{CustomModelData: 46439}"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
 
     "type": "origins:multiple",
 
-    "swiftrun": {
+    "swiftwalk": {
 
         "type": "origins:conditioned_attribute",
         "modifier": {
@@ -16,14 +16,14 @@
         "tick_rate": 20,
         "condition": {
             "type": "origins:equipped_item",
-            "equipment_slot": "feet",
+            "equipment_slot": "legs",
             "item_condition": {
                 "type": "origins:and",
                 "conditions": [
                     {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:iron_boots"
+                            "item": "minecraft:iron_leggings"
                         }
                     },
                     {
@@ -34,6 +34,44 @@
             }
         }
 
+    },
+    "swiftrun": {
+
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.4,
+            "name": "Increased speed"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:iron_leggings"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 68752}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:sprinting"
+                }
+            ]
+        }
     }
 
 }

@@ -30,27 +30,68 @@
                 },
                 {
                     "type": "origins:collided_horizontally"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.1,
+                            "offset_y": 0.0,
+                            "offset_z": 0.1
+
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.1,
+                            "offset_y": 0.0,
+                            "offset_z": 0.1
+                        }
+                    ]
                 }
             ]
         },
         "condition": {
-        "type": "origins:equipped_item",
-        "equipment_slot": "feet",
-        "item_condition": {
             "type": "origins:and",
             "conditions": [
-                    {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "item": "minecraft:diamond_boots"
-                        }
-                    },
-                    {
-                        "type": "origins:nbt",
-                        "nbt": "{CustomModelData: 46439}"
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:diamond_boots"
+                                }
+                            },
+                            {
+                                "type": "origins:nbt",
+                                "nbt": "{CustomModelData: 46439}"
+                            }
+                        ]
                     }
-                ]
-            }
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.1,
+                            "offset_y": 0.0,
+                            "offset_z": 0.1
+
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.1,
+                            "offset_y": 0.0,
+                            "offset_z": 0.1
+                        }
+                    ]
+                }
+            ]
         }
     },
 

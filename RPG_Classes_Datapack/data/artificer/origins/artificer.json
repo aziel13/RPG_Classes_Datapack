@@ -14,8 +14,9 @@
         "artificer:diamondbootsdisplacerfunctionality",
         "artificer:netheritebootsantigravityfunctionality",
         "artificer:irongrievesswiftfunctionality",
+        "artificer:diamondlightninggrievestfunctionality",
+        "artificer:netheritemetoricgrievestfunctionality",
         "artificer:artificer_item_testing"
-
     ],
     "icon": "book",
     "order": 10,
