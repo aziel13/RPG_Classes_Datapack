@@ -119,8 +119,41 @@
     "hud_render": {
       "should_render": false
     }
-  }
-
-
-
+  },
+  "fungusonstickmainhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+    },
+    "fungusonstickoffhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "orangedyemainhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+      },
+      "orangedyeoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      }
 }

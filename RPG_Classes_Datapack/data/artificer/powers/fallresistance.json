@@ -22,10 +22,10 @@
                     "type": "origins:name",
                     "name": "flyIntoWall"
                 }
-            ],
+            ]
 
 
-        },
+        }
 
     },
     "lowfallimmunity": {
@@ -58,26 +58,29 @@
         }
     },
 
-    "startuprevokefallimmunityonstart": {
+    "startuprevokefallresistonstart": {
 
         "type": "origins:action_on_callback",
         "entity_action_gained": {
             "type": "origins:delay",
             "ticks": 20,
             "action": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:revoke_power",
-                        "power": "*:*_falldamageresistance",
-                        "source": "artificer:artificer"
-                    },
-                    {
-                        "type": "origins:revoke_power",
-                        "power": "*:*_lowfallimmunity",
-                        "source": "artificer:artificer"
-                    }
-                ]
+                "type": "origins:revoke_power",
+                "power": "*:*_falldamageresistance",
+                "source": "artificer:artificer"
+            }
+        }
+    },
+    "startuprevokelowfallimmunityonstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_lowfallimmunity",
+                "source": "artificer:artificer"
             }
         }
     },
@@ -192,7 +195,7 @@
                                 "source": "artificer:artificer"
 
                             }
-                        ],
+                        ]
 
                     }
 

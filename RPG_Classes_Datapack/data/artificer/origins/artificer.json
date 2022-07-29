@@ -28,8 +28,8 @@
         "artificer:fallresistance",
         "artificer:nightvision",
         "artificer:spectralvision",
-        "artificer:lavavision"
-
+        "artificer:lavavision",
+        "artificer:equipeditemsdetector"
 
     ],
     "icon": "book",
