@@ -1,0 +1,71 @@
+{
+    "name": "waterwalkingFunctionalityWillBeHidden",
+    "description": "water walking functionality that overlaps with more than one item",
+
+    "type": "origins:multiple",
+    "waterwalking":{
+
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
+
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_waterwalktoggle",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type": "origins:and",
+                    "conditions": [
+
+                        {
+
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type":"origins:resource",
+                                    "resource":"artificer:equipmenttoggles_diamondboots",
+                                    "comparison":"==",
+                                    "compare_to":1
+
+                                },
+                                {
+                                    "type":"origins:resource",
+                                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                                    "comparison":"==",
+                                    "compare_to":1
+
+                                }
+
+                            ]
+
+                        },
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">=",
+                            "compare_to": -1
+                        },
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": "<",
+                            "compare_to": 0.4
+                        }
+                    ]
+                }
+            ]
+
+
+        }
+    }
+}

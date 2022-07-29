@@ -1,0 +1,188 @@
+{
+    "name": "Craft Iron Omnithopter Chestplate",
+    "description": "You have an idea for a new artifact you can craft that will give you the ability to glide when worn.",
+
+    "type": "origins:multiple",
+
+    "glidepower": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
+    },
+
+    "startuprevokeglidepower": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:revoke_power",
+            "power": "*:*_glidepower",
+            "source": "artificer:artificer"
+        }
+    },
+
+    "armor_power_checker": {
+
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_master",
+                                "comparison":"==",
+                                "compare_to":1
+
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_gildertoggle",
+                                "comparison":"==",
+                                "compare_to":1
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_ironchestplate",
+                                        "comparison":"==",
+                                        "compare_to":1
+
+                                    },
+                                    {
+                                        "type": "origins:and",
+                                        "conditions": [
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:equipmenttoggles_diamondchestplate",
+                                                "comparison":"==",
+                                                "compare_to":1
+                                            },
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:powertoggles_glideorhovertoggle",
+                                                "comparison":"==",
+                                                "compare_to":1
+                                            }
+                                        ]
+
+                                    },
+                                    {
+                                        "type": "origins:and",
+                                        "conditions": [
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:equipmenttoggles_netheritechestplate",
+                                                "comparison":"==",
+                                                "compare_to":1
+                                            },
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:powertoggles_glideorcreativeflighttoggle",
+                                                "comparison":"==",
+                                                "compare_to":0
+                                            }
+                                        ]
+
+                                    }
+                                ]
+                            }
+                        ]
+
+                    },
+                    "action": {
+
+                        "type": "origins:grant_power",
+                        "power": "*:glider_glidepower",
+                        "source": "artificer:artificer"
+
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_master",
+                                "comparison":"==",
+                                "compare_to":0
+
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_gildertoggle",
+                                "comparison":"==",
+                                "compare_to":0
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_ironchestplate",
+                                        "comparison":"==",
+                                        "compare_to":0
+
+                                    },
+                                    {
+                                        "type": "origins:or",
+                                        "conditions": [
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:equipmenttoggles_diamondchestplate",
+                                                "comparison":"==",
+                                                "compare_to":0
+                                            },
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:powertoggles_glideorhovertoggle",
+                                                "comparison":"==",
+                                                "compare_to":0
+                                            }
+                                        ]
+
+                                    },
+                                    {
+                                        "type": "origins:or",
+                                        "conditions": [
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:equipmenttoggles_netheritechestplate",
+                                                "comparison":"==",
+                                                "compare_to":0
+                                            },
+                                            {
+                                                "type":"origins:resource",
+                                                "resource":"artificer:powertoggles_glideorcreativeflighttoggle",
+                                                "comparison":"==",
+                                                "compare_to":1
+                                            }
+                                        ]
+
+                                    }
+                                ]
+                            }
+                        ]
+
+
+                    },
+                    "action": {
+
+                        "type": "origins:revoke_power",
+                        "power": "*:glider_glidepower",
+                        "source": "artificer:artificer"
+
+                    }
+                }
+
+            ]
+
+        }
+    }
+}

@@ -5,7 +5,7 @@
         "result": {
             "item": "iron_helmet",
             "amount": 1,
-            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-536043201,378225528,-1721061264,-2116135236],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-367329456,323479609,-552423691,-299477413],Slot:\"head\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Darkvision goggles\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A armored pair of goggles that lets you see in the dark\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" that let you\",\"italic\":false,\"see when its dark\":\"white\"}]','[{\"text\":\" and thats all \",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:97250}"
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-536043201,378225528,-1721061264,-2116135236],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-367329456,323479609,-552423691,-299477413],Slot:\"head\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Darkvision goggles\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A armored pair of goggles that lets you see in the dark\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" that let you\",\"italic\":false,\"see when its dark\":\"white\"}]','[{\"text\":\" and thats all \",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:97254}"
 
         }
     },

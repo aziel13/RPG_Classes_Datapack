@@ -1,0 +1,195 @@
+{
+  "type":"origins:multiple",
+  "master": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
+  "setmastertoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
+  "gildertoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "flaptoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "hovertoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "glideorhovertoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "glideorcreativeflighttoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "creativeflighttoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "reducedfalldamagetoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "nofalldamagetoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "climbtoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "waterwalktoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "lavawalktoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "swiftwalktoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "swiftruntoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "lightningrebuketoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "meteoricleaptoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "nightvisiontoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "spectralvisiontoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "lavavisiontoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  }
+
+
+
+}
