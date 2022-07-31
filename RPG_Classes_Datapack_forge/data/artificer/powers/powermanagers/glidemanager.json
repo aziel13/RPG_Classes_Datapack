@@ -26,6 +26,12 @@
                 "compare_to":1
               },
               {
+                "type":"origins:resource",
+                "resource":"artificer:haspowertoggles_hasgilder",
+                "comparison":"==",
+                "compare_to":0
+              },
+              {
                 "type": "origins:or",
                 "conditions": [
                   {
@@ -87,98 +93,146 @@
 
           },
           "action": {
+
+            "type": "origins:and",
+            "actions": [
+              {
+                "type":"origins:change_resource",
+                "resource":"artificer:haspowertoggles_hasgilder",
+                "operation": "set",
+                "change":1
+              },
+              {
                 "type": "origins:grant_power",
                 "power": "artificer:crafteditempowers/glider",
                 "source": "artificer:artificer"
+              },
+              {
+                "type": "origins:execute_command",
+                "command": "say Should have been granted glider"
+              }
+            ]
           }
         },
         {
           "condition": {
-            "type": "origins:or",
+
+            "type": "origins:and",
             "conditions": [
               {
                 "type":"origins:resource",
-                "resource":"artificer:powertoggles_master",
+                "resource":"artificer:haspowertoggles_hasgilder",
                 "comparison":"==",
-                "compare_to":0
-
+                "compare_to":1
               },
               {
-                "type":"origins:resource",
-                "resource":"artificer:powertoggles_gildertoggle",
-                "comparison":"==",
-                "compare_to":0
-              },
-              {
-                "type": "origins:or",
-                "conditions": [
-                  {
-                    "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironchestplate",
-                    "comparison":"==",
-                    "compare_to":0
+                  "type": "origins:or",
+                  "conditions": [
+                    {
+                      "type":"origins:resource",
+                      "resource":"artificer:powertoggles_master",
+                      "comparison":"==",
+                      "compare_to":0
 
-                  },
-                  {
-                    "type": "origins:and",
-                    "conditions": [
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondchestplate",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_gliderstate",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_hoverstate",
-                        "comparison":"==",
-                        "compare_to":0
-                      }
-                    ],
-                    "inverted": true
+                    },
+                    {
+                      "type":"origins:resource",
+                      "resource":"artificer:powertoggles_gildertoggle",
+                      "comparison":"==",
+                      "compare_to":0
+                    },
+                    {
+                      "type": "origins:and",
+                      "conditions": [
+                        {
+                          "type":"origins:resource",
+                          "resource":"artificer:equipmenttoggles_ironchestplate",
+                          "comparison":"==",
+                          "compare_to":0
 
-                  },
-                  {
-                    "type": "origins:and",
-                    "conditions": [
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheritechestplate",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_glidercreativestate",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_creativestate",
-                        "comparison":"==",
-                        "compare_to":0
-                      }
-                    ],
-                    "inverted": true
+                        },
+                        {
+                          "type": "origins:and",
+                          "conditions": [
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:equipmenttoggles_diamondchestplate",
+                              "comparison":"==",
+                              "compare_to":1
+                            },
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:powertoggles_gliderstate",
+                              "comparison":"==",
+                              "compare_to":1
+                            },
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:powertoggles_hoverstate",
+                              "comparison":"==",
+                              "compare_to":0
+                            }
+                          ],
+                          "inverted": true
 
-                  }
-                ]
+                        },
+                        {
+                          "type": "origins:and",
+                          "conditions": [
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:equipmenttoggles_netheritechestplate",
+                              "comparison":"==",
+                              "compare_to":1
+                            },
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:powertoggles_glidercreativestate",
+                              "comparison":"==",
+                              "compare_to":1
+                            },
+                            {
+                              "type":"origins:resource",
+                              "resource":"artificer:powertoggles_creativestate",
+                              "comparison":"==",
+                              "compare_to":0
+                            }
+                          ],
+                          "inverted": true
+
+                        }
+                      ]
+                    }
+                  ]
               }
             ]
+
+
 
           },
           "action":{
 
+
+
+            "type": "origins:and",
+            "actions": [
+              {
+                "type":"origins:change_resource",
+                "resource":"artificer:haspowertoggles_hasgilder",
+                "operation": "set",
+                "change":0
+              }
+             ,{
                 "type": "origins:revoke_power",
                 "power": "artificer:crafteditempowers/glider",
                 "source": "artificer:artificer"
+              },
+              {
+                "type": "origins:execute_command",
+                "command": "say glider was revoked"
+              }
+            ]
+
 
           }
         }

@@ -1,8 +1,10 @@
+/resource get aziel13 artificer:equipmenttoggles_ironchestplate
+
 /resource get aziel13 artificer:equipmenttoggles_netheritechestplate
 
 /resource get aziel13 artificer:equipmenttoggles_diamondchestplate
-
 /resource get aziel13 artificer:powertoggles_gildertoggle
+
 
 /resource get aziel13 artificer:powertoggles_flaptoggle
 

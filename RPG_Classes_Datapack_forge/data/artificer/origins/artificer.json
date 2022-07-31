@@ -8,6 +8,7 @@
         "artificer:craftmagicleggings",
         "artificer:powertoggles",
         "artificer:equipmenttoggles",
+        "artificer:haspowertoggles",
         "artificer:detectorpowers/equipmentirondetectors",
         "artificer:detectorpowers/equipmentdiamonddetectors",
         "artificer:detectorpowers/equipmentnetheritedetectors",

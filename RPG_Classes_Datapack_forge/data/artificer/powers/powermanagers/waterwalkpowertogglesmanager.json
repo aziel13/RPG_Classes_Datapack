@@ -41,6 +41,11 @@
                     "compare_to":1
                   }
                 ]
+              },
+              {
+                "type": "origins:power_active",
+                "power": "artificer:crafteditempowers/waterwalkswitch",
+                "inverted": true
               }
             ]
 
@@ -69,22 +74,21 @@
                     "type":"origins:resource",
                     "resource":"artificer:equipmenttoggles_ironboots",
                     "comparison":"==",
-                    "compare_to":1
+                    "compare_to":0
                   },
                   {
                     "type":"origins:resource",
                     "resource":"artificer:equipmenttoggles_diamondboots",
                     "comparison":"==",
-                    "compare_to":1
+                    "compare_to":0
                   },
                   {
                     "type":"origins:resource",
                     "resource":"artificer:equipmenttoggles_netheriteboots",
                     "comparison":"==",
-                    "compare_to":1
+                    "compare_to":0
                   }
-                ],
-                "inverted": true
+                ]
               }
             ]
           },

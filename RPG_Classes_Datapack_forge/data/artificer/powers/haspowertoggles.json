@@ -1,0 +1,171 @@
+{
+  "type":"origins:multiple",
+
+    "hasgilder": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+
+    "hasflap": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "hashover": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "hascreative": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "haslesserreducedfalldamage": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "hasgreaterreducedfalldamage": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "hasnofalldamage": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "hasclimb": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "haswaterwalk": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "haslavawalk": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "hasswiftwalk": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "hasswiftrun": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "haslightningrebuke": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "hasmeteoricleap": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "hasnightvision": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "hasspectralvision": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    },
+    "haslavavision": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+
+    }
+
+  }
+
+
+
+}
