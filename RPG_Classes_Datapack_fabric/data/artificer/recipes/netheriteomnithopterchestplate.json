@@ -1,0 +1,32 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"pattern":[
+		"$%$",
+		"*@*",
+		"&#&"
+	],
+	"key":{
+		"#":{
+			"item":"minecraft:piston"
+		},
+		"*":{
+			"item":"minecraft:netherite_ingot"
+		},
+		"$":{
+			"item":"minecraft:crossbow"
+		},
+		"&":{
+			"item":"minecraft:white_banner"
+		},
+		"%":{
+			"item":"minecraft:tripwire_hook"
+		},
+		"@":{
+			"item":"minecraft:netherite_chestplate"
+		}
+	},
+	"result":{
+		"item":"minecraft:netherite_chestplate",
+		"count":1
+	}
+}

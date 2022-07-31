@@ -1,0 +1,30 @@
+{   "type": "origins:multiple",
+    "add_recipie_ironhookboots": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:ironnightvisionhelmet",
+        "result": {
+            "item": "iron_helmet",
+            "amount": 1,
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-536043201,378225528,-1721061264,-2116135236],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-367329456,323479609,-552423691,-299477413],Slot:\"head\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Darkvision goggles\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A armored pair of goggles that lets you see in the dark\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" that let you\",\"italic\":false,\"see when its dark\":\"white\"}]','[{\"text\":\" and thats all \",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:97254}"
+
+        }
+    },
+    "add_recipie_diamonddisplacementbooks": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:diamondtruesighthelmet",
+        "result": {
+            "item": "diamond_helmet",
+            "amount": 1,
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUID:[I;-962109425,168910631,-1481300593,-926739236],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3,Operation:0,UUID:[I;-719521056,309410492,-653453191,-792471403],Slot:\"head\"}],Enchantments:[{id:\"unbreaking\",lvl:3}],display:{Name:'{\"text\":\"Diamond Helm Of True Sight\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A Helmet that lets you see\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"in the dark\",\"italic\":false,\" side effect of true sight. you see mobs through walls\":\"white\"}]','[{\"text\":\" reveals the hidden\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:1952314}"
+        }
+    },
+    "add_recipie_netheriteantigravityboots": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:netheritehelmoftransendence",
+        "result": {
+            "item": "netherite_helmet",
+            "amount": 1,
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUID:[I;-926139425,820905624,-1921901593,-965234019],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:4,Operation:0,UUID:[I;-719091256,399401593,-603743291,-776250917],Slot:\"head\"}],Enchantments:[{id:\"unbreaking\",lvl:5}],display:{Name:'{\"text\":\"Netherite Helm of transcendence\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A Helmet that Forces you to see\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"Whats really in the dark\",\"italic\":false,\" side effect of gods eyes.... madness\":\"white\"}]','[{\"text\":\" shows you things you should not see\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:7635421}"
+        }
+    }
+}

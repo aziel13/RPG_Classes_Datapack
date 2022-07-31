@@ -1,0 +1,314 @@
+{
+  "type":"origins:multiple",
+
+  "ironhelmettequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironhelmet",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Armored Night Vision Goggles Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_ironhelmet",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_ironhelmet 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironhelmet",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Armored Night Vision Goggles Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:iron_helmet"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 97254}"
+          }
+        ]
+      }
+    }
+  },
+
+  "ironchestplatetequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironchestplate",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Omnithopter Chestplate Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_ironchestplate",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_ironchestplate 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironchestplate",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Omnithopter Chestplate Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "chest",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:iron_chestplate"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 63912}"
+          }
+        ]
+      }
+    }
+  },
+
+  "ironleggingstequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironleggings",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Swift Greaves Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_ironleggings",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_ironleggings 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironleggings",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Swift Greaves Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "legs",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:iron_leggings"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 68752}"
+          }
+        ]
+      }
+    }
+  },
+  "ironbootstequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironboots",
+
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Hook Boots Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_ironboots",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_ironboots 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_ironboots",
+          "change":-1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Iron Hook Boots Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "feet",
+      "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+
+                "type": "origins:ingredient",
+                "ingredient": {
+                  "item": "minecraft:iron_boots"
+                }
+              },
+              {
+                "type": "origins:nbt",
+                "nbt": "{CustomModelData: 68752}"
+              }
+            ]
+        }
+    }
+  }
+}

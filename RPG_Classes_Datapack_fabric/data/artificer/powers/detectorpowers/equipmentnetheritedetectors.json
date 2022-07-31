@@ -1,0 +1,314 @@
+{
+  "type":"origins:multiple",
+
+  "netheritehelmetequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheritehelmet",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Helm Of Transcendence Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheritehelmet",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheritehelmet 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheritehelmet",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Helm Of Transcendence Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:netherite_helmet"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 7635421}"
+          }
+        ]
+      }
+    }
+  },
+
+  "netheritechestplateequipcheck": {
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheritechestplate",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Omnithopter Chestplate Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheritechestplate",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheritechestplate 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheritechestplate",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Omnithopter Chestplate Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "chest",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:netherite_chestplate"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 55170}"
+          }
+        ]
+      }
+    }
+  },
+
+  "netheriteleggingsequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteleggings",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Meteoric Greaves Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheriteleggings",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheriteleggings 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Meteoric Greaves Equiped Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteleggings",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Meteoric Greaves Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "legs",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:netherite_leggings"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 31695}"
+          }
+        ]
+      }
+    }
+  },
+
+  "netheritebootsequipcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteboots",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Anti-Gravity Boots Equiped"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheriteboots",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheriteboots 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Omnithopter Chestplate Equiped"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteboots",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Anti-Gravity Boots Unequiped"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "feet",
+      "item_condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "item": "minecraft:netherite_boots"
+              }
+            },
+            {
+              "type": "origins:nbt",
+              "nbt": "{CustomModelData: 463159}"
+            }
+          ]
+        }
+      }
+    }
+}

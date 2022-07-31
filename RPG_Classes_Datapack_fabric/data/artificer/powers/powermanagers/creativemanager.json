@@ -1,0 +1,110 @@
+{
+  "type":"origins:multiple",
+
+  "creativeflightmanager": {
+
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "artificer:powertoggles_master",
+                "comparison": "==",
+                "compare_to": 1
+              },
+              {
+                "type": "origins:resource",
+                "resource": "artificer:powertoggles_creativeflighttoggle",
+                "comparison": "==",
+                "compare_to": 1
+              },
+              {
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_netheritechestplate",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:powertoggles_creativestate",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:powertoggles_glidercreativestate",
+                    "comparison": "==",
+                    "compare_to": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "action": {
+                "type": "origins:grant_power",
+                "power": "artificer:crafteditempowers/creativeflight",
+                "source": "artificer:artificer"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:or",
+            "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:powertoggles_master",
+                    "comparison": "==",
+                    "compare_to": 0
+                  },
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:powertoggles_creativeflighttoggle",
+                    "comparison": "==",
+                    "compare_to": 0
+                  },
+                  {
+                    "type": "origins:and",
+                    "conditions": [
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheritechestplate",
+                        "comparison": "==",
+                        "compare_to": 1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:powertoggles_creativestate",
+                        "comparison": "==",
+                        "compare_to": 1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:powertoggles_glidercreativestate",
+                        "comparison": "==",
+                        "compare_to": 0
+                      }
+                    ],
+                    "inverted": true
+                  }
+                ]
+              },
+              "action": {
+
+                        "type": "origins:revoke_power",
+                        "power": "artificer:crafteditempowers/creativeflight",
+                        "source": "artificer:artificer"
+              }
+        }
+      ]
+    }
+  }
+}

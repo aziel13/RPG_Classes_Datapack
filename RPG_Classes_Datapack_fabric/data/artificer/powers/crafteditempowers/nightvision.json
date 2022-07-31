@@ -1,0 +1,54 @@
+{
+    "name": "BootsFunctionalityWillBeHidden",
+    "description": "Functionality of boots that overlaps",
+
+    "type": "origins:multiple",
+
+    "nightvision": {
+        "type": "origins:night_vision",
+        "strength": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
+
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_nightvisiontoggle",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_ironhelmet",
+                            "comparison":"==",
+                            "compare_to":1
+
+                        },
+                        {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_diamondhelmet",
+                            "comparison":"==",
+                            "compare_to":1
+                        },
+                        {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_netheritehelmet",
+                            "comparison":"==",
+                            "compare_to":1
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+
+}

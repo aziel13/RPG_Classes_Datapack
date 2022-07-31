@@ -1,0 +1,159 @@
+{
+  "type":"origins:multiple",
+
+
+  "equipmenteventsoutput": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
+  "ironhelmet": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "ironchestplate": {
+  "type": "origins:resource",
+  "min": 0,
+  "max": 1,
+  "start_value": 0,
+  "hud_render": {
+    "should_render": false
+    }
+  },
+  "ironleggings": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "ironboots": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondhelmet": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondchestplate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondleggings": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondboots": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheritehelmet": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheritechestplate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheriteleggings": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheriteboots": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "fungusonstickmainhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+    },
+    "fungusonstickoffhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "orangedyemainhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+      },
+      "orangedyeoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      }
+}

@@ -1,0 +1,125 @@
+{
+    "name": "BootsFunctionalityWillBeHidden",
+    "description": "Functionality of boots that overlaps",
+
+    "type": "origins:multiple",
+
+    "spectralvision": {
+        "type": "origins:entity_glow"
+    },
+    "startuprevokespecttralvisiononstart": {
+
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:revoke_power",
+                "power": "*:*_spectralvision",
+                "source": "artificer:artificer"
+            }
+        }
+    },
+
+    "armor_power_checker": {
+
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_master",
+                                "comparison":"==",
+                                "compare_to":1
+
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_spectralvisiontoggle",
+                                "comparison":"==",
+                                "compare_to":1
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_diamondhelmet",
+                                        "comparison":"==",
+                                        "compare_to":1
+                                    },
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_netheritehelmet",
+                                        "comparison":"==",
+                                        "compare_to":1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "action": {
+
+                        "type": "origins:grant_power",
+                        "power": "*:*_spectralvision",
+                        "source": "artificer:artificer"
+
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_master",
+                                "comparison":"==",
+                                "compare_to":0
+
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_spectralvisiontoggle",
+                                "comparison":"==",
+                                "compare_to":0
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_diamondhelmet",
+                                        "comparison":"==",
+                                        "compare_to":1
+                                    },
+                                    {
+                                        "type":"origins:resource",
+                                        "resource":"artificer:equipmenttoggles_netheritehelmet",
+                                        "comparison":"==",
+                                        "compare_to":1
+                                    }
+                                ],
+                                "inverted": true
+                            }
+                        ]
+                    },
+                    "action": {
+
+                        "type": "origins:revoke_power",
+                        "power": "*:*_spectralvision",
+                        "source": "artificer:artificer"
+
+                    }
+                }
+
+            ]
+
+        }
+    }
+}

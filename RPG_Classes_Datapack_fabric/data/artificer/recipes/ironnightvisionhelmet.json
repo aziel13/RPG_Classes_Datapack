@@ -1,0 +1,32 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"pattern":[
+		"%&%",
+		"*@*",
+		"$#$"
+	],
+	"key":{
+		"#":{
+			"item":"minecraft:spyglass"
+		},
+		"%":{
+			"item":"minecraft:glass"
+		},
+		"@":{
+			"item":"minecraft:iron_helmet"
+		},
+		"$":{
+			"item":"minecraft:flint"
+		},
+		"&":{
+			"item":"minecraft:amethyst_shard"
+		},
+		"*":{
+			"item":"minecraft:iron_ingot"
+		}
+	},
+	"result":{
+		"item":"minecraft:iron_helmet",
+		"count":1
+	}
+}

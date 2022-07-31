@@ -1,0 +1,72 @@
+{
+  "type":"origins:multiple",
+  "toggleglidecreativeflight": {
+
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:resource",
+            "resource":"artificer:powertoggles_creativestate",
+            "comparison":"==",
+            "compare_to":1
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:powertoggles_glidercreativestate",
+            "comparison":"==",
+            "compare_to":0
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_creativestate",
+            "operation": "set",
+            "change":0
+          },
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_glidercreativestate",
+            "operation": "set",
+            "change":1
+          }
+        ]
+
+      },
+      "else_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_creativestate",
+            "operation": "set",
+            "change":1
+          },
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_glidercreativestate",
+            "operation": "set",
+            "change":0
+          }
+        ]
+      }
+    },
+    "key": {
+      "key": "key.saveToolbarActivator",
+      "continuous": false
+    },
+    "cooldown": 20,
+    "hud_render": {
+      "should_render": true
+    }
+
+  }
+
+}
