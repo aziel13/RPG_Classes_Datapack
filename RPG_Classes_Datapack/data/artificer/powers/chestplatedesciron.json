@@ -1,0 +1,17 @@
+{
+    "name": "Craft Iron Omnithopter Chestplate",
+    "description": "You have an idea for a new artifact you can craft that will give you the ability to glide when worn.",
+    "type": "origins:multiple",
+
+    "ironomnithopterchestplate":{
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:ironomnithopterchestplate",
+        "result": {
+            "item": "iron_chestplate",
+            "amount": 1,
+            "tag": "{ AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;-536033501,378225528,-1721061264,-2116139236],Slot:\"chest\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;-1311289446,314926761,-1352423663,-1949770175],Slot:\"chest\"}],Enchantments:[{id:\"unbreaking\",lvl:1}],display:{Name:'{\"text\":\"Iron Omnithopter Chestplate\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A chestplate\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" with \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" mechanical wings\",\"italic\":false,\"color\":\"white\"}]']},CustomModelData:63912}"
+
+        }
+    }
+
+}

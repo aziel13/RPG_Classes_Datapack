@@ -6,12 +6,15 @@
 
     "meteortimer": {
         "type": "origins:cooldown",
-        "cooldown": 60
+        "cooldown": 60,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 3
+        }
     },
     "meteoricleap": {
 
         "type": "origins:active_self",
-
         "entity_action": {
 
             "type": "origins:if_else",
@@ -198,6 +201,7 @@
 
             ]
         },
+        "interval": 20,
         "condition": {
             "type": "origins:and",
             "conditions": [

@@ -1,0 +1,70 @@
+{
+  "type":"origins:multiple",
+  "toggleglidehover": {
+
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:resource",
+            "resource":"artificer:powertoggles_hoverstate",
+            "comparison":"==",
+            "compare_to":0
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:powertoggles_gliderstate",
+            "comparison":"==",
+            "compare_to":1
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_hoverstate",
+            "operation": "set",
+            "change":1
+          },
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_gliderstate",
+            "operation": "set",
+            "change":0
+          }
+        ]
+      },
+      "else_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_hoverstate",
+            "operation": "set",
+            "change":0
+          },
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_gliderstate",
+            "operation": "set",
+            "change":1
+          }
+        ]
+      }
+    },
+    "key": {
+      "key": "key.saveToolbarActivator",
+      "continuous": false
+    },
+    "cooldown": 20,
+    "hud_render": {
+      "should_render": true
+    }
+
+  }
+}

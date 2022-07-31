@@ -10,16 +10,6 @@
     }
   },
 
-  "setmastertoggle": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 1,
-    "start_value": 1,
-    "hud_render": {
-      "should_render": false
-    }
-  },
-
   "gildertoggle": {
     "type": "origins:resource",
     "min": 0,
@@ -29,7 +19,27 @@
       "should_render": false
     }
   },
+
+  "gliderstate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
   "flaptoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "flapstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -47,15 +57,25 @@
       "should_render": false
     }
   },
-  "glideorhovertoggle": {
+  "hoverstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
+    "start_value": 0,
     "hud_render": {
       "should_render": false
     }
   },
-  "glideorcreativeflighttoggle": {
+  "glidercreativestate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "creativestate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -64,6 +84,7 @@
       "should_render": false
     }
   },
+
   "creativeflighttoggle": {
     "type": "origins:resource",
     "min": 0,
@@ -73,7 +94,16 @@
       "should_render": false
     }
   },
-  "reducedfalldamagetoggle": {
+  "lesserreducedfalldamagetoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "greaterreducedfalldamagetoggle": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -109,7 +139,26 @@
       "should_render": false
     }
   },
+  "waterwalkstate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
   "lavawalktoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "lavawalkstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -129,7 +178,27 @@
     }
 
   },
+  "swiftwalkstate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
   "swiftruntoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "swiftrunstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -149,7 +218,27 @@
     }
 
   },
+  "lightningrebukestate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
   "meteoricleaptoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "meteoricleapstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -169,6 +258,16 @@
     }
 
   },
+  "nightvisionstate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
   "spectralvisiontoggle": {
     "type": "origins:resource",
     "min": 0,
@@ -179,7 +278,27 @@
     }
 
   },
+  "spectralvisionstate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
   "lavavisiontoggle": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+
+  },
+  "lavavisionstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,

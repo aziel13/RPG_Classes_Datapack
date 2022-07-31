@@ -1,0 +1,25 @@
+/resource get aziel13 artificer:equipmenttoggles_netheritechestplate
+
+/resource get aziel13 artificer:equipmenttoggles_diamondchestplate
+
+/resource get aziel13 artificer:powertoggles_gildertoggle
+
+/resource get aziel13 artificer:powertoggles_flaptoggle
+
+/resource get aziel13 artificer:powertoggles_gliderstate
+
+/resource get aziel13 artificer:powertoggles_hoverstate
+
+/resource get aziel13 artificer:powertoggles_glidercreativestate
+
+/resource get aziel13 artificer:powertoggles_creativeflighttoggle
+
+/resource get aziel13 artificer:powertoggles_creativestate
+
+/give aziel13 minecraft:command_block
+
+/give aziel13 minecraft:chain_command_block
+
+/power has aziel13 artificer:crafteditempowers/lesserrfallresistance
+
+
