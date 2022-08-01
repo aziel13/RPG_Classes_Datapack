@@ -1,0 +1,8 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/glider",
+		"slot": "chest",
+		"negative": true
+	}
+]
