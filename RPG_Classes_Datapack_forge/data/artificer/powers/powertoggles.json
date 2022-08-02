@@ -30,6 +30,7 @@
     }
   },
 
+
   "flaptoggle": {
     "type": "origins:resource",
     "min": 0,
@@ -44,6 +45,15 @@
     "min": 0,
     "max": 1,
     "start_value": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "flapcreativestate": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
     "hud_render": {
       "should_render": false
     }
@@ -178,27 +188,7 @@
     }
 
   },
-  "swiftwalkstate": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 1,
-    "start_value": 1,
-    "hud_render": {
-      "should_render": false
-    }
-
-  },
   "swiftruntoggle": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 1,
-    "start_value": 1,
-    "hud_render": {
-      "should_render": false
-    }
-
-  },
-  "swiftrunstate": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -278,7 +268,8 @@
     }
 
   },
-  "spectralvisionstate": {
+
+  "lavavisiontoggle": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -288,7 +279,7 @@
     }
 
   },
-  "lavavisiontoggle": {
+  "seapowertoggle": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,

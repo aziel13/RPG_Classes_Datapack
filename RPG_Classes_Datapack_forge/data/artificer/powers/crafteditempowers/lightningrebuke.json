@@ -1,90 +1,67 @@
 {
-    "name": "Craft Diamond Lighting Greives",
-    "description": "You think you may be able to make a pair of greives that make you move faster and periodically shocks anything that you attack, doing more damage if they are wet",
-
-    "type": "origins:multiple",
-
-    "lightningrebuke": {
-        "type": "origins:modify_damage_taken",
-        "attacker_action":  {
+    "type": "origins:modify_damage_taken",
+    "attacker_action":  {
 
 
-            "type": "origins:if_else",
-            "condition": {
+        "type": "origins:if_else",
+        "condition": {
 
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:fluid_height",
-                            "fluid": "minecraft:water",
-                            "comparison": ">",
-                            "compare_to": 0.0
-                        },
-                        {
-                            "type": "origins:in_rain"
-                        }
-                    ]
-
-            },
-            "if_action": {
-                "type": "origins:damage",
-                "amount": 10,
-                "bypasses_armor":true,
-                "magic": true,
-                "unblockable": true,
-                "source": {
-                    "name": "lightningBolt.player"
-                }
-            },
-            "else_action": {
-                "type": "origins:damage",
-                "amount": 5,
-                "bypasses_armor":true,
-                "magic": true,
-                "unblockable": true,
-                "source": {
-                    "name": "lightningBolt.player"
-                }
-            }
-
-        },
-        "bientity_condition": {
-            "type": "origins:target_condition",
-            "condition": {
-                "type": "origins:and",
+                "type": "origins:or",
                 "conditions": [
                     {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_master",
-                        "comparison":"==",
-                        "compare_to":1
+                        "type": "origins:fluid_height",
+                        "fluid": "minecraft:water",
+                        "comparison": ">",
+                        "compare_to": 0.0
                     },
                     {
-                        "type":"origins:resource",
-                        "resource":"artificer:powertoggles_lightningrebuketoggle",
-                        "comparison":"==",
-                        "compare_to":1
-                    },
-                    {
-                        "type": "origins:or",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "artificer:equipmenttoggles_diamondleggings",
-                                "comparison": "==",
-                                "compare_to": 1
-                            },
-                            {
-                                "type": "origins:resource",
-                                "resource": "artificer:equipmenttoggles_netheriteleggings",
-                                "comparison": "==",
-                                "compare_to": 1
-                            }
-                        ]
+                        "type": "origins:in_rain"
                     }
                 ]
 
+        },
+        "if_action": {
+            "type": "origins:damage",
+            "amount": 10,
+            "bypasses_armor":true,
+            "magic": true,
+            "unblockable": true,
+            "source": {
+                "name": "lightningBolt.player"
+            }
+        },
+        "else_action": {
+            "type": "origins:damage",
+            "amount": 5,
+            "bypasses_armor":true,
+            "magic": true,
+            "unblockable": true,
+            "source": {
+                "name": "lightningBolt.player"
             }
         }
+
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_lightningrebuketoggle",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+
+        }
     }
+
 }

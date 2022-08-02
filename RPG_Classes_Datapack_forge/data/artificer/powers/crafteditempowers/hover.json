@@ -1,5 +1,22 @@
 {
         "type": "origins:modify_falling",
         "velocity": 0.001,
-        "take_fall_damage": false
+        "take_fall_damage": false,
+        "condition": {
+                "type": "origins:and",
+                "conditions": [
+                        {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_hoverstate",
+                                "comparison":"==",
+                                "compare_to":1
+                        },
+                        {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_hovertoggle",
+                                "comparison":"==",
+                                "compare_to":1
+                        }
+                ]
+        }
 }

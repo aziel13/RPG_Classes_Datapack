@@ -1,0 +1,21 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/climbtoggle",
+		"slot": "feet",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lesserrfallresistance",
+		"slot": "feet",
+		"negative": true
+	}
+	,
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lesserrfalldamageimmunity",
+		"slot": "feet",
+		"negative": true
+	}
+]

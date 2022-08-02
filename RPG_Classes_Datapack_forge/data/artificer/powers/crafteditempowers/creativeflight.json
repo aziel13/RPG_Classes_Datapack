@@ -1,4 +1,20 @@
 {
-    "type": "origins:creative_flight"
-
+    "type": "origins:creative_flight",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type":"origins:resource",
+                "resource":"artificer:powertoggles_creativestate",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type":"origins:resource",
+                "resource":"artificer:powertoggles_creativeflighttoggle",
+                "comparison":"==",
+                "compare_to":1
+            }
+        ]
+    }
 }

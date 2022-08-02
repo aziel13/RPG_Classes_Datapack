@@ -24,13 +24,6 @@
                 "conditions": [
                     {
                         "type": "origins:resource",
-                        "resource": "artificer:equipmenttoggles_netheriteleggings",
-                        "comparison": "==",
-                        "compare_to": 1
-
-                    },
-                    {
-                        "type": "origins:resource",
                         "resource": "*:*_meteortimer",
                         "comparison": "==",
                         "compare_to": 0

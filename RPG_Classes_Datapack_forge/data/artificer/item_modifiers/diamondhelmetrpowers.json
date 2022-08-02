@@ -1,0 +1,14 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/nightvision",
+		"slot": "head",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/spectralvision",
+		"slot": "head",
+		"negative": true
+	}
+]

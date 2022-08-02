@@ -29,29 +29,6 @@
                     "resource":"artificer:powertoggles_swiftwalktoggle",
                     "comparison":"==",
                     "compare_to":0
-                },
-                {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_ironleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_diamondleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_netheriteleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        }
-                    ]
                 }
             ]
         }
@@ -63,7 +40,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "addition",
-            "value": 0.4,
+            "value": 0.6,
             "name": "Increased speed"
         },
         "tick_rate": 20,
@@ -82,29 +59,6 @@
                     "resource":"artificer:powertoggles_swiftruntoggle",
                     "comparison":"==",
                     "compare_to":0
-                },
-                {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_ironleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_diamondleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:resource",
-                            "resource": "artificer:equipmenttoggles_netheriteleggings",
-                            "comparison": "==",
-                            "compare_to": 1
-                        }
-                    ]
                 },
                 {
                     "type": "origins:sprinting"

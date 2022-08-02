@@ -9,7 +9,53 @@
     "speed": 1,
     "key": {
         "key": "key.jump"
-    }
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type":"origins:resource",
+                "resource":"artificer:powertoggles_flaptoggle",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type":"origins:resource",
+                        "resource":"artificer:powertoggles_flapstate",
+                        "comparison":"==",
+                        "compare_to":1
+                    },
+                    {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:equipmenttoggles_diamondchestplate",
+                        "operation": "set",
+                        "change":1
+                    }
 
+                ]
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type":"origins:resource",
+                        "resource":"artificer:powertoggles_flapcreativestate",
+                        "comparison":"==",
+                        "compare_to":1
+                    },
+                    {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheritechestplate",
+                        "comparison":"==",
+                        "compare_to":1
+                    }
+                ]
+
+            }
+        ]
+    }
 
 }

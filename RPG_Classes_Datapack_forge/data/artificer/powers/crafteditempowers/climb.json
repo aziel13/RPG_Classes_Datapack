@@ -14,6 +14,10 @@
                     "power": "*:*_master"
                 },
                 {
+                    "type": "origins:power_active",
+                    "power": "*:*_master"
+                },
+                {
                     "type": "origins:or",
                     "conditions": [
                         {
@@ -22,18 +26,6 @@
                             "comparison":"==",
                             "compare_to":1
 
-                        },
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_diamondboots",
-                            "comparison":"==",
-                            "compare_to":1
-                        },
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_netheriteboots",
-                            "comparison":"==",
-                            "compare_to":1
                         }
                     ]
                 },
@@ -72,18 +64,6 @@
                             "comparison":"==",
                             "compare_to":1
 
-                        },
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_diamondboots",
-                            "comparison":"==",
-                            "compare_to":1
-                        },
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_netheriteboots",
-                            "comparison":"==",
-                            "compare_to":1
                         }
                     ]
                 },

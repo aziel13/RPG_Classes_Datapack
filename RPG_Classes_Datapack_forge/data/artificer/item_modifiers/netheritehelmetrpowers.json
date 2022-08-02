@@ -1,0 +1,26 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/nightvision",
+		"slot": "head",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/spectralvision",
+		"slot": "head",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lavavisiontoggle",
+		"slot": "head",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/SeaMagic",
+		"slot": "head",
+		"negative": true
+	}
+]

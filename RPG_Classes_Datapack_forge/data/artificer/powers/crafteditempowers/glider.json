@@ -1,5 +1,63 @@
 {
     "type": "origins:elytra_flight",
     "render_elytra": true,
-    "texture_location": "minecraft:textures/entity/elytra.png"
+    "texture_location": "minecraft:textures/entity/elytra.png",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type":"origins:resource",
+                "resource":"artificer:powertoggles_gildertoggle",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironchestplate",
+                        "comparison":"==",
+                        "compare_to":1
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_gliderstate",
+                                "comparison":"==",
+                                "compare_to":1
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:equipmenttoggles_diamondchestplate",
+                                "comparison":"==",
+                                "compare_to":1
+                            }
+
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:powertoggles_glidercreativestate",
+                                "comparison":"==",
+                                "compare_to":1
+                            },
+                            {
+                                "type":"origins:resource",
+                                "resource":"artificer:equipmenttoggles_netheritechestplate",
+                                "comparison":"==",
+                                "compare_to":1
+                            }
+                        ]
+
+                    }
+                ]
+            }
+        ]
+    }
 }

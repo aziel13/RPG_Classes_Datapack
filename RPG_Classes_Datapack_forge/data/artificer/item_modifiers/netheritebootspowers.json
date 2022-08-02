@@ -1,0 +1,34 @@
+[
+
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/climb",
+		"slot": "feet",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/waterwalk",
+		"slot": "feet",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:powerswitches/waterwalkswitch",
+		"slot": "feet",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:powerswitches/fallimmunity",
+		"slot": "feet",
+		"negative": true
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lavawalk",
+		"slot": "feet",
+		"negative": true
+	}
+
+]

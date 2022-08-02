@@ -23,18 +23,7 @@
                     "resource":"artificer:powertoggles_lavawalktoggle",
                     "comparison":"==",
                     "compare_to":1
-                },
-                {
-                    "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteboots",
-                    "comparison":"==",
-                    "compare_to":1
-                },
-                {
-                    "type": "origins:sneaking",
-                    "inverted": true
                 }
-
             ]
         }
 

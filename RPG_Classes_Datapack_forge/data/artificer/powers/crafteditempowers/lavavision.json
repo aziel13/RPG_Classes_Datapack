@@ -1,93 +1,25 @@
 {
-    "name": "BootsFunctionalityWillBeHidden",
-    "description": "Functionality of boots that overlaps",
 
-    "type": "origins:multiple",
-    "lavavision": {
         "type": "origins:lava_vision",
         "s": 0,
-        "v": 32
-    },
-
-    "lavavision_power_checker": {
-
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:if_else_list",
-            "actions": [
+        "v": 32,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
                 {
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:powertoggles_master",
-                                "comparison":"==",
-                                "compare_to":1
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
 
-                            },
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:powertoggles_lavavisiontoggle",
-                                "comparison":"==",
-                                "compare_to":1
-                            },
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:equipmenttoggles_netheritehelmet",
-                                "comparison":"==",
-                                "compare_to":1
-                            }
-                        ]
-
-                    },
-                    "action": {
-
-                        "type": "origins:grant_power",
-                        "power": "*:*_lavavision",
-                        "source": "artificer:artificer"
-
-                    }
                 },
                 {
-                    "condition": {
-                        "type": "origins:or",
-                        "conditions": [
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:powertoggles_master",
-                                "comparison":"==",
-                                "compare_to":0
-
-                            },
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:powertoggles_gildertoggle",
-                                "comparison":"==",
-                                "compare_to":0
-                            },
-                            {
-                                "type":"origins:resource",
-                                "resource":"artificer:equipmenttoggles_netheritehelmet",
-                                "comparison":"==",
-                                "compare_to":0
-                            }
-                        ]
-
-
-                    },
-                    "action": {
-
-                        "type": "origins:revoke_power",
-                        "power": "*:*_lavavision",
-                        "source": "artificer:artificer"
-
-                    }
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_lavavisiontoggle",
+                    "comparison":"==",
+                    "compare_to":1
                 }
-
             ]
-
         }
-    }
+
 }

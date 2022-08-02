@@ -15,6 +15,12 @@
             "compare_to":1
           },
           {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_flapcreativestate",
+            "operation": "set",
+            "change":0
+          },
+          {
             "type":"origins:resource",
             "resource":"artificer:powertoggles_glidercreativestate",
             "comparison":"==",
@@ -33,6 +39,12 @@
           },
           {
             "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_flapcreativestate",
+            "operation": "set",
+            "change":1
+          },
+          {
+            "type":"origins:change_resource",
             "resource":"artificer:powertoggles_glidercreativestate",
             "operation": "set",
             "change":1
@@ -48,6 +60,12 @@
             "resource":"artificer:powertoggles_creativestate",
             "operation": "set",
             "change":1
+          },
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:powertoggles_flapcreativestate",
+            "operation": "set",
+            "change":0
           },
           {
             "type":"origins:change_resource",

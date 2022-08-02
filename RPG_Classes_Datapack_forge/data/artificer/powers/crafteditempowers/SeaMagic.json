@@ -1,7 +1,18 @@
 {
-    "type": "origins:night_vision",
-    "strength": 1,
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:conduit_power",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
     "condition": {
+
         "type": "origins:and",
         "conditions": [
             {
@@ -9,11 +20,10 @@
                 "resource":"artificer:powertoggles_master",
                 "comparison":"==",
                 "compare_to":1
-
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:powertoggles_nightvisiontoggle",
+                "resource":"artificer:powertoggles_seapowertoggle",
                 "comparison":"==",
                 "compare_to":1
             }
