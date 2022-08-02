@@ -1,6 +1,4 @@
 {
-  "type":"origins:multiple",
-  "toggleglidehover": {
 
     "type": "origins:active_self",
     "entity_action": {
@@ -21,10 +19,10 @@
             "compare_to":1
           },
           {
-            "type":"origins:change_resource",
+            "type":"origins:resource",
             "resource":"artificer:powertoggles_flapstate",
-            "operation": "set",
-            "change":1
+            "comparison":"==",
+            "compare_to":1
           }
         ]
       },
@@ -84,5 +82,5 @@
       "should_render": true
     }
 
-  }
+
 }

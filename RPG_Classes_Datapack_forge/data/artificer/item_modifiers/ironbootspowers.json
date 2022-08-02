@@ -1,7 +1,7 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/climbtoggle",
+		"power": "artificer:crafteditempowers/climb",
 		"slot": "feet",
 		"negative": true
 	},

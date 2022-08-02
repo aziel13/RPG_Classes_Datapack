@@ -1,28 +1,16 @@
 {
 	"type":"minecraft:crafting_shaped",
 	"pattern":[
-		"$%$",
-		"*@*",
-		"&#&"
+		"&&&",
+		"&@&",
+		"&&&"
 	],
 	"key":{
-		"#":{
-			"item":"minecraft:piston"
-		},
-		"%":{
-			"item":"minecraft:observer"
-		},
 		"@":{
 			"item":"minecraft:diamond_boots"
 		},
-		"$":{
-			"item":"minecraft:crossbow"
-		},
 		"&":{
 			"item":"minecraft:slime_ball"
-		},
-		"*":{
-			"item":"minecraft:tripwire_hook"
 		}
 	},
 	"result":{

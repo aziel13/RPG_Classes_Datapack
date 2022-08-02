@@ -18,16 +18,11 @@
                     "power": "*:*_master"
                 },
                 {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_ironboots",
-                            "comparison":"==",
-                            "compare_to":1
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_climbtoggle",
+                    "comparison":"==",
+                    "compare_to":1
 
-                        }
-                    ]
                 },
                 {
                     "type": "origins:collided_horizontally"
@@ -56,16 +51,11 @@
             "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type":"origins:resource",
-                            "resource":"artificer:equipmenttoggles_ironboots",
-                            "comparison":"==",
-                            "compare_to":1
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_climbtoggle",
+                    "comparison":"==",
+                    "compare_to":1
 
-                        }
-                    ]
                 },
                 {
                     "type": "origins:or",

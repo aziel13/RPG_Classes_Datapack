@@ -2,13 +2,13 @@
 	{
 		"function": "apoli:add_power",
 		"power": "artificer:crafteditempowers/fastrun",
-		"slot": "chest",
+		"slot": "legs",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
 		"power": "artificer:crafteditempowers/lightningrebuke",
-		"slot": "chest",
+		"slot": "legs",
 		"negative": true
 	}
 ]

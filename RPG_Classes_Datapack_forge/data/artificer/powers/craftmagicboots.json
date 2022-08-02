@@ -4,7 +4,7 @@
         "recipe": "artificer:ironhookboots",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:ironomnithopterpowers"
+            "modifier": "artificer:ironbootspowers"
         },
         "result": {
             "item": "iron_boots",
