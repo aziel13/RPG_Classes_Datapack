@@ -1,82 +1,52 @@
 {
-    "name": "BootsFunctionalityWillBeHidden",
+    "name": "climb",
     "description": "Functionality of boots that overlaps",
 
-    "type": "origins:multiple",
-
-    "climbwalls": {
         "type": "origins:climbing",
         "hold_condition": {
             "type": "origins:and",
             "conditions":[
                 {
-                    "type": "origins:power_active",
-                    "power": "*:*_master"
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_master"
+                    "type": "origins:collided_horizontally"
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_climbtoggle",
+                    "resource":"artificer:powertoggles_climbtoggle",
                     "comparison":"==",
                     "compare_to":1
 
                 },
                 {
-                    "type": "origins:collided_horizontally"
-                },
-                {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:block_collision",
-                            "offset_x": 0.1,
-                            "offset_y": 0.0,
-                            "offset_z": 0.1
-
-                        },
-                        {
-                            "type": "origins:block_collision",
-                            "offset_x": -0.1,
-                            "offset_y": 0.0,
-                            "offset_z": -0.1
-                        }
-                    ]
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
                 }
+
             ]
         },
         "condition": {
             "type": "origins:and",
             "conditions": [
+
+                {
+                    "type": "origins:collided_horizontally"
+                },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_climbtoggle",
+                    "resource":"artificer:powertoggles_climbtoggle",
                     "comparison":"==",
                     "compare_to":1
 
                 },
                 {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:block_collision",
-                            "offset_x": 0.1,
-                            "offset_y": 0.0,
-                            "offset_z": 0.1
-
-                        },
-                        {
-                            "type": "origins:block_collision",
-                            "offset_x": -0.1,
-                            "offset_y": 0.0,
-                            "offset_z": -0.1
-                        }
-                    ]
+                    "type":"origins:resource",
+                    "resource":"artificer:powertoggles_master",
+                    "comparison":"==",
+                    "compare_to":1
                 }
             ]
         }
-    }
+
 
 }

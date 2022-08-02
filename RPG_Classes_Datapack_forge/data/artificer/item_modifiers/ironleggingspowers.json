@@ -1,6 +1,12 @@
 [
 	{
 		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/ironsetbonusdummytext",
+		"slot": "chest",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
 		"power": "artificer:crafteditempowers/fastrun",
 		"slot": "legs",
 		"negative": true

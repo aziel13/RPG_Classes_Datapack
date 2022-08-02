@@ -1,5 +1,10 @@
 [
-
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/netheritesetbonustextdummy",
+		"slot": "chest",
+		"negative": false
+	},
 	{
 		"function": "apoli:add_power",
 		"power": "artificer:crafteditempowers/climb",

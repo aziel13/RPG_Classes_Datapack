@@ -1,0 +1,50 @@
+{
+    "name": "Diamond Set Bonus",
+    "description": "Wearing all of your diamond armor creations gives you the additional bonus's of increased damage and health",
+
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 1,
+            "name": "Iron armor set bonus: slight damage increase"
+        },
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": 4,
+            "name": "Iron armor set bonus: slight damage increase"
+        }
+    ],
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_ironhelmet",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_ironchestplate",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_ironleggings",
+                "comparison":"==",
+                "compare_to":1
+            },
+            {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_ironboots",
+                "comparison":"==",
+                "compare_to":1
+            }
+        ]
+    }
+}
