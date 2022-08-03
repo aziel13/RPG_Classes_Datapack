@@ -49,7 +49,7 @@
                  "actions": [
                    {
                      "type": "origins:damage",
-                     "amount": 3,
+                     "amount": 1,
                      "source": {
                        "name": "onFire",
                        "fire": true,

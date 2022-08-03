@@ -3,3 +3,4 @@ summon item ~ ~ ~ {Glowing:1b,Item:{id:"minecraft:orange_dye",Count:1b,tag:{Ench
 summon item ~ ~ ~ {Glowing:1b,Item:{id:"minecraft:blue_dye",Count:1b,tag:{Enchantments:[{id:"vanishing_curse",lvl:1}],display:{Name:'{"text":"heat removal tool","color":"blue","bold":false}',Lore:['{"text":"a tool that removes heat","color":"white"}']},HideFlags:122,Unbreakable:1b,CustomModelData:1}}}
 summon item ~ ~ ~ {Glowing:1b,Item:{id:"minecraft:gray_dye",Count:1b,tag:{Enchantments:[{id:"vanishing_curse",lvl:1}],display:{Name:'{"text":"wire cutters","color":"aqua","bold":false}',Lore:['{"text":"a tool for cutting wires","color":"white"}']},HideFlags:122,Unbreakable:1b,CustomModelData:1}}}
 
+
