@@ -29,10 +29,10 @@
                         "compare_to":1
                     },
                     {
-                        "type":"origins:change_resource",
+                        "type":"origins:resource",
                         "resource":"artificer:equipmenttoggles_diamondchestplate",
-                        "operation": "set",
-                        "change":1
+                        "comparison":"==",
+                        "compare_to":1
                     }
 
                 ]

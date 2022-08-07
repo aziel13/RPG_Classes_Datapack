@@ -15,8 +15,8 @@
         "artificer:detectorpowers/equipeditemsdetector",
         "artificer:chestplatedesciron",
         "artificer:chestplatedescdiamond",
-        "artificer:chestplatedescnetherite"
-
+        "artificer:chestplatedescnetherite",
+        "artificer:spellresources"
     ],
     "icon": "book",
     "order": 10,

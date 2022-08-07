@@ -312,5 +312,161 @@
         ]
       }
     }
+  },
+  "lightbluedyekmainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Warm Whatnot Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_lightbluedyemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Fractured Warm Whatnot Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Cold Whatnot Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:light_blue_dye"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "lightbluedyeoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Broken Warm Whatnot Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_lightbluedyeoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Fractured Cold Whatnot Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Cold Whatnot Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:light_blue_dye"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
   }
 }

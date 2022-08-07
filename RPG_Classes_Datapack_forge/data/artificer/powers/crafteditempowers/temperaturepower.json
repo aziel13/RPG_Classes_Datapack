@@ -1,0 +1,58 @@
+{
+   "name":"frostcyclemanager",
+   "description":"Heat removal Tool: Your multitool cools your target, causing frost damage and slowness. Mana Cost: 300 Per Use. [Right Click, Held]",
+
+
+    "type":"origins:multiple",
+
+  "defrostcycle": {
+
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:resource",
+            "resource":"artificer:spellresources_freezelevels",
+            "comparison":">",
+            "compare_to":0
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:change_resource",
+            "resource":"artificer:spellresources_freezelevels",
+            "change":-1
+          }
+        ]
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type":"origins:resource",
+          "resource":"artificer:spellresources_freezelevels",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"origins:resource",
+          "resource":"artificer:spellresources_freezecooldown",
+          "comparison":"==",
+          "compare_to":0
+        }
+      ]
+
+    }
+
+  }
+
+
+}
