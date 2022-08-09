@@ -327,7 +327,7 @@
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Warm Whatnot Equiped in Mainhand"
+          "command": "say Fractured Cold Whatnot Equiped in Mainhand"
         }
       ]
     },
@@ -349,7 +349,7 @@
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Warm Whatnot Equiped in Mainhand"
+            "command": "say Fractured Cold Whatnot Equiped in Mainhand"
           }
         ]
       }
@@ -405,7 +405,7 @@
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Warm Whatnot Equiped in Mainhand"
+          "command": "say Broken Cold Whatnot Equiped in Mainhand"
         }
       ]
     },
@@ -458,6 +458,162 @@
             "type":"origins:ingredient",
             "ingredient":{
               "item":"minecraft:light_blue_dye"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "greendyekmainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_greendyemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_greendyemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_greendyemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_greendyemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:green_dye"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "greendyeoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_greendyeoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Broken Verdant Whatnot Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_greendyeoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_greendyeoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_greendyeoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:green_dye"
             }
 
           },

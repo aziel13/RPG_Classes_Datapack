@@ -1,0 +1,436 @@
+{
+  "type":"origins:multiple",
+
+  "hotenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_hotenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Hot Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_hotenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_hotenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Hot Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_hotenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Hot Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        }
+      ]
+    }
+  },
+
+  "mediumenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_mediumenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Medium Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_mediumenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_mediumenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Medium Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_mediumenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Medium Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": "<",
+            "compare_to": 2
+          }
+        },
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">",
+            "compare_to": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "coldenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_coldenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Cold Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_coldenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_coldenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Cold Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_coldenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Cold Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": "<=",
+            "compare_to": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "dryenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_dryenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Dry Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_dryenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_dryenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Dry Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_dryenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Dry Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:precipitation",
+            "precipitation": "none"
+          }
+        }
+      ]
+    }
+  },
+  "temperateenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_temperateenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Temperate Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_temperateenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_temperateenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Temperate Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_temperateenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Temperate Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:precipitation",
+            "precipitation": "rain"
+          }
+        }
+      ]
+    }
+  },
+  "snowyenvironmentcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_snowyenvironment",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Entering Snowy Environment"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:enviornmentaltoggles_snowyenvironment",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:enviornmentaltoggles_snowyenvironment 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Entering Snowy Environment"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:enviornmentaltoggles_snowyenvironment",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Leaving Snowy Environment"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:precipitation",
+            "precipitation": "snow"
+          }
+        }
+      ]
+    }
+  }
+}

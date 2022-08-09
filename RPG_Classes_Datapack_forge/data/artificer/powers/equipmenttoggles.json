@@ -173,5 +173,23 @@
         "hud_render": {
           "should_render": false
         }
+      },
+      "greendyemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "greendyeoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
       }
 }

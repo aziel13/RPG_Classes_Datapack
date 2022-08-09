@@ -22,6 +22,12 @@
 		"power": "artificer:crafteditempowers/lesser_freeze_ray",
 		"slot": "mainhand",
 		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lesserrepairitems",
+		"slot": "offhand",
+		"negative": false
 	}
 
 

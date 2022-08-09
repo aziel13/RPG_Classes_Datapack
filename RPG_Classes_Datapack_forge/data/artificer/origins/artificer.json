@@ -16,7 +16,9 @@
         "artificer:chestplatedesciron",
         "artificer:chestplatedescdiamond",
         "artificer:chestplatedescnetherite",
-        "artificer:spellresources"
+        "artificer:spellresources",
+        "artificer:enviornmentaltoggles",
+        "artificer:detectorpowers/environmentaldetector"
     ],
     "icon": "book",
     "order": 10,

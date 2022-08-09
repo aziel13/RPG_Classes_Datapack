@@ -35,6 +35,12 @@
             "entity": true,
             "shape_type": "visual",
             "fluid_handling": "any",
+            "block_action": {
+
+              "type":"origins:execute_command",
+              "command":"/fill ~-1 ~ ~-1 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
+              "permission_level":4
+            },
             "bientity_action": {
 
               "type": "origins:and",
@@ -82,6 +88,14 @@
                             {
                               "type":"origins:execute_command",
                               "command":"particle minecraft:snowflake ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                              "permission_level":4
+                            },
+                            {
+                              "type": "origins:extinguish"
+                            },
+                            {
+                              "type":"origins:execute_command",
+                              "command":"/fill ~-1 ~ ~-1 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
                               "permission_level":4
                             }
                           ]
@@ -145,6 +159,14 @@
                               "type":"origins:execute_command",
                               "command":"particle minecraft:snowflake ~ ~ ~ 0 0 0 0.0 1 normal @a",
                               "permission_level":4
+                            },
+                            {
+                              "type": "origins:extinguish"
+                            },
+                            {
+                              "type":"origins:execute_command",
+                              "command":"/fill ~-2 ~ ~-2 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
+                              "permission_level":4
                             }
                           ]
                         }
@@ -207,6 +229,14 @@
                               "type":"origins:execute_command",
                               "command":"particle minecraft:snowflake ~ ~ ~ 0 0 0 0.0 1 normal @a",
                               "permission_level":4
+                            },
+                            {
+                              "type": "origins:extinguish"
+                            },
+                            {
+                              "type":"origins:execute_command",
+                              "command":"/fill ~-3 ~ ~-3 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
+                              "permission_level":4
                             }
                           ]
                         }
@@ -219,32 +249,86 @@
             "hit_action": {
               "type": "origins:and",
               "actions": [
-
                 {
-                  "type": "origins:if_else_list",
-                  "actions": [
-                    {
-                      "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                          {
-                            "type": "origins:biome",
-                            "condition": {
-                              "type": "origins:temperature",
-                              "comparison": ">",
-                              "compare_to": -1
-                            }
-                          }
-                        ]
-                      },
-                      "action": {
-                        "type": "origins:change_resource",
-                        "resource": "artificer:spellresources_freezelevels",
-                        "change": 2
-                      }
-                    }
-                  ]
+                      "type": "origins:if_else_list",
+                      "actions": [
 
+                        {
+                          "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                              {
+                                "type":"origins:resource",
+                                "resource":"artificer:enviornmentaltoggles_coldenvironment",
+                                "comparison":"==",
+                                "compare_to":1
+                              }
+                            ]
+                          },
+                          "action": {
+
+                            "type": "origins:and",
+                            "actions": [
+                              {
+                                "type": "origins:change_resource",
+                                "resource": "artificer:spellresources_freezelevels",
+                                "change": 3
+                              },
+                              {
+                                "type":"origins:execute_command",
+                                "command":"/fill ~-3 ~ ~-3 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
+                                "permission_level":4
+                              }
+                            ]
+                          }
+                        },
+                        {
+                              "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                  {
+                                    "type":"origins:resource",
+                                    "resource":"artificer:enviornmentaltoggles_mediumenvironment",
+                                    "comparison":"==",
+                                    "compare_to":1
+                                  }
+                                ]
+                              },
+                              "action": {
+                                "type": "origins:and",
+                                "actions": [
+                                  {
+                                    "type": "origins:change_resource",
+                                    "resource": "artificer:spellresources_freezelevels",
+                                    "change": 2
+                                  },
+                                  {
+                                    "type":"origins:execute_command",
+                                    "command":"/fill ~-2 ~ ~-2 ~1 ~5 ~3 minecraft:air replace minecraft:fire",
+                                    "permission_level":4
+                                  }
+                                ]
+                              }
+                        },
+                        {
+                          "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                              {
+                                "type":"origins:resource",
+                                "resource":"artificer:enviornmentaltoggles_hotenvironment",
+                                "comparison":"==",
+                                "compare_to":1
+                              }
+                            ]
+                          },
+                          "action": {
+                            "type": "origins:change_resource",
+                            "resource": "artificer:spellresources_freezelevels",
+                            "change": 1
+                          }
+                        }
+                      ]
                     },
                     {
                       "type": "origins:and",
