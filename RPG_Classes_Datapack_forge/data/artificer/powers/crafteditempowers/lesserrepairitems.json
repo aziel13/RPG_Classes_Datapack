@@ -1,6 +1,6 @@
 {
-   "name":"Lesser Verdant Repair(hold tool in off hand)",
-   "description":"Verdant Tool: Your multitool emits natrual energy healing you and repairing  damaged items in your hand. Mana Cost: 500 Per Use. [Right Click, Held]",
+   "name":"Lesser Repair(hold tool in off hand)",
+   "description":"Repair Tool: You can use your multitool to repair items using essence. Mana Cost: 500 Per Use. [Right Click, Held]",
 
 
     "type":"origins:multiple",
@@ -13,10 +13,9 @@
           "type": "origins:equipped_item",
           "equipment_slot": "mainhand",
           "item_condition": {
-              "type":"origins:resource",
-              "resource":"artificer:equipmenttoggles_greendyemainhand",
-              "comparison":"==",
-              "compare_to":1
+            "type": "origins:empty",
+            "invetered": true
+
           }
         },
         "if_action": {

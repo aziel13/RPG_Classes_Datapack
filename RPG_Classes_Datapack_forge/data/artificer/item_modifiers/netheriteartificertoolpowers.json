@@ -28,7 +28,23 @@
 		"power": "artificer:crafteditempowers/lesserrepairitems",
 		"slot": "offhand",
 		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/greaterrepairself",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/launchthorn",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/netheritemultitool",
+		"slot": "mainhand",
+		"negative": false
 	}
-
-
 ]

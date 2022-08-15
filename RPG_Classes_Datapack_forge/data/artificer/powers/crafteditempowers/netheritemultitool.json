@@ -1,0 +1,36 @@
+{
+   "name":"Wood multitool(hold tool in Main hand)",
+   "description":"Wood Multi Tool: You can use your multitool to break anything a wooden tool can break. costs 1 essence ",
+
+
+    "type":"origins:multiple",
+    "netheritetoolspeed":{
+
+      "type": "origins:modify_break_speed",
+      "modifier": {
+        "operation": "multiply_base",
+        "value": 8
+      }
+    },
+
+  "netheritetoolsharvest":{
+
+    "type": "origins:modify_harvest",
+    "allow": true
+  },
+  "toolsshear":{
+
+      "type": "origins:action_on_block_break",
+      "block_action": {
+        "type": "origins:modify_block_state",
+        "property": "disarmed",
+        "cycle": true
+      },
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:tripwire"
+      },
+      "only_when_harvested": false
+
+  }
+}

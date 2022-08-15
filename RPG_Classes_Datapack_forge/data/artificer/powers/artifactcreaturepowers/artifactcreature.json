@@ -1,0 +1,224 @@
+{
+    "type":"origins:multiple",
+    "spideraggro": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:area_of_effect",
+            "radius": 32,
+            "bientity_action": {
+
+                "type": "origins:if_else",
+                "condition": {
+
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Tags:['Artifact_Creature']}"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "artificer:artificer"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "artificer:aggro"
+                                }
+                            ]
+                        }
+                    ],
+                    "inverted": true
+
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:damage",
+                            "amount": 0,
+                            "source": {
+                                "name": "dryout",
+                                "magic": true,
+                                "unblockable": true,
+                                "bypasses_armor": true
+                            }
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tag @e[tag=!artificer,tag=!artifact_creature] add aggro"
+                        }
+                    ]
+                }
+            },
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Tags:['Artifact_Creature']}"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "artificer:artificer"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "artificer:aggro"
+                                }
+                            ]
+                        }
+                    ],
+                    "inverted": true
+                }
+            }
+        }
+    },
+
+    "spideraggrocontinous": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 32,
+            "bientity_action": {
+
+                "type": "origins:if_else",
+                "condition": {
+
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:nbt",
+                                    "nbt": "{Tags:['Artifact_Creature']}"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "artificer:artificer"
+                                }
+                            ]
+                        }
+                    ],
+                    "inverted": true
+
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:damage",
+                            "amount": 0,
+                            "source": {
+                                "name": "dryout",
+                                "magic": true,
+                                "unblockable": true,
+                                "bypasses_armor": true
+                            }
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                        }
+                    ]
+                }
+            }
+        },
+        "interval": 300
+    },
+
+    "spideraggroonfall": {
+
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 32,
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:or",
+                                        "conditions": [
+                                            {
+                                                "type": "origins:nbt",
+                                                "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                                "type": "origins:in_tag",
+                                                "tag": "artificer:artificer"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "inverted": true
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:damage",
+                                        "amount": 0,
+                                        "source": {
+                                            "name": "dryout",
+                                            "magic": true,
+                                            "unblockable": true,
+                                            "bypasses_armor": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                }
+            ]
+        }
+    },
+    "sparkinwater": {
+
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type":"origins:execute_command",
+            "command":"execute as @s run  particle minecraft:end_rod ~ ~ ~ 0 0 0 0.0 1 normal @a",
+            "permission_level":4
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        }
+    }
+}

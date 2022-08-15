@@ -1,0 +1,123 @@
+{
+   "name":"Wood multitool(hold tool in Main hand)",
+   "description":"Wood Multi Tool: You can use your multitool to break anything a wooden tool can break. costs 1 essence ",
+
+
+    "type":"origins:multiple",
+    "stonetoolspeed":{
+
+      "type": "origins:modify_break_speed",
+      "block_condition": {
+
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:block",
+              "block": "minecraft:diamond_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:deepslate_diamond_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:emerald_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:deepslate_emerald_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:gold_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:deepslate_gold_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:redstone_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:deepslate_redstone_ore"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:ancient_debris"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:obsidian"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:crying_obsidian"
+            }
+          ],
+          "inverted": true
+      },
+      "modifier": {
+        "operation": "multiply_base",
+        "value": 2
+      }
+    },
+
+  "stonetoolsharvest":{
+
+    "type": "origins:modify_harvest",
+    "block_condition": {
+
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block",
+            "block": "minecraft:diamond_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:deepslate_diamond_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:emerald_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:deepslate_emerald_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:gold_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:deepslate_gold_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:redstone_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:deepslate_redstone_ore"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:ancient_debris"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:obsidian"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:crying_obsidian"
+          }
+        ],
+        "inverted": true
+    },
+    "allow": true
+  }
+}

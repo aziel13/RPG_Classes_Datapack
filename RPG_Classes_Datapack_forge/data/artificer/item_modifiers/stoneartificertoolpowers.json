@@ -1,0 +1,20 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lesserrepairitems",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/launchthorn",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/stonemultitool",
+		"slot": "mainhand",
+		"negative": false
+	}
+]

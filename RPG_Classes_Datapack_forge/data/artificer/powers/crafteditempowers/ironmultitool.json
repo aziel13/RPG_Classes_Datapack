@@ -1,0 +1,72 @@
+{
+   "name":"Wood multitool(hold tool in Main hand)",
+   "description":"Wood Multi Tool: You can use your multitool to break anything a wooden tool can break. costs 1 essence ",
+
+
+    "type":"origins:multiple",
+    "irontoolspeed":{
+
+      "type": "origins:modify_break_speed",
+      "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block",
+            "block": "minecraft:ancient_debris"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:obsidian"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:crying_obsidian"
+          }
+        ],
+        "inverted": true
+      },
+      "modifier": {
+        "operation": "multiply_base",
+        "value": 2
+      }
+    },
+
+  "irontoolsharvest":{
+
+    "type": "origins:modify_harvest",
+    "block_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:block",
+          "block": "minecraft:ancient_debris"
+        },
+        {
+          "type": "origins:block",
+          "block": "minecraft:obsidian"
+        },
+        {
+          "type": "origins:block",
+          "block": "minecraft:crying_obsidian"
+        }
+      ],
+      "inverted": true
+    },
+    "allow": true
+  },
+  "toolsshear":{
+
+      "type": "origins:action_on_block_break",
+      "block_action": {
+        "type": "origins:modify_block_state",
+        "property": "disarmed",
+        "cycle": true
+      },
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:tripwire"
+      },
+      "only_when_harvested": false
+
+  }
+}

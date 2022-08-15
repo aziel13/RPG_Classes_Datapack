@@ -25,8 +25,32 @@
 	},
 	{
 		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/shoot_lesser_artifact_spider",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/lesser_shock_bolt",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
 		"power": "artificer:crafteditempowers/lesserrepairitems",
 		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/launchthorn",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/diamondmultitool",
+		"slot": "mainhand",
 		"negative": false
 	}
 

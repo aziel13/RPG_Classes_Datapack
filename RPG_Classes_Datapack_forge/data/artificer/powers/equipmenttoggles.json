@@ -191,5 +191,23 @@
         "hud_render": {
           "should_render": false
         }
+      },
+      "lightgraydyemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "lightgraydyeoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
       }
 }

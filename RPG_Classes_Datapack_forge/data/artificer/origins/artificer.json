@@ -1,6 +1,6 @@
 {
     "powers": [
-
+        "artificer:artificer_creature_team",
         "artificer:artificer_item_testing",
         "artificer:essencetank",
         "artificer:craftmagicboots",

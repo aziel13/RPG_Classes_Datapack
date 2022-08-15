@@ -22,6 +22,13 @@
               "duration": 60,
               "amplifier": 0
             }
+          },
+          {
+            "type": "origins:block_action_at",
+            "block_action": {
+              "type": "origins:bonemeal",
+              "effects": false
+            }
           }
         ]
 
