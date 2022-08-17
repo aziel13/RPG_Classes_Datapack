@@ -4,7 +4,7 @@
         "recipe": "artificer:ironnightvisionhelmet",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:irohelmetrpowers"
+            "modifier": "artificer:ironhelmetpowers"
         },
         "result": {
             "item": "iron_helmet",

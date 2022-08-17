@@ -45,7 +45,7 @@
                 },
                 {
                   "type":"origins:execute_command",
-                  "command":"execute as @e[tag=Artifact_Creature,sort=furthest] run power grant @e[tag=Artifact_Creature,sort=nearest,limit=1,distance=..15] artificer:artifactcreaturepowers/lightningrebuke",
+                  "command":"execute as @e[tag=Artifact_Creature,sort=furthest] run power grant @e[tag=Artifact_Creature,sort=nearest,limit=1,distance=..15] artificer:artifactcreaturepowers/artifactdefensebarrier",
                   "permission_level":4
                 }
               ]
