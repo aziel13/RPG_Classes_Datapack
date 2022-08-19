@@ -6,29 +6,29 @@
             "type": "origins:area_of_effect",
             "radius": 32,
             "bientity_action": {
-                "type": "origins:target_action",
-                "action": {
+
                     "type": "origins:if_else",
                     "condition": {
-
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:or",
-                                "conditions": [
-                                    {
-                                        "type": "origins:nbt",
-                                        "nbt": "{Tags:['Artifact_Creature']}"
-                                    },
-                                    {
-                                        "type": "origins:in_tag",
-                                        "tag": "artificer:artificer"
-                                    }
-                                ]
-                            }
-                        ],
-                        "inverted": true
-
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:nbt",
+                                            "nbt": "{Tags:['Artifact_Creature']}"
+                                        },
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "artificer:artificer"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "inverted": true
+                        }
                     },
                     "if_action": {
                         "type": "origins:and",
@@ -43,13 +43,15 @@
                                     "bypasses_armor": true
                                 }
                             },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                            {  "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                                }
                             }
                         ]
                     }
-                }
+
             },
             "bientity_condition": {
                 "type": "origins:target_condition",
@@ -78,25 +80,25 @@
             "type": "origins:area_of_effect",
             "radius": 32,
             "bientity_action": {
-                "type": "origins:target_action",
-                "action": {
+
                     "type": "origins:if_else",
                     "condition": {
-
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:or",
-                                "conditions": [
-                                    {
-                                        "type": "origins:nbt",
-                                        "nbt": "{Tags:['Artifact_Creature']}"
-                                    }
-                                ]
-                            }
-                        ],
-                        "inverted": false
-
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:nbt",
+                                            "nbt": "{Tags:['Artifact_Creature']}"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "inverted": false
+                        }
                     },
                     "if_action": {
                         "type": "origins:and",
@@ -112,73 +114,26 @@
                                 }
                             },
                             {
-
-                                "type": "origins:execute_command",
-                                "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
-
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
+                                }
+                            },
+                            {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "power revoke @s artificer:artifactcreaturepowers/agroartifactcreature",
+                                    "permission_level": 4
+                                }
                             }
                         ]
                     }
-                }
+
 
             }
         },
         "interval": 300
-    },
-
-    "spideraggroonfall": {
-
-        "type": "origins:action_on_land",
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:area_of_effect",
-                    "radius": 32,
-                    "bientity_action": {
-                        "type": "origins:target_action",
-                        "action": {
-                            "type": "origins:if_else",
-                            "condition": {
-
-                                "type": "origins:and",
-                                "conditions": [
-                                    {
-                                        "type": "origins:or",
-                                        "conditions": [
-                                            {
-                                                "type": "origins:nbt",
-                                                "nbt": "{Tags:['Artifact_Creature']}"
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "inverted": false
-
-                            },
-                            "if_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:damage",
-                                        "amount": 0,
-                                        "source": {
-                                            "name": "dryout",
-                                            "magic": true,
-                                            "unblockable": true,
-                                            "bypasses_armor": true
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "particle angry_villager ~ ~1 ~ 0.2 0.5 0.2 0 5"
-                }
-            ]
-        }
     }
 }

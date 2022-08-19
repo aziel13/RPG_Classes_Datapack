@@ -1,0 +1,372 @@
+{
+    "name": "Netherite Set Bonus",
+    "description": "Wearing all of your netherite armor creations gives you the additional bonus's of increased damage, health, and immunity to fire",
+
+    "type": "origins:multiple",
+
+    "netheriteessencesetbonuscheck": {
+
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "operation": "set",
+                    "change":1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say wearing all netherite: gained additional netherite essence collection bonus"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                "comparison":"==",
+                "compare_to":0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "resource set @p artificer:essencetoggles_netheriteessencesetbonus 1"
+
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "say wearing all netherite: gained additional netherite essence collection bonus"
+                    }
+                ]
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "operation": "set",
+                    "change":0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say no longer wearing all netherite: lost additional netherite essence collection bonus"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheritehelmet",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheritechestplate",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheriteleggings",
+                    "comparison":"==",
+                    "compare_to":1
+                },
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+        }
+    },
+    "netherithelmeteessencebonuscheck": {
+
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritehelmetessencebonus",
+                    "operation": "set",
+                    "change":1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say entered range of low mana density source"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_netheritehelmetessencebonus",
+                "comparison":"==",
+                "compare_to":0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "resource set @p artificer:essencetoggles_netheritehelmetessencebonus 1"
+
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "say entered range of low mana density source"
+                    }
+                ]
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritehelmetessencebonus",
+                    "operation": "set",
+                    "change":0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say left range of low mana density source"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheritehelmet",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+        }
+    },
+    "netheritechestplateessencebonuscheck": {
+
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritechestplateessencebonus",
+                    "operation": "set",
+                    "change":1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say entered range of low mana density source"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_netheritechestplateessencebonus",
+                "comparison":"==",
+                "compare_to":0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "resource set @p artificer:essencetoggles_netheritechestplateessencebonus 1"
+
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "say entered range of low mana density source"
+                    }
+                ]
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritechestplateessencebonus",
+                    "operation": "set",
+                    "change":0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say left range of low mana density source"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheritechestplate",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+        }
+    },
+    "netheriteleggingsessencebonuscheck": {
+
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheriteleggingsessencebonus",
+                    "operation": "set",
+                    "change":1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say netherite leggings essence collection bonus gained"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_netheriteleggingsessencebonus",
+                "comparison":"==",
+                "compare_to":0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "resource set @p artificer:essencetoggles_slowcollect 1"
+
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "say netherite leggings essence collection bonus gained"
+                    }
+                ]
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheriteleggingsessencebonus",
+                    "operation": "set",
+                    "change":0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say netherite leggings essence collection bonus lost"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheriteleggings",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+        }
+    },
+    "netheritebootsessencebonuscheck": {
+
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritbootseessencebonus",
+                    "operation": "set",
+                    "change":1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say netherite boots essence collection bonus gained"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_netheritbootseessencebonus",
+                "comparison":"==",
+                "compare_to":0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "resource set @p artificer:essencetoggles_netheritbootseessencebonus 1"
+
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "say netherite boots essence collection bonus gained"
+                    }
+                ]
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:change_resource",
+                    "resource":"artificer:essencetoggles_netheritbootseessencebonus",
+                    "operation": "set",
+                    "change":0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "say netherite boots essence collection bonus lost"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                    "comparison":"==",
+                    "compare_to":1
+                }
+            ]
+        }
+    }
+
+
+}

@@ -1,0 +1,2 @@
+execute at @e[tag=Artifact_Creature,sort=furthest] run summon arrow ~ ~2.3 ~ {Motion:[0.0,-1.0,0.0],damage:0,life:1200}
+data modify entity @e[type=arrow,limit=1] Owner set from entity @e[tag=!Artifact_Creature,sort=nearest,limit=1] UUID
