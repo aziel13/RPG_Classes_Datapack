@@ -12,13 +12,13 @@
             "actions": [
                 {
                     "type":"origins:change_resource",
-                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "resource":"artificer:essencetoggles_ironessencesetbonus",
                     "operation": "set",
                     "change":1
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "say wearing all netherite: gained additional netherite essence collection bonus"
+                    "command": "say wearing all iron: gained additional netherite essence collection bonus"
                 }
             ]
         },
@@ -26,7 +26,7 @@
             "type": "origins:if_else",
             "condition": {
                 "type":"origins:resource",
-                "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                "resource":"artificer:essencetoggles_ironessencesetbonus",
                 "comparison":"==",
                 "compare_to":0
             },
@@ -35,12 +35,12 @@
                 "actions": [
                     {
                         "type": "origins:execute_command",
-                        "command": "resource set @p artificer:essencetoggles_netheriteessencesetbonus 1"
+                        "command": "resource set @p artificer:essencetoggles_ironessencesetbonus 1"
 
                     },
                     {
                         "type": "origins:execute_command",
-                        "command": "say wearing all netherite: gained additional netherite essence collection bonus"
+                        "command": "say wearing all iron: gained additional netherite essence collection bonus"
                     }
                 ]
             }
@@ -50,13 +50,13 @@
             "actions": [
                 {
                     "type":"origins:change_resource",
-                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "resource":"artificer:essencetoggles_ironessencesetbonus",
                     "operation": "set",
                     "change":0
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "say no longer wearing all netherite: lost additional netherite essence collection bonus"
+                    "command": "say no longer wearing all iron: lost additional netherite essence collection bonus"
                 }
             ]
         },
@@ -66,25 +66,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritehelmet",
+                    "resource":"artificer:equipmenttoggles_ironhelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritechestplate",
+                    "resource":"artificer:equipmenttoggles_ironchestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteleggings",
+                    "resource":"artificer:equipmenttoggles_ironleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                    "resource":"artificer:equipmenttoggles_ironboots",
                     "comparison":"==",
                     "compare_to":1
                 }

@@ -25,25 +25,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironhelmet",
+                    "resource":"artificer:equipmenttoggles_netheritehelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironchestplate",
+                    "resource":"artificer:equipmenttoggles_netheritechestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironleggings",
+                    "resource":"artificer:equipmenttoggles_netheriteleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironboots",
+                    "resource":"artificer:equipmenttoggles_netheriteboots",
                     "comparison":"==",
                     "compare_to":1
                 }
@@ -62,25 +62,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironhelmet",
+                    "resource":"artificer:equipmenttoggles_netheritehelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironchestplate",
+                    "resource":"artificer:equipmenttoggles_netheritechestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironleggings",
+                    "resource":"artificer:equipmenttoggles_netheriteleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_ironboots",
+                    "resource":"artificer:equipmenttoggles_netheriteboots",
                     "comparison":"==",
                     "compare_to":1
                 }

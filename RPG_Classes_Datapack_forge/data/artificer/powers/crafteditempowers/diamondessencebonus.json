@@ -66,25 +66,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritehelmet",
+                    "resource":"artificer:equipmenttoggles_diamondhelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritechestplate",
+                    "resource":"artificer:equipmenttoggles_diamondchestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteleggings",
+                    "resource":"artificer:equipmenttoggles_diamondleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                    "resource":"artificer:equipmenttoggles_diamondboots",
                     "comparison":"==",
                     "compare_to":1
                 }

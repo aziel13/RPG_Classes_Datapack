@@ -333,5 +333,87 @@
          "compare_to": 1
 
       }
+   },
+   "iscollectingessencecheck": {
+
+      "type": "origins:action_over_time",
+      "rising_action": {
+         "type": "origins:and",
+         "actions": [
+            {
+               "type":"origins:change_resource",
+               "resource":"artificer:essencetoggles_iscollect",
+               "operation": "set",
+               "change":1
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "say started collecting mana"
+            }
+         ]
+      },
+      "entity_action": {
+         "type": "origins:if_else",
+         "condition": {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_iscollect",
+            "comparison":"==",
+            "compare_to":0
+         },
+         "if_action": {
+            "type": "origins:and",
+            "actions": [
+               {
+                  "type": "origins:execute_command",
+                  "command": "resource set @p artificer:essencetoggles_iscollect 1"
+
+               },
+               {
+                  "type": "origins:execute_command",
+                  "command": "say started collecting mana"
+               }
+            ]
+         }
+      },
+      "falling_action": {
+         "type": "origins:and",
+         "actions": [
+            {
+               "type":"origins:change_resource",
+               "resource":"artificer:essencetoggles_iscollect",
+               "operation": "set",
+               "change":0
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "say stopped collecting mana"
+            }
+         ]
+      },
+      "interval": 20,
+      "condition": {
+
+         "type": "origins:or",
+         "conditions": [
+            {
+               "type":"origins:resource",
+               "resource":"artificer:essencetoggles_slowcollect",
+               "comparison":"==",
+               "compare_to":1
+            },
+            {
+               "type":"origins:resource",
+               "resource":"artificer:essencetoggles_averagecollect",
+               "comparison":"==",
+               "compare_to":1
+            },
+            {
+               "type":"origins:resource",
+               "resource":"artificer:essencetoggles_fastcollect",
+               "comparison":"==",
+               "compare_to":1
+            }
+         ]
+      }
    }
 }

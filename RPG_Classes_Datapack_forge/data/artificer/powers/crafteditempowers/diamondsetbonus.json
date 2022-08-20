@@ -8,13 +8,13 @@
             "attribute": "minecraft:generic.attack_damage",
             "operation": "addition",
             "value": 1,
-            "name": "Iron armor set bonus: slight damage increase"
+            "name": "Diamond armor set bonus: slight damage increase"
         },
         {
             "attribute": "minecraft:generic.max_health",
             "operation": "addition",
             "value": 4,
-            "name": "Iron armor set bonus: slight damage increase"
+            "name": "Diamond armor set bonus: slight damage increase"
         }
     ],
     "tick_rate": 20,
@@ -23,25 +23,25 @@
         "conditions": [
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_ironhelmet",
+                "resource":"artificer:equipmenttoggles_diamondhelmet",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_ironchestplate",
+                "resource":"artificer:equipmenttoggles_diamondchestplate",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_ironleggings",
+                "resource":"artificer:equipmenttoggles_diamondleggings",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_ironboots",
+                "resource":"artificer:equipmenttoggles_diamondboots",
                 "comparison":"==",
                 "compare_to":1
             }

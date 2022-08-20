@@ -9,6 +9,15 @@
          "bar_index":19
       }
    },
+   "iscollect": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+         "should_render": false
+      }
+   },
    "slowcollect": {
       "type": "origins:resource",
       "min": 0,
@@ -45,42 +54,6 @@
          "should_render": false
       }
    },
-   "ironhelmetessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "ironchestplateessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "ironleggingsessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "ironbootseessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
    "diamondessencesetbonus": {
       "type": "origins:resource",
       "min": 0,
@@ -90,129 +63,7 @@
          "should_render": false
       }
    },
-   "diamondhelmetessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "diamondchestplateessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "diamondleggingsessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "diamondbootseessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
    "netheriteessencesetbonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "netheritehelmetessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "netheritechestplateessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "netheriteleggingsessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "netheritbootseessencebonus": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-
-
-   "woodtooleessencecostreduction": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-
-   "stonetooleessencecostreduction": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-
-   "irontooleessencecostreduction": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-
-   "diamondtooleessencecostreduction": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 1,
-      "start_value": 0,
-      "hud_render": {
-         "should_render": false
-      }
-   },
-   "netheritetooleessencecostreduction": {
       "type": "origins:resource",
       "min": 0,
       "max": 1,
