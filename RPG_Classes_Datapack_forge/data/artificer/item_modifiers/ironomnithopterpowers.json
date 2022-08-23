@@ -2,19 +2,19 @@
 
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/ironsetbonus",
+		"power": "artificer:crafteditempowers/armorpowers/ironsetbonus",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/ironessencebonus",
+		"power": "artificer:crafteditempowers/armorpowers/ironessencebonus",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/glider",
+		"power": "artificer:crafteditempowers/armorpowers/glider",
 		"slot": "chest",
 		"negative": true
 	}

@@ -1,25 +1,25 @@
 [
 	{
 	"function": "apoli:add_power",
-	"power": "artificer:crafteditempowers/lesserrepairself",
+	"power": "artificer:crafteditempowers/toolpowers/lesserrepairself",
 	"slot": "offhand",
 	"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/launchthorn",
+		"power": "artificer:crafteditempowers/toolpowers/launchthorn",
 		"slot": "mainhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesserrepairitems",
+		"power": "artificer:crafteditempowers/toolpowers/lesserrepairitems",
 		"slot": "offhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/woodmultitool",
+		"power": "artificer:crafteditempowers/toolpowers/woodmultitool",
 		"slot": "mainhand",
 		"negative": false
 	}

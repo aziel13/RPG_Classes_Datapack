@@ -1,31 +1,31 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/netheritesetbonustextdummy",
+		"power": "artificer:crafteditempowers/armorpowers/netheritesetbonustextdummy",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/nightvision",
+		"power": "artificer:crafteditempowers/armorpowers/nightvision",
 		"slot": "head",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/spectralvision",
+		"power": "artificer:crafteditempowers/armorpowers/spectralvision",
 		"slot": "head",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lavavisiontoggle",
+		"power": "artificer:crafteditempowers/armorpowers/lavavisiontoggle",
 		"slot": "head",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/seamagic",
+		"power": "artificer:crafteditempowers/armorpowers/seamagic",
 		"slot": "head",
 		"negative": true
 	}

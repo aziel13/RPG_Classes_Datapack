@@ -1,25 +1,25 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/netheritesetbonustextdummy",
+		"power": "artificer:crafteditempowers/armorpowers/netheritesetbonustextdummy",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/fastrun",
+		"power": "artificer:crafteditempowers/armorpowers/fastrun",
 		"slot": "legs",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lightningrebuke",
+		"power": "artificer:crafteditempowers/armorpowers/lightningrebuke",
 		"slot": "legs",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/metorpower",
+		"power": "artificer:crafteditempowers/armorpowers/metorpower",
 		"slot": "legs",
 		"negative": true
 	}

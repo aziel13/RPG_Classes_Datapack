@@ -1,4 +1,7 @@
 {
+   "type":"origins:multiple",
+
+
    "slowessencecheck": {
 
       "type": "origins:action_over_time",
@@ -158,53 +161,44 @@
       },
       "interval": 20,
       "condition": {
-
          "type": "origins:block_in_radius",
          "block_condition": {
-            "type": "origins:block_in_radius",
-            "block_condition": {
-               "type": "origins:or",
-               "conditions": [
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:coal_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:iron_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:gold_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:copper_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:nether_quartz_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:nether_gold_ore"
-                  },
-                  {
-                     "type": "origins:block",
-                     "block": "minecraft:redstone_ore"
-                  }
-               ]
-            },
-            "radius": 2,
-            "shape": "sphere",
-            "comparison": ">=",
-            "compare_to": 1
+            "type": "origins:or",
+            "conditions": [
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:coal_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:iron_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:copper_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:nether_quartz_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:nether_gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:redstone_ore"
+               }
+            ]
          },
          "radius": 2,
          "shape": "sphere",
          "comparison": ">=",
          "compare_to": 1
-
       }
    },
 
@@ -269,69 +263,54 @@
 
          "type": "origins:block_in_radius",
          "block_condition": {
-            "type": "origins:block_in_radius",
-            "block_condition":  {
-               "type": "origins:block_in_radius",
-               "block_condition": {
-                  "type": "origins:or",
-                  "conditions": [
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:diamond_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:emerald_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_diamond_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_emerald_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_coal_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_iron_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_gold_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_copper_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:deepslate_redstone_ore"
-                     },
-                     {
-                        "type": "origins:block",
-                        "block": "minecraft:amethyst_block"
-                     }
-                  ]
+            "type": "origins:or",
+            "conditions": [
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:diamond_ore"
                },
-               "radius": 2,
-               "shape": "sphere",
-               "comparison": ">=",
-               "compare_to": 1
-            },
-            "radius": 2,
-            "shape": "sphere",
-            "comparison": ">=",
-            "compare_to": 1
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:emerald_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_diamond_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_emerald_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_coal_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_iron_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_gold_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_copper_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:deepslate_redstone_ore"
+               },
+               {
+                  "type": "origins:block",
+                  "block": "minecraft:amethyst_block"
+               }
+            ]
          },
          "radius": 2,
          "shape": "sphere",
          "comparison": ">=",
          "compare_to": 1
-
       }
    },
    "iscollectingessencecheck": {

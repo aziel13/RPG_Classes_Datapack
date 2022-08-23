@@ -2,37 +2,37 @@
 
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/diamondsetbonusdummytext",
+		"power": "artificer:crafteditempowers/armorpowers/diamondsetbonusdummytext",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/climb",
+		"power": "artificer:crafteditempowers/armorpowers/climb",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/waterwalk",
+		"power": "artificer:crafteditempowers/armorpowers/waterwalk",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:powerswitches/waterwalkswitch",
+		"power": "artificer:powerswitches/armorpowers/waterwalkswitch",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/greaterfalldamageimmunity",
+		"power": "artificer:crafteditempowers/armorpowers/greaterfalldamageimmunity",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/greaterfallresistance",
+		"power": "artificer:crafteditempowers/armorpowers/greaterfallresistance",
 		"slot": "feet",
 		"negative": true
 	}

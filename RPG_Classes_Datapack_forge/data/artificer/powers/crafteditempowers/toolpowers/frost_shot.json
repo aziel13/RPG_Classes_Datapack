@@ -1,0 +1,462 @@
+{
+   "name":"Lesser frost shot (hold tool in off hand)",
+   "description":"Heat removal Tool: Your multitool removes nearby heat and discards the resulting ice. Mana Cost: 100 Per Use. [Right Click, Held]",
+
+
+    "type":"origins:multiple",
+
+    "coldiceshot":{
+      "type": "origins:fire_projectile",
+      "entity_type": "minecraft:snowball",
+      "cooldown": 20,
+      "hud_render": {
+        "should_render": false
+      },
+      "count": 4,
+      "divergence": 32,
+      "speed": 0.5,
+      "interval": 0,
+      "tag": "{Item: {id: 'minecraft:ice', Count: 1b}}",
+      "key": {
+        "key": "key.use",
+        "continuous": false
+      },
+      "condition": {
+
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+                "comparison":"==",
+                "compare_to":1
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+
+      }
+    },
+    "glacialiceshot":{
+      "type": "origins:fire_projectile",
+      "entity_type": "minecraft:snowball",
+      "cooldown": 20,
+      "hud_render": {
+        "should_render": false
+      },
+      "count": 8,
+      "divergence": 32,
+      "speed": 1.5,
+      "interval": 0,
+      "tag": "{Item: {id: 'minecraft:ice', Count: 1b}}",
+      "key": {
+        "key": "key.use",
+        "continuous": false
+      },
+      "condition": {
+
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_glacialkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+
+      }
+    },
+    "articiceshot":{
+      "type": "origins:fire_projectile",
+      "entity_type": "minecraft:snowball",
+      "cooldown": 20,
+      "hud_render": {
+        "should_render": false
+      },
+      "count": 12,
+      "divergence": 32,
+      "speed": 2.5,
+      "interval": 0,
+      "tag": "{Item: {id: 'minecraft:ice', Count: 1b}}",
+      "key": {
+        "key": "key.use",
+        "continuous": false
+      },
+      "condition": {
+
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_arctickeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+
+      }
+    },
+    "putoutfires":{
+      "type": "origins:active_self",
+      "entity_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:extinguish"
+          },
+          {
+            "type":"origins:execute_command",
+            "command":"/fill ~-3 ~ ~-3 ~3 ~5 ~3 minecraft:air replace minecraft:fire",
+            "permission_level":4
+          },
+          {
+            "type": "origins:if_else_list",
+            "actions": [
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-250
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-200
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-150
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-100
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-50
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-350
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-250
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-150
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_arctickeystonemainhand",
+                  "comparison": "==",
+                  "compare_to": 1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-550
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-350
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+                "comparison":"==",
+                "compare_to":1
+              },
+              {
+
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_glacialkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_arctickeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+      },
+      "cooldown": 20,
+      "key": {
+        "key": "key.use",
+        "continuous": false
+      }
+    }
+}

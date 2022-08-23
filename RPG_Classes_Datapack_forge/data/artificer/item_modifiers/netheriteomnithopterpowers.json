@@ -1,37 +1,37 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/netheritesetbonus",
+		"power": "artificer:crafteditempowers/armorpowers/netheritesetbonus",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/netheriteessencebonus",
+		"power": "artificer:crafteditempowers/armorpowers/netheriteessencebonus",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/glider",
+		"power": "artificer:crafteditempowers/armorpowers/glider",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/flap",
+		"power": "artificer:crafteditempowers/armorpowers/flap",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/creativeflight",
+		"power": "artificer:crafteditempowers/armorpowers/creativeflight",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:powerswitches/glidercreativeswitch",
+		"power": "artificer:powerswitches/armorpowers/glidercreativeswitch",
 		"slot": "chest",
 		"hidden": true
 	}

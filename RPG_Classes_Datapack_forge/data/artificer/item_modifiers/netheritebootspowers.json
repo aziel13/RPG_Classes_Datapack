@@ -1,37 +1,37 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/netheritesetbonustextdummy",
+		"power": "artificer:crafteditempowers/armorpowers/netheritesetbonustextdummy",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/climb",
+		"power": "artificer:crafteditempowers/armorpowers/climb",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/waterwalk",
+		"power": "artificer:crafteditempowers/armorpowers/waterwalk",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:powerswitches/waterwalkswitch",
+		"power": "artificer:powerswitches/armorpowers/waterwalkswitch",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:powerswitches/fallimmunity",
+		"power": "artificer:powerswitches/armorpowers/fallimmunity",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lavawalk",
+		"power": "artificer:crafteditempowers/armorpowers/lavawalk",
 		"slot": "feet",
 		"negative": true
 	}

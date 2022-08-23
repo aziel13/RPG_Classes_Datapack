@@ -120,7 +120,7 @@
       "should_render": false
     }
   },
-  "fungusonstickmainhand": {
+  "woodartificerstoolmainhand": {
     "type": "origins:resource",
     "min": 0,
     "max": 1,
@@ -129,7 +129,7 @@
       "should_render": false
     }
     },
-    "fungusonstickoffhand": {
+    "woodartificerstooloffhand": {
       "type": "origins:resource",
       "min": 0,
       "max": 1,
@@ -138,7 +138,79 @@
         "should_render": false
       }
     },
-    "orangedyemainhand": {
+    "stoneartificerstoolmainhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "stoneartificerstooloffhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+  "ironartificerstoolmainhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "ironartificerstooloffhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondartificerstoolmainhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "diamondartificerstooloffhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheriteartificerstoolmainhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "netheriteartificerstooloffhand": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+    "warmkeystonemainhand": {
       "type": "origins:resource",
       "min": 0,
       "max": 1,
@@ -147,7 +219,7 @@
         "should_render": false
       }
       },
-      "orangedyeoffhand": {
+      "warmkeystoneoffhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -156,7 +228,7 @@
           "should_render": false
         }
       },
-      "lightbluedyemainhand": {
+      "hotkeystonemainhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -165,7 +237,7 @@
           "should_render": false
         }
       },
-      "lightbluedyeoffhand": {
+      "hotkeystoneoffhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -174,7 +246,7 @@
           "should_render": false
         }
       },
-      "greendyemainhand": {
+      "pyretickeystonemainhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -183,7 +255,7 @@
           "should_render": false
         }
       },
-      "greendyeoffhand": {
+      "pyretickeystoneoffhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -192,7 +264,7 @@
           "should_render": false
         }
       },
-      "lightgraydyemainhand": {
+      "coldkeystonemainhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -201,7 +273,151 @@
           "should_render": false
         }
       },
-      "lightgraydyeoffhand": {
+      "coldkeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "glacialkeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "glacialkeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "arctickeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "arctickeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "mossykeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "mossykeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "verdantkeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "verdantkeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "overgrownkeystonemainhand": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "start_value": 0,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+      "overgrownkeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "statickeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "statickeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "shockingkeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "shockingkeystoneoffhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "electricutingkeystonemainhand": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": false
+        }
+      },
+      "electricutingkeystoneoffhand": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,

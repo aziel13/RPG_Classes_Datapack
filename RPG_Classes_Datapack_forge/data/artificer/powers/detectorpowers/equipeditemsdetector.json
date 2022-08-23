@@ -1,7 +1,6 @@
 {
   "type":"origins:multiple",
-
-  "fungusonstickmainhandcheck": {
+  "woodartificerstoolmainhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -9,13 +8,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_fungusonstickmainhand",
+          "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Artificer's tool Equiped in Mainhand"
+          "command": "say Wood Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -23,7 +22,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_fungusonstickmainhand",
+        "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -32,12 +31,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_fungusonstickmainhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_woodartificerstoolmainhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Artificer's tool Equiped in Mainhand"
+            "command": "say Wood Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -47,13 +46,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_fungusonstickmainhand",
+          "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Artificer's tool Unequiped in Mainhand"
+          "command": "say Wood Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -79,7 +78,7 @@
       }
     }
   },
-  "fungusonstickoffhandcheck": {
+  "woodartificerstooloffhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -87,13 +86,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_fungusonstickoffhand",
+          "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Artificer's tool Equiped in Mainhand"
+          "command": "say Wood Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -101,7 +100,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_fungusonstickoffhand",
+        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -115,7 +114,7 @@
           },
           {
             "type": "origins:execute_command",
-            "command": "say Artificer's tool Equiped in Mainhand"
+            "command": "say Wood Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -125,13 +124,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_fungusonstickoffhand",
+          "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Artificer's tool Unequiped in Mainhand"
+          "command": "say Wood Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -157,7 +156,7 @@
       }
     }
   },
-  "orangedyekmainhandcheck": {
+  "stoneartificerstoolmainhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -165,13 +164,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_orangedyemainhand",
+          "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Warm Whatnot Equiped in Mainhand"
+          "command": "say Stone Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -179,7 +178,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_orangedyemainhand",
+        "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -188,12 +187,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_orangedyemainhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_stoneartificerstoolmainhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Broken Warm Whatnot Equiped in Mainhand"
+            "command": "say Stone Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -203,13 +202,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_orangedyemainhand",
+          "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Warm Whatnot Unequiped in Mainhand"
+          "command": "say Stone Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -223,19 +222,19 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:orange_dye"
+              "item":"minecraft:warped_fungus_on_a_stick"
             }
 
           },
           {
             "type": "origins:nbt",
-            "nbt": "{CustomModelData: 1}"
+            "nbt": "{CustomModelData: 2}"
           }
         ]
       }
     }
   },
-  "orangedyeoffhandcheck": {
+  "stoneartificerstooloffhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -243,13 +242,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_orangedyeoffhand",
+          "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Warm Whatnot Equiped in Mainhand"
+          "command": "say Stone Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -257,7 +256,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_orangedyeoffhand",
+        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -266,12 +265,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_orangedyeoffhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_stoneartificerstooloffhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Broken Warm Whatnot Equiped in Mainhand"
+            "command": "say Stone Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -281,13 +280,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_orangedyeoffhand",
+          "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Warm Whatnot Unequiped in Mainhand"
+          "command": "say Stone Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -301,19 +300,19 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:orange_dye"
+              "item":"minecraft:warped_fungus_on_a_stick"
             }
 
           },
           {
             "type": "origins:nbt",
-            "nbt": "{CustomModelData: 1}"
+            "nbt": "{CustomModelData: 2}"
           }
         ]
       }
     }
   },
-  "lightbluedyekmainhandcheck": {
+  "ironartificerstoolmainhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -321,13 +320,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+          "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Cold Whatnot Equiped in Mainhand"
+          "command": "say Iron Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -335,7 +334,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+        "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -344,12 +343,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_lightbluedyemainhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_ironartificerstoolmainhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Cold Whatnot Equiped in Mainhand"
+            "command": "say Iron Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -359,13 +358,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightbluedyemainhand",
+          "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Cold Whatnot Unequiped in Mainhand"
+          "command": "say Iron Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -379,19 +378,19 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:light_blue_dye"
+              "item":"minecraft:warped_fungus_on_a_stick"
             }
 
           },
           {
             "type": "origins:nbt",
-            "nbt": "{CustomModelData: 1}"
+            "nbt": "{CustomModelData: 3}"
           }
         ]
       }
     }
   },
-  "lightbluedyeoffhandcheck": {
+  "ironartificerstooloffhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -399,13 +398,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+          "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Cold Whatnot Equiped in Mainhand"
+          "command": "say Iron Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -413,7 +412,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -422,12 +421,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_lightbluedyeoffhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_ironartificerstooloffhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Cold Whatnot Equiped in Mainhand"
+            "command": "say Iron Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -437,13 +436,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightbluedyeoffhand",
+          "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Cold Whatnot Unequiped in Mainhand"
+          "command": "say Iron Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -457,19 +456,19 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:light_blue_dye"
+              "item":"minecraft:warped_fungus_on_a_stick"
             }
 
           },
           {
             "type": "origins:nbt",
-            "nbt": "{CustomModelData: 1}"
+            "nbt": "{CustomModelData: 3}"
           }
         ]
       }
     }
   },
-  "greendyekmainhandcheck": {
+  "diamondartificerstoolmainhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -477,13 +476,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_greendyemainhand",
+          "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+          "command": "say Diamond Artificer's tool Equiped in Mainhand"
         }
       ]
     },
@@ -491,7 +490,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_greendyemainhand",
+        "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -500,12 +499,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_greendyemainhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_diamondartificerstoolmainhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+            "command": "say Diamond Artificer's tool Equiped in Mainhand"
           }
         ]
       }
@@ -515,13 +514,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_greendyemainhand",
+          "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+          "command": "say Diamond Artificer's tool Unequiped in Mainhand"
         }
       ]
     },
@@ -535,7 +534,320 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:green_dye"
+              "item":"minecraft:warped_fungus_on_a_stick"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 4}"
+          }
+        ]
+      }
+    }
+  },
+  "diamondartificerstooloffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Diamond Artificer's tool Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_diamondartificerstooloffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Diamond Artificer's tool Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Diamond Artificer's tool Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:warped_fungus_on_a_stick"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 4}"
+          }
+        ]
+      }
+    }
+  },
+  "netheriteartificerstoolmainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Diamond Artificer's tool Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheriteartificerstoolmainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Diamond Artificer's tool Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Diamond Artificer's tool Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:warped_fungus_on_a_stick"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 5}"
+          }
+        ]
+      }
+    }
+  },
+  "netheriteartificerstooloffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Artificer's tool Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_netheriteartificerstooloffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Netherite Artificer's tool Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Netherite Artificer's tool Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:warped_fungus_on_a_stick"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 5}"
+          }
+        ]
+      }
+    }
+  },
+
+  "warmkeystonekmainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_warmkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Broken Warm Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
             }
 
           },
@@ -547,7 +859,1099 @@
       }
     }
   },
-  "greendyeoffhandcheck": {
+  "warmkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_warmkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Warm Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "hotkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_hotkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Hot Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Warm Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "hotkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Hot Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_hotkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Hot Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Hot Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
+            }
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "pyretickeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Pyretic Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_pyretickeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Pyretic Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Pyretic Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "pyretickeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Pyretic Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_pyretickeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Pyretic Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Pyretic Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_blocks"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "coldkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Cold Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_coldkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Cold Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say  Cold Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "coldkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Cold Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_coldkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Cold Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Cold Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "glacialkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Glacial Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_glacialkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Glacial Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say  Glacial Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "glacialkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Glacial Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_glacialkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Glacial Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Glacial Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+
+  "arcticmainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Arctic Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_arctickeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Arctic Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say  Arctic Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "arcticoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Arctic Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_arctickeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Arctic Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Arctic Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_wait"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "mossykeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Mossy Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_mossykeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Mossy Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Mossy Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_far"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "mossykeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_mossykeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Mossy Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_greendyeoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_mossykeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Mossy Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_mossykeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Mossy Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_far"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "verdantkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Verdant Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_verdantkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Verdant Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Verdant Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_far"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "verdantkeystoneoffhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -561,7 +1965,7 @@
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Verdant Whatnot Equiped in Mainhand"
+          "command": "say Verdant Keystone Equiped in Offhand"
         }
       ]
     },
@@ -583,7 +1987,7 @@
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+            "command": "say Verdant Keystone Equiped in Offhand"
           }
         ]
       }
@@ -599,7 +2003,7 @@
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+          "command": "say Verdant Keystone Unequiped in Offhand"
         }
       ]
     },
@@ -613,19 +2017,19 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:green_dye"
+              "item":"minecraft:music_disc_far"
             }
 
           },
           {
             "type": "origins:nbt",
-            "nbt": "{CustomModelData: 1}"
+            "nbt": "{CustomModelData: 2}"
           }
         ]
       }
     }
   },
-  "lightgraydyekmainhandcheck": {
+  "overgrownkeystonemainhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -633,13 +2037,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightgraydyemainhand",
+          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+          "command": "say Overgrown Keystone Equiped in Mainhand"
         }
       ]
     },
@@ -647,7 +2051,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_lightgraydyemainhand",
+        "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -656,12 +2060,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_lightgraydyemainhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_overgrownkeystonemainhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+            "command": "say Overgrown Keystone Equiped in Mainhand"
           }
         ]
       }
@@ -671,13 +2075,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightgraydyemainhand",
+          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+          "command": "say Overgrown Keystone Unequiped in Mainhand"
         }
       ]
     },
@@ -691,7 +2095,163 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:light_gray_dye"
+              "item":"minecraft:music_disc_far"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "overgrownkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Overgrown Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_overgrownkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Overgrown Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Overgrown Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_far"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "statickeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Static Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_statickeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Static Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Static Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_strad"
             }
 
           },
@@ -703,7 +2263,7 @@
       }
     }
   },
-  "lightgraydyeoffhandcheck": {
+  "statickeystoneoffhandcheck": {
 
     "type": "origins:action_over_time",
     "rising_action": {
@@ -711,13 +2271,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightgraydyeoffhand",
+          "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
           "operation": "set",
           "change":1
         },
         {
           "type": "origins:execute_command",
-          "command": "say Broken Verdant Whatnot Equiped in Mainhand"
+          "command": "say Static Keystone Equiped in Offhand"
         }
       ]
     },
@@ -734,12 +2294,12 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_lightgraydyeoffhand 1"
+            "command": "resource set @p artificer:equipmenttoggles_statickeystoneoffhand 1"
 
           },
           {
             "type": "origins:execute_command",
-            "command": "say Fractured Verdant Whatnot Equiped in Mainhand"
+            "command": "say Static Keystone Equiped in Offhand"
           }
         ]
       }
@@ -749,13 +2309,13 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_lightgraydyeoffhand",
+          "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
           "operation": "set",
           "change":0
         },
         {
           "type": "origins:execute_command",
-          "command": "say Fractured Verdant Whatnot Unequiped in Mainhand"
+          "command": "say Static Keystone Unequiped in Offhand"
         }
       ]
     },
@@ -769,13 +2329,325 @@
           {
             "type":"origins:ingredient",
             "ingredient":{
-              "item":"minecraft:light_gray_dye"
+              "item":"minecraft:music_disc_strad"
             }
 
           },
           {
             "type": "origins:nbt",
             "nbt": "{CustomModelData: 1}"
+          }
+        ]
+      }
+    }
+  },
+  "shockingkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Shocking Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_shockingkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Shocking Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Shocking Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_strad"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "shockingkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Shocking Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_shockingkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Shocking Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Shocking Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_strad"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "electricutingkeystonemainhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Electricuting Keystone Equiped in Mainhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_electricutingkeystonemainhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Electricuting Keystone Equiped in Mainhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Electricuting Keystone Unequiped in Mainhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_strad"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
+          }
+        ]
+      }
+    }
+  },
+  "electricutingkeystoneoffhandcheck": {
+
+    "type": "origins:action_over_time",
+    "rising_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "operation": "set",
+          "change":1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Electricuting Keystone Equiped in Offhand"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type":"origins:resource",
+        "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+        "comparison":"==",
+        "compare_to":0
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "resource set @p artificer:equipmenttoggles_shockingkeystoneoffhand 1"
+
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "say Electricuting Keystone Equiped in Offhand"
+          }
+        ]
+      }
+    },
+    "falling_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type":"origins:change_resource",
+          "resource":"artificer:equipmenttoggles_electricutingkeystoneoffhand",
+          "operation": "set",
+          "change":0
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "say Electricuting Keystone Unequiped in Offhand"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "offhand",
+      "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type":"origins:ingredient",
+            "ingredient":{
+              "item":"minecraft:music_disc_strad"
+            }
+
+          },
+          {
+            "type": "origins:nbt",
+            "nbt": "{CustomModelData: 3}"
           }
         ]
       }

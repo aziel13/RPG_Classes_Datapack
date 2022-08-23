@@ -1,0 +1,486 @@
+{
+   "name":"Lesser freeze ray (hold tool in off hand)",
+   "description":"Heat removal Tool: Your multitool cools your target, causing frost damage and slowness. damage and slowness increases as the tool gets colder Mana Cost: 300 Per Use. [Right Click, Held]",
+
+
+    "type":"origins:multiple",
+  "kill_old_spiders" : {
+
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+                "comparison":"==",
+                "compare_to":1
+              },
+              {
+
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type":"origins:execute_command",
+            "command":"execute as @s run kill @e[tag=Artifact_Creature,sort=furthest]",
+            "permission_level":4
+          },
+          {
+            "type": "origins:if_else_list",
+            "actions": [
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-250
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-200
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-150
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-100
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-50
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-350
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-250
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-150
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+                  "comparison": "==",
+                  "compare_to": 1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-550
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type":"origins:change_resource",
+                        "resource":"artificer:essencetoggles_essence",
+                        "change":-350
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type":"origins:execute_command",
+                  "command":"execute as @e[tag=Artifact_Creature,sort=furthest] run power grant @e[tag=Artifact_Creature,sort=nearest,limit=1,distance=..15] artificer:artifactcreaturepowers/artifactcreature",
+                  "permission_level":4
+                },
+                {
+                  "type":"origins:execute_command",
+                  "command":"execute as @e[tag=Artifact_Creature,sort=furthest] run power grant @e[tag=Artifact_Creature,sort=nearest,limit=1,distance=..15] artificer:artifactcreaturepowers/artifactdefensebarrier",
+                  "permission_level":4
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cooldown": 30,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 5
+    },
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    }
+  },
+
+
+
+  "shoot_static_spider": {
+
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:cave_spider",
+    "cooldown": 30,
+    "hud_render": {
+      "should_render": false
+    },
+    "count": 1,
+    "interval": 1,
+    "start_delay": 10,
+    "tag": "{CustomName:\"\\\"Staticy Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:200},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:1},{Name:\"generic.attack_damage\",Base:3},{Name:\"generic.armor\",Base:4}]}",
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type":"origins:resource",
+              "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+              "comparison":"==",
+              "compare_to":1
+            }
+          ]
+        },
+        {
+          "type":"origins:resource",
+          "resource":"artificer:essencetoggles_essence",
+          "comparison":">=",
+          "compare_to":250
+        }
+      ]
+    }
+
+  },
+
+  "shoot_shocking_spider": {
+
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:cave_spider",
+    "cooldown": 30,
+    "hud_render": {
+      "should_render": false
+    },
+    "count": 1,
+    "interval": 1,
+    "start_delay": 10,
+    "tag": "{CustomName:\"\\\"Shocking Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:400},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:3},{Name:\"generic.attack_damage\",Base:5},{Name:\"generic.armor\",Base:6}]}",
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
+                  "comparison": "==",
+                  "compare_to": 1
+                },
+                {
+                  "type": "origins:or",
+                  "conditions": [
+                    {
+                      "type":"origins:resource",
+                      "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                      "comparison":"==",
+                      "compare_to":1
+                    },
+                    {
+                      "type":"origins:resource",
+                      "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                      "comparison":"==",
+                      "compare_to":1
+                    },
+                    {
+                      "type": "origins:resource",
+                      "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                      "comparison": "==",
+                      "compare_to": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"origins:resource",
+          "resource":"artificer:essencetoggles_essence",
+          "comparison":">=",
+          "compare_to":250
+        }
+      ]
+    }
+
+  },
+  "shoot_electricuting_spider": {
+
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:cave_spider",
+    "cooldown": 30,
+    "hud_render": {
+      "should_render": false
+    },
+    "count": 1,
+    "interval": 1,
+    "start_delay": 10,
+    "tag": "{CustomName:\"\\\"Elelectricuting Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:600},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:5},{Name:\"generic.attack_damage\",Base:7},{Name:\"generic.armor\",Base:10}]}",
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+                  "comparison": "==",
+                  "compare_to": 1
+                },
+                {
+                  "type": "origins:or",
+                  "conditions": [
+                    {
+                      "type":"origins:resource",
+                      "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                      "comparison":"==",
+                      "compare_to":1
+                    },
+                    {
+                      "type": "origins:resource",
+                      "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                      "comparison": "==",
+                      "compare_to": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"origins:resource",
+          "resource":"artificer:essencetoggles_essence",
+          "comparison":">=",
+          "compare_to":250
+        }
+      ]
+    }
+
+  }
+}

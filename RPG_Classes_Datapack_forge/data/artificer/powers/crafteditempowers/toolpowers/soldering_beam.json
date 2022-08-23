@@ -1,0 +1,486 @@
+{
+   "name":"Laser Beam (hold tool in off hand)",
+   "description":"Soldering Beam Tool: Your multitool emits a beam of heat. Mana Cost: 100 Per Use. [Right Click, Held]",
+
+   "type":"origins:multiple",
+
+   "heatbeam": {
+     "type": "origins:active_self",
+     "entity_action": {
+       "type": "origins:if_else",
+       "condition": {
+
+         "type": "origins:and",
+         "conditions": [
+           {
+             "type": "origins:or",
+             "conditions": [
+               {
+                 "type":"origins:resource",
+                 "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+                 "comparison":"==",
+                 "compare_to":1
+               },
+               {
+
+                 "type": "origins:and",
+                 "conditions": [
+                   {
+                     "type": "origins:resource",
+                     "resource": "artificer:equipmenttoggles_hotkeystoneoffhand",
+                     "comparison": "==",
+                     "compare_to": 1
+                   },
+                   {
+                     "type": "origins:or",
+                     "conditions": [
+                       {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       {
+                         "type": "origins:resource",
+                         "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                         "comparison": "==",
+                         "compare_to": 1
+                       }
+                     ]
+                   }
+                  ]
+               },
+               {
+                 "type": "origins:and",
+                 "conditions": [
+                   {
+                     "type": "origins:resource",
+                     "resource": "artificer:equipmenttoggles_pyretickeystoneoffhand",
+                     "comparison": "==",
+                     "compare_to": 1
+                   },
+                   {
+                     "type": "origins:or",
+                     "conditions": [
+                       {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       {
+                         "type": "origins:resource",
+                         "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                         "comparison": "==",
+                         "compare_to": 1
+                       }
+                     ]
+                   }
+                 ]
+               }
+             ]
+           },
+           {
+             "type":"origins:resource",
+             "resource":"artificer:essencetoggles_essence",
+             "comparison":">=",
+             "compare_to":250
+           }
+         ]
+       },
+       "if_action": {
+         "type": "origins:and",
+         "actions": [
+           {
+
+             "type": "origins:raycast",
+             "distance": 16,
+             "block": true,
+             "entity": true,
+             "shape_type": "visual",
+             "fluid_handling": "any",
+             "bientity_action": {
+               "type": "origins:and",
+               "actions": [
+                 {
+                   "type": "origins:if_else_list",
+                   "actions": [
+                     {
+                       "condition": {
+                           "type": "origins:actor_action",
+                           "action": {
+                               "type":"origins:resource",
+                               "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+                               "comparison":"==",
+                               "compare_to":1
+                           }
+                       },
+                       "action": {
+                         "type": "origins:target_action",
+                         "action": {
+                           "type": "origins:damage",
+                           "amount": 2,
+                           "source": {
+                             "name": "onFire",
+                             "fire": true,
+                             "bypasses_armor": true,
+                             "magic": true
+                           }
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                           "type": "origins:actor_action",
+                           "action": {
+                           "type":"origins:resource",
+                           "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+                           "comparison":"==",
+                           "compare_to":1
+                           }
+                       },
+                       "action": {
+                         "type": "origins:target_action",
+                         "action": {
+                           "type": "origins:damage",
+                           "amount": 6,
+                           "source": {
+                             "name": "onFire",
+                             "fire": true,
+                             "bypasses_armor": true,
+                             "magic": true
+                           }
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type": "origins:actor_action",
+                         "action": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+                         "comparison":"==",
+                         "compare_to":1
+                         }
+                       },
+                       "action": {
+                             "type": "origins:target_action",
+                             "action": {
+                                   "type": "origins:damage",
+                                   "amount": 10,
+                                   "source": {
+                                     "name": "onFire",
+                                     "fire": true,
+                                     "bypasses_armor": true,
+                                     "magic": true
+                                   }
+                             }
+                         }
+                     }
+                   ]
+                 },
+                 {
+                   "type": "origins:target_action",
+                   "action": {
+                     "type": "origins:and",
+                     "actions": [
+                       {
+                         "type": "origins:set_on_fire",
+                         "duration": 1
+                       },
+                       {
+                         "type":"origins:execute_command",
+                         "command":"particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                         "permission_level":4
+                       },
+                       {
+                         "type":"origins:execute_command",
+                         "command":"particle minecraft:lava ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                         "permission_level":4
+                       },
+                       {
+                         "type":"origins:execute_command",
+                         "command":"particle minecraft:white_ash ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                         "permission_level":4
+                       }
+
+                     ]
+                   }
+                 }
+               ]
+             },
+             "hit_action": {
+               "type": "origins:and",
+               "actions": [
+                 {
+                   "type": "origins:and",
+                   "actions": [
+                     {
+                       "type":"origins:execute_command",
+                       "command":"particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                       "permission_level":4
+                     },
+                     {
+                       "type":"origins:execute_command",
+                       "command":"particle minecraft:lava ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                       "permission_level":4
+                     },
+                     {
+                       "type":"origins:execute_command",
+                       "command":"particle minecraft:white_ash ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                       "permission_level":4
+                     }
+                   ]
+
+                 }
+               ]
+             },
+             "miss_action": {
+               "type": "origins:and",
+               "actions": [
+                 {
+                   "type":"origins:execute_command",
+                   "command":"particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                   "permission_level":4
+                 },
+                 {
+                   "type":"origins:execute_command",
+                   "command":"particle minecraft:lava ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                   "permission_level":4
+                 },
+                 {
+                   "type":"origins:execute_command",
+                   "command":"particle minecraft:white_ash ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                   "permission_level":4
+                 }
+               ]
+             },
+             "command_at_hit": "particle minecraft:item minecraft:fire_charge ~ ~ ~ 0 0 0 0.0 0.1 normal @a",
+             "command_along_ray": "particle minecraft:flame",
+             "command_step": 1,
+             "command_along_ray_only_on_hit": true
+           },
+           {
+             "type": "origins:if_else_list",
+             "actions": [
+               {
+                 "condition": {
+                     "type":"origins:resource",
+                     "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+                     "comparison":"==",
+                     "compare_to":1
+                 },
+                 "action": {
+                   "type": "origins:if_else_list",
+                   "actions": [
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-250
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-200
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-150
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-100
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-50
+                         }
+                       }
+                     }
+                   ]
+                 }
+               },
+               {
+                 "condition": {
+                     "type":"origins:resource",
+                     "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+                     "comparison":"==",
+                     "compare_to":1
+                 },
+                 "action": {
+                   "type": "origins:if_else_list",
+                   "actions": [
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-350
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-250
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-150
+                         }
+                       }
+                     }
+                   ]
+                 }
+               },
+               {
+                 "condition": {
+                       "type": "origins:resource",
+                       "resource": "artificer:equipmenttoggles_pyretickeystoneoffhand",
+                       "comparison": "==",
+                       "compare_to": 1
+                 },
+                 "action": {
+                   "type": "origins:if_else_list",
+                   "actions": [
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-550
+                         }
+                       }
+                     },
+                     {
+                       "condition": {
+                         "type":"origins:resource",
+                         "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                         "comparison":"==",
+                         "compare_to":1
+                       },
+                       "action": {
+                         "type": "origins:apply_effect",
+                         "effect": {
+                           "type":"origins:change_resource",
+                           "resource":"artificer:essencetoggles_essence",
+                           "change":-350
+                         }
+                       }
+                     }
+                   ]
+                 }
+               }
+             ]
+           }
+         ]
+       }
+      },
+      "cooldown": 1,
+      "hud_render": {
+         "should_render": false,
+         "bar_index": 5
+      },
+      "key": {
+         "key": "key.use",
+         "continuous": true
+      }
+   }
+}

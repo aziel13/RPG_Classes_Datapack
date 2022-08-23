@@ -1,0 +1,431 @@
+{
+   "name":"Lesser Verdant Repair(hold tool in off hand)",
+   "description":"Verdant Tool: Your multitool emits natrual energy healing you. Mana Cost: 500 Per Use. [Right Click, Held]",
+
+
+    "type":"origins:multiple",
+
+  "repairself": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type":"origins:resource",
+                "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+                "comparison":"==",
+                "compare_to":1
+              },
+              {
+
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_verdantkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "origins:and",
+                "conditions": [
+                  {
+                    "type": "origins:resource",
+                    "resource": "artificer:equipmenttoggles_overgrownkeystonemainhand",
+                    "comparison": "==",
+                    "compare_to": 1
+                  },
+                  {
+                    "type": "origins:or",
+                    "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"origins:resource",
+            "resource":"artificer:essencetoggles_essence",
+            "comparison":">=",
+            "compare_to":250
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:area_of_effect",
+            "radius": 3,
+            "bientity_action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type": "origins:actor_action",
+                        "action": {
+                          "type":"origins:resource",
+                          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+                          "comparison":"==",
+                          "compare_to":1
+                        }
+                      },
+                      "action": {
+                        "type": "origins:and",
+                        "actions": [
+                          {
+                            "type": "origins:heal",
+                            "amount": 4
+
+                          },
+                          {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                              "effect": "minecraft:regeneration",
+                              "duration": 60,
+                              "amplifier": 0
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type": "origins:actor_action",
+                        "action": {
+                          "type":"origins:resource",
+                          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+                          "comparison":"==",
+                          "compare_to":1
+                        }
+                      },
+                      "action": {
+                        "type": "origins:and",
+                        "actions": [
+                          {
+                            "type": "origins:heal",
+                            "amount": 4
+
+                          },
+                          {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                              "effect": "minecraft:regeneration",
+                              "duration": 60,
+                              "amplifier": 0
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type": "origins:actor_action",
+                        "action": {
+                          "type":"origins:resource",
+                          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
+                          "comparison":"==",
+                          "compare_to":1
+                        }
+                      },
+                      "action": {
+                        "type": "origins:and",
+                        "actions": [
+                          {
+                            "type": "origins:heal",
+                            "amount": 4
+
+                          },
+                          {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                              "effect": "minecraft:regeneration",
+                              "duration": 60,
+                              "amplifier": 0
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "origins:and",
+                  "actions": [
+                    {
+                      "type": "origins:block_action_at",
+                      "block_action": {
+                        "type": "origins:bonemeal",
+                        "effects": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "origins:if_else_list",
+            "actions": [
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-250
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-200
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-150
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-100
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-50
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-350
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-250
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-150
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "condition": {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_overgrownkeystonemainhand",
+                  "comparison": "==",
+                  "compare_to": 1
+                },
+                "action": {
+                  "type": "origins:if_else_list",
+                  "actions": [
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-550
+                        }
+                      }
+                    },
+                    {
+                      "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                          "type":"origins:change_resource",
+                          "resource":"artificer:essencetoggles_essence",
+                          "change":-350
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "cooldown": 200,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 8
+    },
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    }
+  }
+}

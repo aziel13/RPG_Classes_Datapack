@@ -1,26 +1,26 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/ironsetbonusdummytext",
+		"power": "artificer:crafteditempowers/armorpowers/ironsetbonusdummytext",
 		"slot": "chest",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/climb",
+		"power": "artificer:crafteditempowers/armorpowers/climb",
 		"slot": "feet",
 		"negative": true
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesserrfallresistance",
+		"power": "artificer:crafteditempowers/armorpowers/lesserrfallresistance",
 		"slot": "feet",
 		"negative": true
 	}
 	,
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesserrfalldamageimmunity",
+		"power": "artificer:crafteditempowers/armorpowers/lesserrfalldamageimmunity",
 		"slot": "feet",
 		"negative": true
 	}

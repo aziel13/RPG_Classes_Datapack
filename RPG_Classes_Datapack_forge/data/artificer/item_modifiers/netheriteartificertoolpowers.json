@@ -1,37 +1,37 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesser_soldering_beam",
+		"power": "artificer:crafteditempowers/toolpowers/lesser_soldering_beam",
 		"slot": "offhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesser_soldering_heatburst",
+		"power": "artificer:crafteditempowers/toolpowers/lesser_soldering_heatburst",
 		"slot": "mainhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesser_frost_shot",
+		"power": "artificer:crafteditempowers/toolpowers/lesser_frost_shot",
 		"slot": "offhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesser_freeze_ray",
+		"power": "artificer:crafteditempowers/toolpowers/lesser_freeze_ray",
 		"slot": "mainhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/lesserrepairitems",
+		"power": "artificer:crafteditempowers/toolpowers/lesserrepairitems",
 		"slot": "offhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/greaterrepairself",
+		"power": "artificer:crafteditempowers/toolpowers/greaterrepairself",
 		"slot": "offhand",
 		"negative": false
 	},
