@@ -278,7 +278,7 @@
           },
           {
             "type": "origins:delay",
-            "ticks": 20,
+            "ticks": 25,
             "action": {
               "type": "origins:and",
               "actions": [
@@ -298,13 +298,13 @@
         ]
       }
     },
-    "cooldown": 30,
+    "cooldown": 1,
     "hud_render": {
       "should_render": true,
-      "bar_index": 5
+      "bar_index": 1
     },
     "key": {
-      "key": "key.use",
+      "key": "key.used",
       "continuous": false
     }
   },
@@ -315,13 +315,13 @@
 
     "type": "origins:fire_projectile",
     "entity_type": "minecraft:cave_spider",
-    "cooldown": 30,
+    "cooldown": 1,
     "hud_render": {
       "should_render": false
     },
     "count": 1,
     "interval": 1,
-    "start_delay": 10,
+    "start_delay": 15,
     "tag": "{CustomName:\"\\\"Staticy Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:200},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:1},{Name:\"generic.attack_damage\",Base:3},{Name:\"generic.armor\",Base:4}]}",
     "key": {
       "key": "key.use",
@@ -331,15 +331,10 @@
       "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:or",
-          "conditions": [
-            {
               "type":"origins:resource",
               "resource":"artificer:equipmenttoggles_statickeystonemainhand",
               "comparison":"==",
               "compare_to":1
-            }
-          ]
         },
         {
           "type":"origins:resource",
@@ -356,13 +351,13 @@
 
     "type": "origins:fire_projectile",
     "entity_type": "minecraft:cave_spider",
-    "cooldown": 30,
+    "cooldown": 1,
     "hud_render": {
       "should_render": false
     },
     "count": 1,
     "interval": 1,
-    "start_delay": 10,
+    "start_delay": 15,
     "tag": "{CustomName:\"\\\"Shocking Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:400},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:3},{Name:\"generic.attack_damage\",Base:5},{Name:\"generic.armor\",Base:6}]}",
     "key": {
       "key": "key.use",
@@ -372,40 +367,34 @@
       "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:or",
+          "type": "origins:and",
           "conditions": [
             {
-
-              "type": "origins:and",
+              "type": "origins:resource",
+              "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
+              "comparison": "==",
+              "compare_to": 1
+            },
+            {
+              "type": "origins:or",
               "conditions": [
                 {
-                  "type": "origins:resource",
-                  "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
-                  "comparison": "==",
-                  "compare_to": 1
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                  "comparison":"==",
+                  "compare_to":1
                 },
                 {
-                  "type": "origins:or",
-                  "conditions": [
-                    {
-                      "type":"origins:resource",
-                      "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
-                      "comparison":"==",
-                      "compare_to":1
-                    },
-                    {
-                      "type":"origins:resource",
-                      "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
-                      "comparison":"==",
-                      "compare_to":1
-                    },
-                    {
-                      "type": "origins:resource",
-                      "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
-                      "comparison": "==",
-                      "compare_to": 1
-                    }
-                  ]
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                {
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                  "comparison": "==",
+                  "compare_to": 1
                 }
               ]
             }
@@ -425,7 +414,7 @@
 
     "type": "origins:fire_projectile",
     "entity_type": "minecraft:cave_spider",
-    "cooldown": 30,
+    "cooldown": 1,
     "hud_render": {
       "should_render": false
     },
@@ -441,33 +430,28 @@
       "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:or",
+          "type": "origins:and",
           "conditions": [
             {
-              "type": "origins:and",
+              "type": "origins:resource",
+              "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+              "comparison": "==",
+              "compare_to": 1
+            },
+            {
+              "type": "origins:or",
               "conditions": [
                 {
-                  "type": "origins:resource",
-                  "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
-                  "comparison": "==",
-                  "compare_to": 1
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                  "comparison":"==",
+                  "compare_to":1
                 },
                 {
-                  "type": "origins:or",
-                  "conditions": [
-                    {
-                      "type":"origins:resource",
-                      "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
-                      "comparison":"==",
-                      "compare_to":1
-                    },
-                    {
-                      "type": "origins:resource",
-                      "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
-                      "comparison": "==",
-                      "compare_to": 1
-                    }
-                  ]
+                  "type": "origins:resource",
+                  "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                  "comparison": "==",
+                  "compare_to": 1
                 }
               ]
             }

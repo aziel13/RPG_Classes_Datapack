@@ -99,117 +99,92 @@
         "type": "origins:and",
         "actions": [
           {
-            "type": "origins:area_of_effect",
-            "radius": 3,
-            "bientity_action": {
-              "type": "origins:and",
-              "actions": [
-                {
-                  "type": "origins:if_else_list",
-                  "actions": [
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
-                        "type": "origins:and",
-                        "actions": [
-                          {
-                            "type": "origins:heal",
-                            "amount": 4
-
-                          },
-                          {
-                            "type": "origins:apply_effect",
-                            "effect": {
-                              "effect": "minecraft:regeneration",
-                              "duration": 60,
-                              "amplifier": 0
-                            }
-                          }
-                        ]
-                      }
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:if_else_list",
+                "actions": [
+                  {
+                    "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+                        "comparison":"==",
+                        "compare_to":1
                     },
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
-                        "type": "origins:and",
-                        "actions": [
-                          {
-                            "type": "origins:heal",
-                            "amount": 4
+                    "action": {
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:heal",
+                          "amount": 4
 
-                          },
-                          {
-                            "type": "origins:apply_effect",
-                            "effect": {
-                              "effect": "minecraft:regeneration",
-                              "duration": 60,
-                              "amplifier": 0
-                            }
+                        },
+                        {
+                          "type": "origins:apply_effect",
+                          "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 60,
+                            "amplifier": 0
                           }
-                        ]
-                      }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+                        "comparison":"==",
+                        "compare_to":1
                     },
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
-                        "type": "origins:and",
-                        "actions": [
-                          {
-                            "type": "origins:heal",
-                            "amount": 4
+                    "action": {
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:heal",
+                          "amount": 4
 
-                          },
-                          {
-                            "type": "origins:apply_effect",
-                            "effect": {
-                              "effect": "minecraft:regeneration",
-                              "duration": 60,
-                              "amplifier": 0
-                            }
+                        },
+                        {
+                          "type": "origins:apply_effect",
+                          "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 60,
+                            "amplifier": 0
                           }
-                        ]
-                      }
+                        }
+                      ]
                     }
-                  ]
-                },
-                {
-                  "type": "origins:and",
-                  "actions": [
-                    {
-                      "type": "origins:block_action_at",
-                      "block_action": {
-                        "type": "origins:bonemeal",
-                        "effects": false
-                      }
+                  },
+                  {
+                    "condition": {
+                        "type":"origins:resource",
+                        "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
+                        "comparison":"==",
+                        "compare_to":1
+                    },
+                    "action": {
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:heal",
+                          "amount": 4
+
+                        },
+                        {
+                          "type": "origins:apply_effect",
+                          "effect": {
+                            "effect": "minecraft:regeneration",
+                            "duration": 60,
+                            "amplifier": 0
+                          }
+                        }
+                      ]
                     }
-                  ]
-                }
-              ]
-            }
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "origins:if_else_list",
@@ -232,12 +207,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-250
-                        }
                       }
                     },
                     {
@@ -248,12 +220,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-200
-                        }
                       }
                     },
                     {
@@ -264,12 +233,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-150
-                        }
                       }
                     },
                     {
@@ -280,12 +246,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-100
-                        }
                       }
                     },
                     {
@@ -296,12 +259,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-50
-                        }
                       }
                     }
                   ]
@@ -325,12 +285,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-350
-                        }
                       }
                     },
                     {
@@ -341,12 +298,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-250
-                        }
                       }
                     },
                     {
@@ -357,12 +311,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-150
-                        }
                       }
                     }
                   ]
@@ -386,12 +337,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-550
-                        }
                       }
                     },
                     {
@@ -402,12 +350,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-350
-                        }
                       }
                     }
                   ]

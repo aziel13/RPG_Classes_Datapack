@@ -113,12 +113,12 @@
                    "actions": [
                      {
                        "condition": {
-                           "type": "origins:actor_action",
-                           "action": {
-                               "type":"origins:resource",
-                               "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
-                               "comparison":"==",
-                               "compare_to":1
+                           "type": "origins:actor_condition",
+                           "condition": {
+                             "type":"origins:resource",
+                             "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+                             "comparison":"==",
+                             "compare_to":1
                            }
                        },
                        "action": {
@@ -137,8 +137,8 @@
                      },
                      {
                        "condition": {
-                           "type": "origins:actor_action",
-                           "action": {
+                           "type": "origins:actor_condition",
+                           "condition": {
                            "type":"origins:resource",
                            "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
                            "comparison":"==",
@@ -161,8 +161,8 @@
                      },
                      {
                        "condition": {
-                         "type": "origins:actor_action",
-                         "action": {
+                         "type": "origins:actor_condition",
+                         "condition": {
                          "type":"origins:resource",
                          "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
                          "comparison":"==",
@@ -287,12 +287,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-250
-                         }
                        }
                      },
                      {
@@ -303,12 +300,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-200
-                         }
                        }
                      },
                      {
@@ -319,12 +313,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-150
-                         }
                        }
                      },
                      {
@@ -335,12 +326,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-100
-                         }
                        }
                      },
                      {
@@ -351,12 +339,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-50
-                         }
                        }
                      }
                    ]
@@ -380,12 +365,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-350
-                         }
                        }
                      },
                      {
@@ -396,12 +378,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-250
-                         }
                        }
                      },
                      {
@@ -412,12 +391,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-150
-                         }
                        }
                      }
                    ]
@@ -441,12 +417,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-550
-                         }
                        }
                      },
                      {
@@ -457,12 +430,9 @@
                          "compare_to":1
                        },
                        "action": {
-                         "type": "origins:apply_effect",
-                         "effect": {
                            "type":"origins:change_resource",
                            "resource":"artificer:essencetoggles_essence",
                            "change":-350
-                         }
                        }
                      }
                    ]

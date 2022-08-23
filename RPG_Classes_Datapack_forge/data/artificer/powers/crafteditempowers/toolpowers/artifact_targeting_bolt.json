@@ -14,84 +14,90 @@
         "type": "origins:and",
         "conditions": [
           {
-            "type": "origins:or",
+
+            "type": "origins:and",
             "conditions": [
               {
-                "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
-                "comparison":"==",
-                "compare_to":1
-              },
-              {
+                "type": "origins:or",
+                "conditions": [
+                  {
+                    "type":"origins:resource",
+                    "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
+                    "comparison":"==",
+                    "compare_to":1
+                  },
+                  {
 
-                "type": "origins:and",
-                "conditions": [
-                  {
-                    "type": "origins:resource",
-                    "resource": "artificer:equipmenttoggles_shockingkeystoneoffhand",
-                    "comparison": "==",
-                    "compare_to": 1
-                  },
-                  {
-                    "type": "origins:or",
+                    "type": "origins:and",
                     "conditions": [
                       {
-                        "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
                         "type": "origins:resource",
-                        "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                        "resource": "artificer:equipmenttoggles_shockingkeystoneoffhand",
                         "comparison": "==",
                         "compare_to": 1
+                      },
+                      {
+                        "type": "origins:or",
+                        "conditions": [
+                          {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+                            "comparison":"==",
+                            "compare_to":1
+                          },
+                          {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                            "comparison":"==",
+                            "compare_to":1
+                          },
+                          {
+                            "type": "origins:resource",
+                            "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                            "comparison": "==",
+                            "compare_to": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "origins:and",
+                    "conditions": [
+                      {
+                        "type": "origins:resource",
+                        "resource": "artificer:equipmenttoggles_electricutingkeystoneoffhand",
+                        "comparison": "==",
+                        "compare_to": 1
+                      },
+                      {
+                        "type": "origins:or",
+                        "conditions": [
+                          {
+                            "type":"origins:resource",
+                            "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+                            "comparison":"==",
+                            "compare_to":1
+                          },
+                          {
+                            "type": "origins:resource",
+                            "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+                            "comparison": "==",
+                            "compare_to": 1
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
               },
               {
-                "type": "origins:and",
-                "conditions": [
-                  {
-                    "type": "origins:resource",
-                    "resource": "artificer:equipmenttoggles_electricutingkeystoneoffhand",
-                    "comparison": "==",
-                    "compare_to": 1
-                  },
-                  {
-                    "type": "origins:or",
-                    "conditions": [
-                      {
-                        "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
-                        "comparison":"==",
-                        "compare_to":1
-                      },
-                      {
-                        "type": "origins:resource",
-                        "resource": "artificer:equipmenttoggles_netheriteartificerstoolmainhand",
-                        "comparison": "==",
-                        "compare_to": 1
-                      }
-                    ]
-                  }
-                ]
+                "type":"origins:resource",
+                "resource":"artificer:essencetoggles_essence",
+                "comparison":">=",
+                "compare_to":250
               }
             ]
-          },
-          {
-            "type":"origins:resource",
-            "resource":"artificer:essencetoggles_essence",
-            "comparison":">=",
-            "compare_to":250
           }
         ]
       },
@@ -99,1045 +105,1101 @@
         "type": "origins:and",
         "actions": [
           {
-            "type": "origins:raycast",
-            "distance": 32,
-            "block": true,
-            "entity": true,
-            "shape_type": "visual",
-            "fluid_handling": "none",
-            "bientity_action": {
-              "type": "origins:and",
-              "actions": [
-                {
-                  "type": "origins:if_else_list",
-                  "actions": [
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
+            "type": "origins:if_else_list",
+            "actions": [
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                              "type": "origins:raycast",
+                              "distance": 16,
+                              "block": true,
+                              "entity": true,
+                              "shape_type": "visual",
+                              "fluid_handling": "none",
+                              "bientity_action": {
 
-                        "type": "origins:if_else",
-                        "condition": {
-                          "type": "origins:target_condition",
-                          "condition": {
-                            "type": "origins:or",
-                            "conditions": [
-                              {
-                                "type": "origins:fluid_height",
-                                "fluid": "minecraft:water",
-                                "comparison": ">",
-                                "compare_to": 0.0
+
+
+                                "type": "origins:if_else",
+                                "condition": {
+                                  "type": "origins:target_condition",
+                                  "condition": {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                      {
+                                        "type": "origins:fluid_height",
+                                        "fluid": "minecraft:water",
+                                        "comparison": ">",
+                                        "compare_to": 0.0
+                                      },
+                                      {
+                                        "type": "origins:in_rain"
+                                      }
+                                    ]
+                                  }
+                                },
+                                "if_action": {
+
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:damage",
+                                        "amount": 8,
+                                        "source": {
+                                          "name": "lightningBolt.player",
+                                          "bypasses_armor": true,
+                                          "magic": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:actor_action",
+                                      "action": {
+                                        "type": "origins:area_of_effect",
+                                        "radius": 8,
+                                        "bientity_action": {
+                                          "type": "origins:if_else",
+                                          "condition": {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                              {
+                                                "type": "origins:actor_condition",
+                                                "condition": {
+                                                  "type": "origins:and",
+                                                  "conditions": [
+                                                    {
+                                                      "type": "origins:or",
+                                                      "conditions": [
+                                                        {
+                                                          "type": "origins:nbt",
+                                                          "nbt": "{Tags:['Artifact_Creature']}"
+                                                        },
+                                                        {
+                                                          "type": "origins:in_tag",
+                                                          "tag": "artificer"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "inverted": true
+                                                }
+                                              },
+                                              {
+                                                "type": "origins:target_condition",
+                                                "condition": {
+                                                  "type": "origins:and",
+                                                  "conditions": [
+                                                    {
+                                                      "type": "origins:or",
+                                                      "conditions": [
+                                                        {
+                                                          "type": "origins:nbt",
+                                                          "nbt": "{Tags:['Artifact_Creature']}"
+                                                        },
+                                                        {
+                                                          "type": "origins:in_tag",
+                                                          "tag": "artificer"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "inverted": true
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "if_action": {
+                                            "type": "origins:target_action",
+                                            "action": {
+                                              "type": "origins:and",
+                                              "actions": [
+                                                {
+                                                  "type": "origins:damage",
+                                                  "amount": 4,
+                                                  "source": {
+                                                    "name": "lightningBolt.player",
+                                                    "bypasses_armor": true,
+                                                    "magic": true
+                                                  }
+                                                },
+                                                {
+                                                  "type": "origins:apply_effect",
+                                                  "effects": [
+                                                    {
+                                                      "effect": "minecraft:slowness",
+                                                      "duration": 60,
+                                                      "is_ambient": false,
+                                                      "show_particles": false,
+                                                      "show_icon": true,
+                                                      "amplifier": 3
+                                                    },
+                                                    {
+                                                      "effect": "minecraft:wither",
+                                                      "duration": 30,
+                                                      "is_ambient": false,
+                                                      "show_particles": false,
+                                                      "show_icon": true,
+                                                      "amplifier": 1
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        "bientity_condition": {
+                                          "type": "origins:can_see"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:apply_effect",
+                                        "effects": [
+                                          {
+                                            "effect": "minecraft:slowness",
+                                            "duration": 60,
+                                            "is_ambient": false,
+                                            "show_particles": false,
+                                            "show_icon": true,
+                                            "amplifier": 3
+                                          },
+                                          {
+                                            "effect": "minecraft:wither",
+                                            "duration": 30,
+                                            "is_ambient": false,
+                                            "show_particles": false,
+                                            "show_icon": true,
+                                            "amplifier": 0
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                                        "permission_level": 4
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                                        "permission_level": 4
+                                      }
+                                    }
+                                  ]
+                                },
+                                "else_action": {
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:damage",
+                                        "amount": 4,
+                                        "source": {
+                                          "name": "lightningBolt.player",
+                                          "bypasses_armor": true,
+                                          "magic": true
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:actor_action",
+                                      "action": {
+                                        "type": "origins:area_of_effect",
+                                        "radius": 8,
+                                        "bientity_action": {
+                                          "type": "origins:if_else",
+                                          "condition": {
+
+                                            "type": "origins:and",
+                                            "conditions": [
+                                              {
+                                                "type": "origins:actor_condition",
+                                                "condition": {
+                                                  "type": "origins:and",
+                                                  "conditions": [
+                                                    {
+                                                      "type": "origins:or",
+                                                      "conditions": [
+                                                        {
+                                                          "type": "origins:nbt",
+                                                          "nbt": "{Tags:['Artifact_Creature']}"
+                                                        },
+                                                        {
+                                                          "type": "origins:in_tag",
+                                                          "tag": "artificer"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "inverted": true
+                                                }
+                                              },
+                                              {
+                                                "type": "origins:target_condition",
+                                                "condition": {
+                                                  "type": "origins:and",
+                                                  "conditions": [
+                                                    {
+                                                      "type": "origins:or",
+                                                      "conditions": [
+                                                        {
+                                                          "type": "origins:nbt",
+                                                          "nbt": "{Tags:['Artifact_Creature']}"
+                                                        },
+                                                        {
+                                                          "type": "origins:in_tag",
+                                                          "tag": "artificer"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "inverted": true
+                                                }
+                                              }
+                                            ]
+
+                                          },
+                                          "if_action": {
+                                            "type": "origins:target_action",
+                                            "action": {
+                                              "type": "origins:and",
+                                              "actions": [
+                                                {
+                                                  "type": "origins:damage",
+                                                  "amount": 2,
+                                                  "source": {
+                                                    "name": "lightningBolt.player",
+                                                    "bypasses_armor": true,
+                                                    "magic": true
+                                                  }
+                                                },
+                                                {
+                                                  "type": "origins:apply_effect",
+                                                  "effects": [
+                                                    {
+                                                      "effect": "minecraft:slowness",
+                                                      "duration": 30,
+                                                      "is_ambient": false,
+                                                      "show_particles": false,
+                                                      "show_icon": true,
+                                                      "amplifier": 3
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        "bientity_condition": {
+                                          "type": "origins:can_see"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:apply_effect",
+                                        "effects": [
+                                          {
+                                            "effect": "minecraft:slowness",
+                                            "duration": 30,
+                                            "is_ambient": false,
+                                            "show_particles": false,
+                                            "show_icon": true,
+                                            "amplifier": 3
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                                        "permission_level": 4
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:target_action",
+                                      "action": {
+                                        "type": "origins:execute_command",
+                                        "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                                        "permission_level": 4
+                                      }
+                                    }
+                                  ]
+                                }
                               },
-                              {
-                                "type": "origins:in_rain"
-                              }
-                            ]
+                              "hit_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                  {
+                                    "type":"origins:execute_command",
+                                    "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                                    "permission_level":4
+                                  }
+                                ]
+                              },
+                              "miss_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                  {
+                                    "type":"origins:execute_command",
+                                    "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                                    "permission_level":4
+                                  }
+                                ]
+                              },
+                              "command_at_hit": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0.0 0.1 normal @a",
+                              "command_along_ray": "particle minecraft:end_rod",
+                              "command_step": 1,
+                              "command_along_ray_only_on_hit": true
+                }
+              },
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:raycast",
+                  "distance": 24,
+                  "block": true,
+                  "entity": true,
+                  "shape_type": "visual",
+                  "fluid_handling": "none",
+                  "bientity_action": {
+
+
+
+                    "type": "origins:if_else",
+                    "condition": {
+                      "type": "origins:target_condition",
+                      "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                          {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                          },
+                          {
+                            "type": "origins:in_rain"
                           }
-                        },
-                        "if_action": {
-
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 8,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 8,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 4,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 60,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            },
-                                            {
-                                              "effect": "minecraft:wither",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 1
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 60,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  },
-                                  {
-                                    "effect": "minecraft:wither",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 0
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
-                        },
-                        "else_action": {
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 4,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 8,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 2,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
-                        }
+                        ]
                       }
                     },
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
+                    "if_action": {
 
-                        "type": "origins:if_else",
-                        "condition": {
-                          "type": "origins:target_condition",
-                          "condition": {
-                            "type": "origins:or",
-                            "conditions": [
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:damage",
+                            "amount": 16,
+                            "source": {
+                              "name": "lightningBolt.player",
+                              "bypasses_armor": true,
+                              "magic": true
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:actor_action",
+                          "action": {
+                            "type": "origins:area_of_effect",
+                            "radius": 16,
+                            "bientity_action": {
+                              "type": "origins:if_else",
+                              "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                  {
+                                    "type": "origins:actor_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  },
+                                  {
+                                    "type": "origins:target_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:damage",
+                                      "amount": 8,
+                                      "source": {
+                                        "name": "lightningBolt.player",
+                                        "bypasses_armor": true,
+                                        "magic": true
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:apply_effect",
+                                      "effects": [
+                                        {
+                                          "effect": "minecraft:slowness",
+                                          "duration": 60,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 3
+                                        },
+                                        {
+                                          "effect": "minecraft:wither",
+                                          "duration": 30,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 1
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "bientity_condition": {
+                              "type": "origins:can_see"
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:apply_effect",
+                            "effects": [
                               {
-                                "type": "origins:fluid_height",
-                                "fluid": "minecraft:water",
-                                "comparison": ">",
-                                "compare_to": 0.0
+                                "effect": "minecraft:slowness",
+                                "duration": 60,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 3
                               },
                               {
-                                "type": "origins:in_rain"
+                                "effect": "minecraft:wither",
+                                "duration": 30,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 0
                               }
                             ]
                           }
                         },
-                        "if_action": {
-
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 16,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 16,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 8,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 60,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            },
-                                            {
-                                              "effect": "minecraft:wither",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 1
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 60,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  },
-                                  {
-                                    "effect": "minecraft:wither",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 0
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                            "permission_level": 4
+                          }
                         },
-                        "else_action": {
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 8,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 8,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 4,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                            "permission_level": 4
+                          }
                         }
-                      }
+                      ]
                     },
-                    {
-                      "condition": {
-                        "type": "origins:actor_action",
-                        "action": {
-                          "type":"origins:resource",
-                          "resource":"artificer:equipmenttoggles_electricutingkeystoneoffhand",
-                          "comparison":"==",
-                          "compare_to":1
-                        }
-                      },
-                      "action": {
+                    "else_action": {
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:damage",
+                            "amount": 8,
+                            "source": {
+                              "name": "lightningBolt.player",
+                              "bypasses_armor": true,
+                              "magic": true
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:actor_action",
+                          "action": {
+                            "type": "origins:area_of_effect",
+                            "radius": 8,
+                            "bientity_action": {
+                              "type": "origins:if_else",
+                              "condition": {
 
-                        "type": "origins:if_else",
-                        "condition": {
-                          "type": "origins:target_condition",
-                          "condition": {
-                            "type": "origins:or",
-                            "conditions": [
-                              {
-                                "type": "origins:fluid_height",
-                                "fluid": "minecraft:water",
-                                "comparison": ">",
-                                "compare_to": 0.0
+                                "type": "origins:and",
+                                "conditions": [
+                                  {
+                                    "type": "origins:actor_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  },
+                                  {
+                                    "type": "origins:target_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  }
+                                ]
+
                               },
+                              "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:damage",
+                                      "amount": 4,
+                                      "source": {
+                                        "name": "lightningBolt.player",
+                                        "bypasses_armor": true,
+                                        "magic": true
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:apply_effect",
+                                      "effects": [
+                                        {
+                                          "effect": "minecraft:slowness",
+                                          "duration": 30,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 3
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "bientity_condition": {
+                              "type": "origins:can_see"
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:apply_effect",
+                            "effects": [
                               {
-                                "type": "origins:in_rain"
+                                "effect": "minecraft:slowness",
+                                "duration": 30,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 3
                               }
                             ]
                           }
                         },
-                        "if_action": {
-
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 24,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 24,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 12,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 60,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            },
-                                            {
-                                              "effect": "minecraft:wither",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 1
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 60,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  },
-                                  {
-                                    "effect": "minecraft:wither",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 0
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                            "permission_level": 4
+                          }
                         },
-                        "else_action": {
-                          "type": "origins:and",
-                          "actions": [
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:damage",
-                                "amount": 6,
-                                "source": {
-                                  "name": "lightningBolt.player",
-                                  "bypasses_armor": true,
-                                  "magic": true
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:actor_action",
-                              "action": {
-                                "type": "origins:area_of_effect",
-                                "radius": 8,
-                                "bientity_action": {
-                                  "type": "origins:if_else",
-                                  "condition": {
-
-                                    "type": "origins:and",
-                                    "conditions": [
-                                      {
-                                        "type": "origins:actor_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      },
-                                      {
-                                        "type": "origins:target_condition",
-                                        "condition": {
-                                          "type": "origins:and",
-                                          "conditions": [
-                                            {
-                                              "type": "origins:or",
-                                              "conditions": [
-                                                {
-                                                  "type": "origins:nbt",
-                                                  "nbt": "{Tags:['Artifact_Creature']}"
-                                                },
-                                                {
-                                                  "type": "origins:in_tag",
-                                                  "tag": "artificer"
-                                                }
-                                              ]
-                                            }
-                                          ],
-                                          "inverted": true
-                                        }
-                                      }
-                                    ]
-
-                                  },
-                                  "if_action": {
-                                    "type": "origins:target_action",
-                                    "action": {
-                                      "type": "origins:and",
-                                      "actions": [
-                                        {
-                                          "type": "origins:damage",
-                                          "amount": 2,
-                                          "source": {
-                                            "name": "lightningBolt.player",
-                                            "bypasses_armor": true,
-                                            "magic": true
-                                          }
-                                        },
-                                        {
-                                          "type": "origins:apply_effect",
-                                          "effects": [
-                                            {
-                                              "effect": "minecraft:slowness",
-                                              "duration": 30,
-                                              "is_ambient": false,
-                                              "show_particles": false,
-                                              "show_icon": true,
-                                              "amplifier": 3
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "bientity_condition": {
-                                  "type": "origins:can_see"
-                                }
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:apply_effect",
-                                "effects": [
-                                  {
-                                    "effect": "minecraft:slowness",
-                                    "duration": 30,
-                                    "is_ambient": false,
-                                    "show_particles": false,
-                                    "show_icon": true,
-                                    "amplifier": 3
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                                "permission_level": 4
-                              }
-                            },
-                            {
-                              "type": "origins:target_action",
-                              "action": {
-                                "type": "origins:execute_command",
-                                "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
-                                "permission_level": 4
-                              }
-                            }
-                          ]
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                            "permission_level": 4
+                          }
                         }
-                      }
+                      ]
                     }
-                  ]
+                  },
+                  "hit_action": {
+                    "type": "origins:and",
+                    "actions": [
+                      {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                        "permission_level":4
+                      }
+                    ]
+                  },
+                  "miss_action": {
+                    "type": "origins:and",
+                    "actions": [
+                      {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                        "permission_level":4
+                      }
+                    ]
+                  },
+                  "command_at_hit": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0.0 0.1 normal @a",
+                  "command_along_ray": "particle minecraft:end_rod",
+                  "command_step": 1,
+                  "command_along_ray_only_on_hit": true
                 }
-              ]
-            },
-            "hit_action": {
-              "type": "origins:and",
-              "actions": [
-                {
-                  "type":"origins:execute_command",
-                  "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                  "permission_level":4
+              },
+              {
+                "condition": {
+                  "type":"origins:resource",
+                  "resource":"artificer:equipmenttoggles_electricutingkeystoneoffhand",
+                  "comparison":"==",
+                  "compare_to":1
+                },
+                "action": {
+                  "type": "origins:raycast",
+                  "distance": 24,
+                  "block": true,
+                  "entity": true,
+                  "shape_type": "visual",
+                  "fluid_handling": "none",
+                  "bientity_action": {
+
+
+
+                    "type": "origins:if_else",
+                    "condition": {
+                      "type": "origins:target_condition",
+                      "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                          {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">",
+                            "compare_to": 0.0
+                          },
+                          {
+                            "type": "origins:in_rain"
+                          }
+                        ]
+                      }
+                    },
+                    "if_action": {
+
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:damage",
+                            "amount": 24,
+                            "source": {
+                              "name": "lightningBolt.player",
+                              "bypasses_armor": true,
+                              "magic": true
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:actor_action",
+                          "action": {
+                            "type": "origins:area_of_effect",
+                            "radius": 24,
+                            "bientity_action": {
+                              "type": "origins:if_else",
+                              "condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                  {
+                                    "type": "origins:actor_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  },
+                                  {
+                                    "type": "origins:target_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:damage",
+                                      "amount": 12,
+                                      "source": {
+                                        "name": "lightningBolt.player",
+                                        "bypasses_armor": true,
+                                        "magic": true
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:apply_effect",
+                                      "effects": [
+                                        {
+                                          "effect": "minecraft:slowness",
+                                          "duration": 60,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 3
+                                        },
+                                        {
+                                          "effect": "minecraft:wither",
+                                          "duration": 30,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 1
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "bientity_condition": {
+                              "type": "origins:can_see"
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:apply_effect",
+                            "effects": [
+                              {
+                                "effect": "minecraft:slowness",
+                                "duration": 60,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 3
+                              },
+                              {
+                                "effect": "minecraft:wither",
+                                "duration": 30,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 0
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                            "permission_level": 4
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                            "permission_level": 4
+                          }
+                        }
+                      ]
+                    },
+                    "else_action": {
+                      "type": "origins:and",
+                      "actions": [
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:damage",
+                            "amount": 12,
+                            "source": {
+                              "name": "lightningBolt.player",
+                              "bypasses_armor": true,
+                              "magic": true
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:actor_action",
+                          "action": {
+                            "type": "origins:area_of_effect",
+                            "radius": 12,
+                            "bientity_action": {
+                              "type": "origins:if_else",
+                              "condition": {
+
+                                "type": "origins:and",
+                                "conditions": [
+                                  {
+                                    "type": "origins:actor_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  },
+                                  {
+                                    "type": "origins:target_condition",
+                                    "condition": {
+                                      "type": "origins:and",
+                                      "conditions": [
+                                        {
+                                          "type": "origins:or",
+                                          "conditions": [
+                                            {
+                                              "type": "origins:nbt",
+                                              "nbt": "{Tags:['Artifact_Creature']}"
+                                            },
+                                            {
+                                              "type": "origins:in_tag",
+                                              "tag": "artificer"
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "inverted": true
+                                    }
+                                  }
+                                ]
+
+                              },
+                              "if_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                  "type": "origins:and",
+                                  "actions": [
+                                    {
+                                      "type": "origins:damage",
+                                      "amount": 6,
+                                      "source": {
+                                        "name": "lightningBolt.player",
+                                        "bypasses_armor": true,
+                                        "magic": true
+                                      }
+                                    },
+                                    {
+                                      "type": "origins:apply_effect",
+                                      "effects": [
+                                        {
+                                          "effect": "minecraft:slowness",
+                                          "duration": 30,
+                                          "is_ambient": false,
+                                          "show_particles": false,
+                                          "show_icon": true,
+                                          "amplifier": 3
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            "bientity_condition": {
+                              "type": "origins:can_see"
+                            }
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:apply_effect",
+                            "effects": [
+                              {
+                                "effect": "minecraft:slowness",
+                                "duration": 30,
+                                "is_ambient": false,
+                                "show_particles": false,
+                                "show_icon": true,
+                                "amplifier": 3
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                            "permission_level": 4
+                          }
+                        },
+                        {
+                          "type": "origins:target_action",
+                          "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=!Artifact_Creature,sort=nearest] run power grant @e[tag=!Artifact_Creature,sort=nearest,limit=1,distance=..32] artificer:artifactcreaturepowers/agroartifactcreature",
+                            "permission_level": 4
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "hit_action": {
+                    "type": "origins:and",
+                    "actions": [
+                      {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                        "permission_level":4
+                      }
+                    ]
+                  },
+                  "miss_action": {
+                    "type": "origins:and",
+                    "actions": [
+                      {
+                        "type":"origins:execute_command",
+                        "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                        "permission_level":4
+                      }
+                    ]
+                  },
+                  "command_at_hit": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0.0 0.1 normal @a",
+                  "command_along_ray": "particle minecraft:end_rod",
+                  "command_step": 1,
+                  "command_along_ray_only_on_hit": true
                 }
-              ]
-            },
-            "miss_action": {
-              "type": "origins:and",
-              "actions": [
-                {
-                  "type":"origins:execute_command",
-                  "command":"particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                  "permission_level":4
-                }
-              ]
-            },
-            "command_at_hit": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0.0 0.1 normal @a",
-            "command_along_ray": "particle minecraft:end_rod",
-            "command_step": 1,
-            "command_along_ray_only_on_hit": true
+              }
+            ]
           },
           {
             "type": "origins:if_else_list",
@@ -1160,12 +1222,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-250
-                        }
                       }
                     },
                     {
@@ -1176,12 +1235,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-200
-                        }
                       }
                     },
                     {
@@ -1192,12 +1248,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-150
-                        }
                       }
                     },
                     {
@@ -1208,12 +1261,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-100
-                        }
                       }
                     },
                     {
@@ -1224,12 +1274,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-50
-                        }
                       }
                     }
                   ]
@@ -1253,12 +1300,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-350
-                        }
                       }
                     },
                     {
@@ -1269,12 +1313,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-250
-                        }
                       }
                     },
                     {
@@ -1285,12 +1326,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-150
-                        }
                       }
                     }
                   ]
@@ -1314,12 +1352,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-550
-                        }
                       }
                     },
                     {
@@ -1330,12 +1365,9 @@
                         "compare_to":1
                       },
                       "action": {
-                        "type": "origins:apply_effect",
-                        "effect": {
                           "type":"origins:change_resource",
                           "resource":"artificer:essencetoggles_essence",
                           "change":-350
-                        }
                       }
                     }
                   ]
