@@ -8,19 +8,19 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:powertoggles_waterwalkstate",
+        "resource":"artificer:resources/powertoggles_waterwalkstate",
         "comparison":"==",
         "compare_to":1
       },
       "if_action": {
         "type":"origins:change_resource",
-        "resource":"artificer:powertoggles_waterwalkstate",
+        "resource":"artificer:resources/powertoggles_waterwalkstate",
         "operation": "set",
         "change":0
       },
       "else_action": {
         "type":"origins:change_resource",
-        "resource":"artificer:powertoggles_waterwalkstate",
+        "resource":"artificer:resources/powertoggles_waterwalkstate",
         "operation": "set",
         "change":1
       }

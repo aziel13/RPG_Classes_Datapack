@@ -1,16 +1,27 @@
 {
 	"type":"minecraft:crafting_shaped",
 	"pattern":[
-		"$$$",
-		"$@$",
-		"$$$"
+		"$%$",
+		"*@*",
+		"&#&"
 	],
 	"key":{
-
+		"#":{
+			"item":"minecraft:piston"
+		},
+		"%":{
+			"item":"minecraft:redstone_torch"
+		},
 		"@":{
 			"item":"minecraft:iron_leggings"
 		},
 		"$":{
+			"item":"minecraft:leather"
+		},
+		"&":{
+			"item":"minecraft:iron_ingot"
+		},
+		"*":{
 			"item":"minecraft:sugar"
 		}
 	},

@@ -1,13 +1,13 @@
 [
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/toolpowers/lesserrepairitems",
+		"power": "artificer:crafteditempowers/toolpowers/repairitems",
 		"slot": "offhand",
 		"negative": false
 	},
 	{
 		"function": "apoli:add_power",
-		"power": "artificer:crafteditempowers/toolpowers/lesserlaunchthorn",
+		"power": "artificer:crafteditempowers/toolpowers/launchthorn",
 		"slot": "mainhand",
 		"negative": false
 	},

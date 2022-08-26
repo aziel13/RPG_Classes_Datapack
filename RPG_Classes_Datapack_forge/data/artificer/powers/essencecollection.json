@@ -15,7 +15,7 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_slowcollect",
+                        "resource":"artificer:resources/essencetoggles_slowcollect",
                         "comparison":"==",
                         "compare_to":1
 
@@ -24,20 +24,20 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":25
                }
             },
             {
                "condition": {
                   "type":"origins:resource",
-                  "resource":"artificer:essencetoggles_averagecollect",
+                  "resource":"artificer:resources/essencetoggles_averagecollect",
                   "comparison":"==",
                   "compare_to":1
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":75
                }
             },
@@ -45,14 +45,14 @@
                "condition": {
 
                   "type":"origins:resource",
-                  "resource":"artificer:essencetoggles_fastcollect",
+                  "resource":"artificer:resources/essencetoggles_fastcollect",
                   "comparison":"==",
                   "compare_to":1
 
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":125
                }
             },
@@ -62,13 +62,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_ironessencesetbonus",
+                        "resource":"artificer:resources/essencetoggles_ironessencesetbonus",
                         "comparison":"==",
                         "compare_to":1
 
@@ -77,7 +77,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":75
                }
             },
@@ -88,13 +88,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_diamondessencesetbonus",
+                        "resource":"artificer:resources/essencetoggles_diamondessencesetbonus",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -103,7 +103,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":150
                }
             },
@@ -113,13 +113,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                        "resource":"artificer:resources/essencetoggles_netheriteessencesetbonus",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -127,7 +127,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":225
                }
             },
@@ -137,13 +137,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironhelmet",
+                        "resource":"artificer:resources/equipmenttoggles_ironhelmet",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -151,7 +151,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":25
                }
             },
@@ -161,13 +161,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironchestplate",
+                        "resource":"artificer:resources/equipmenttoggles_ironchestplate",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -175,7 +175,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":45
                }
             },
@@ -185,13 +185,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironleggings",
+                        "resource":"artificer:resources/equipmenttoggles_ironleggings",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -199,7 +199,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":35
                }
             },
@@ -209,13 +209,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironboots",
+                        "resource":"artificer:resources/equipmenttoggles_ironboots",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -223,7 +223,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":25
                }
             },
@@ -233,13 +233,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondhelmet",
+                        "resource":"artificer:resources/equipmenttoggles_diamondhelmet",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -247,7 +247,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":45
                }
             },
@@ -257,13 +257,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondchestplate",
+                        "resource":"artificer:resources/equipmenttoggles_diamondchestplate",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -271,7 +271,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":65
                }
             },
@@ -281,13 +281,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondleggings",
+                        "resource":"artificer:resources/equipmenttoggles_diamondleggings",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -295,7 +295,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":55
                }
             },
@@ -305,13 +305,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondboots",
+                        "resource":"artificer:resources/equipmenttoggles_diamondboots",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -319,7 +319,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":45
                }
             },
@@ -329,13 +329,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheritehelmet",
+                        "resource":"artificer:resources/equipmenttoggles_netheritehelmet",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -343,7 +343,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":65
                }
             },
@@ -353,13 +353,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheritechestplate",
+                        "resource":"artificer:resources/equipmenttoggles_netheritechestplate",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -367,7 +367,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":85
                }
             },
@@ -377,13 +377,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheriteleggings",
+                        "resource":"artificer:resources/equipmenttoggles_netheriteleggings",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -391,7 +391,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":75
                }
             },
@@ -401,13 +401,13 @@
                   "conditions": [
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:essencetoggles_iscollect",
+                        "resource":"artificer:resources/essencetoggles_iscollect",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheriteboots",
+                        "resource":"artificer:resources/equipmenttoggles_netheriteboots",
                         "comparison":"==",
                         "compare_to":1
                      }
@@ -415,7 +415,7 @@
                },
                "action": {
                   "type":"origins:change_resource",
-                  "resource":"artificer:essencetoggles_essence",
+                  "resource":"artificer:resources/essencetoggles_essence",
                   "change":65
                }
             }
@@ -433,7 +433,7 @@
       "interval":10,
       "condition":{
          "type":"origins:resource",
-         "resource":"artificer:essencetoggles_iscollect",
+         "resource":"artificer:resources/essencetoggles_iscollect",
          "comparison":"==",
          "compare_to":1
       }
@@ -442,12 +442,12 @@
       "type":"origins:action_on_callback",
       "entity_action_chosen":{
          "type":"origins:change_resource",
-         "resource":"artificer:essencetoggles_essence",
+         "resource":"artificer:resources/essencetoggles_essence",
          "change":-1000
       },
       "entity_action_respawned":{
          "type":"origins:change_resource",
-         "resource":"artificer:essencetoggles_essence",
+         "resource":"artificer:resources/essencetoggles_essence",
          "change":-1000
       },
       "execute_chosen_when_orb":true

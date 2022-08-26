@@ -10,7 +10,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_slowcollect",
+               "resource":"artificer:resources/essencetoggles_slowcollect",
                "operation": "set",
                "change":1
             },
@@ -24,7 +24,7 @@
          "type": "origins:if_else",
          "condition": {
             "type":"origins:resource",
-            "resource":"artificer:essencetoggles_slowcollect",
+            "resource":"artificer:resources/essencetoggles_slowcollect",
             "comparison":"==",
             "compare_to":0
          },
@@ -33,7 +33,7 @@
             "actions": [
                {
                   "type": "origins:execute_command",
-                  "command": "resource set @p artificer:essencetoggles_slowcollect 1"
+                  "command": "resource set @p artificer:resources/essencetoggles_slowcollect 1"
 
                },
                {
@@ -48,7 +48,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_slowcollect",
+               "resource":"artificer:resources/essencetoggles_slowcollect",
                "operation": "set",
                "change":0
             },
@@ -111,7 +111,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_averagecollect",
+               "resource":"artificer:resources/essencetoggles_averagecollect",
                "operation": "set",
                "change":1
             },
@@ -125,7 +125,7 @@
          "type": "origins:if_else",
          "condition": {
             "type":"origins:resource",
-            "resource":"artificer:essencetoggles_averagecollect",
+            "resource":"artificer:resources/essencetoggles_averagecollect",
             "comparison":"==",
             "compare_to":0
          },
@@ -134,7 +134,7 @@
             "actions": [
                {
                   "type": "origins:execute_command",
-                  "command": "resource set @p artificer:essencetoggles_averagecollect 1"
+                  "command": "resource set @p artificer:resources/essencetoggles_averagecollect 1"
 
                },
                {
@@ -149,7 +149,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_averagecollect",
+               "resource":"artificer:resources/essencetoggles_averagecollect",
                "operation": "set",
                "change":0
             },
@@ -210,7 +210,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_fastcollect",
+               "resource":"artificer:resources/essencetoggles_fastcollect",
                "operation": "set",
                "change":1
             },
@@ -224,7 +224,7 @@
          "type": "origins:if_else",
          "condition": {
             "type":"origins:resource",
-            "resource":"artificer:essencetoggles_fastcollect",
+            "resource":"artificer:resources/essencetoggles_fastcollect",
             "comparison":"==",
             "compare_to":0
          },
@@ -233,7 +233,7 @@
             "actions": [
                {
                   "type": "origins:execute_command",
-                  "command": "resource set @p artificer:essencetoggles_fastcollect 1"
+                  "command": "resource set @p artificer:resources/essencetoggles_fastcollect 1"
 
                },
                {
@@ -248,7 +248,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_fastcollect",
+               "resource":"artificer:resources/essencetoggles_fastcollect",
                "operation": "set",
                "change":0
             },
@@ -321,7 +321,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_iscollect",
+               "resource":"artificer:resources/essencetoggles_iscollect",
                "operation": "set",
                "change":1
             },
@@ -335,7 +335,7 @@
          "type": "origins:if_else",
          "condition": {
             "type":"origins:resource",
-            "resource":"artificer:essencetoggles_iscollect",
+            "resource":"artificer:resources/essencetoggles_iscollect",
             "comparison":"==",
             "compare_to":0
          },
@@ -344,7 +344,7 @@
             "actions": [
                {
                   "type": "origins:execute_command",
-                  "command": "resource set @p artificer:essencetoggles_iscollect 1"
+                  "command": "resource set @p artificer:resources/essencetoggles_iscollect 1"
 
                },
                {
@@ -359,7 +359,7 @@
          "actions": [
             {
                "type":"origins:change_resource",
-               "resource":"artificer:essencetoggles_iscollect",
+               "resource":"artificer:resources/essencetoggles_iscollect",
                "operation": "set",
                "change":0
             },
@@ -376,19 +376,19 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"artificer:essencetoggles_slowcollect",
+               "resource":"artificer:resources/essencetoggles_slowcollect",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"artificer:essencetoggles_averagecollect",
+               "resource":"artificer:resources/essencetoggles_averagecollect",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"artificer:essencetoggles_fastcollect",
+               "resource":"artificer:resources/essencetoggles_fastcollect",
                "comparison":"==",
                "compare_to":1
             }

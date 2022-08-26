@@ -19,14 +19,14 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_master",
+                    "resource":"artificer:resources/powertoggles_master",
                     "comparison":"==",
                     "compare_to":0
 
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_swiftwalktoggle",
+                    "resource":"artificer:resources/powertoggles_swiftwalktoggle",
                     "comparison":"==",
                     "compare_to":0
                 }
@@ -49,14 +49,14 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_master",
+                    "resource":"artificer:resources/powertoggles_master",
                     "comparison":"==",
                     "compare_to":0
 
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_swiftruntoggle",
+                    "resource":"artificer:resources/powertoggles_swiftruntoggle",
                     "comparison":"==",
                     "compare_to":0
                 },

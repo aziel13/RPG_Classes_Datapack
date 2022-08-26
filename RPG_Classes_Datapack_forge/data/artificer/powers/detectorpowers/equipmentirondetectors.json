@@ -9,7 +9,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironhelmet",
+          "resource":"artificer:resources/equipmenttoggles_ironhelmet",
           "operation": "set",
           "change":1
         },
@@ -23,7 +23,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironhelmet",
+        "resource":"artificer:resources/equipmenttoggles_ironhelmet",
         "comparison":"==",
         "compare_to":0
       },
@@ -32,7 +32,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironhelmet 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironhelmet 1"
 
           },
           {
@@ -47,7 +47,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironhelmet",
+          "resource":"artificer:resources/equipmenttoggles_ironhelmet",
           "operation": "set",
           "change":0
         },
@@ -87,7 +87,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironchestplate",
+          "resource":"artificer:resources/equipmenttoggles_ironchestplate",
           "operation": "set",
           "change":1
         },
@@ -101,7 +101,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironchestplate",
+        "resource":"artificer:resources/equipmenttoggles_ironchestplate",
         "comparison":"==",
         "compare_to":0
       },
@@ -110,7 +110,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironchestplate 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironchestplate 1"
 
           },
           {
@@ -125,7 +125,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironchestplate",
+          "resource":"artificer:resources/equipmenttoggles_ironchestplate",
           "operation": "set",
           "change":0
         },
@@ -165,7 +165,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironleggings",
+          "resource":"artificer:resources/equipmenttoggles_ironleggings",
           "operation": "set",
           "change":1
         },
@@ -179,7 +179,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironleggings",
+        "resource":"artificer:resources/equipmenttoggles_ironleggings",
         "comparison":"==",
         "compare_to":0
       },
@@ -188,7 +188,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironleggings 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironleggings 1"
 
           },
           {
@@ -203,7 +203,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironleggings",
+          "resource":"artificer:resources/equipmenttoggles_ironleggings",
           "operation": "set",
           "change":0
         },
@@ -242,7 +242,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironboots",
+          "resource":"artificer:resources/equipmenttoggles_ironboots",
 
           "change":1
         },
@@ -256,7 +256,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironboots",
+        "resource":"artificer:resources/equipmenttoggles_ironboots",
         "comparison":"==",
         "compare_to":0
       },
@@ -265,7 +265,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironboots 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironboots 1"
 
           },
           {
@@ -280,7 +280,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironboots",
+          "resource":"artificer:resources/equipmenttoggles_ironboots",
           "change":-1
         },
         {

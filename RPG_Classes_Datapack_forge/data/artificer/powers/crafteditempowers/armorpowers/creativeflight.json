@@ -5,13 +5,13 @@
         "conditions": [
             {
                 "type":"origins:resource",
-                "resource":"artificer:powertoggles_creativestate",
+                "resource":"artificer:resources/powertoggles_creativestate",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:powertoggles_creativeflighttoggle",
+                "resource":"artificer:resources/powertoggles_creativeflighttoggle",
                 "comparison":"==",
                 "compare_to":1
             }

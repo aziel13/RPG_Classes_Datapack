@@ -1,10 +1,10 @@
 {   "type": "origins:multiple",
     "add_recipie_ironhookboots": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:ironnightvisionhelmet",
+        "recipe": "artificer:armor/ironnightvisionhelmet",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:ironhelmetpowers"
+            "modifier": "artificer:armor/ironhelmetpowers"
         },
         "result": {
             "item": "iron_helmet",
@@ -15,10 +15,10 @@
     },
     "add_recipie_diamonddisplacementbooks": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:diamondtruesighthelmet",
+        "recipe": "artificer:armor/diamondtruesighthelmet",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:diamondhelmetrpowers"
+            "modifier": "artificer:armor/diamondhelmetrpowers"
         },
         "result": {
             "item": "diamond_helmet",
@@ -28,10 +28,10 @@
     },
     "add_recipie_netheriteantigravityboots": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:netheritehelmoftransendence",
+        "recipe": "artificer:armor/netheritehelmoftransendence",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:netheritehelmetrpowers"
+            "modifier": "artificer:armor/netheritehelmetrpowers"
         },
         "result": {
             "item": "netherite_helmet",

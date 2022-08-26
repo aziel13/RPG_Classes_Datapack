@@ -10,6 +10,7 @@
     "entity_action": {
       "type": "origins:if_else",
       "condition": {
+
         "type": "origins:and",
         "conditions": [
           {
@@ -17,7 +18,7 @@
             "conditions": [
               {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+                "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
                 "comparison":"==",
                 "compare_to":1
               },
@@ -27,7 +28,7 @@
                 "conditions": [
                   {
                     "type": "origins:resource",
-                    "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
+                    "resource": "artificer:resources/equipmenttoggles_shockingkeystonemainhand",
                     "comparison": "==",
                     "compare_to": 1
                   },
@@ -36,19 +37,19 @@
                     "conditions": [
                       {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       {
                         "type": "origins:resource",
-                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "resource": "artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                         "comparison": "==",
                         "compare_to": 1
                       }
@@ -61,7 +62,7 @@
                 "conditions": [
                   {
                     "type": "origins:resource",
-                    "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+                    "resource": "artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
                     "comparison": "==",
                     "compare_to": 1
                   },
@@ -70,13 +71,13 @@
                     "conditions": [
                       {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       {
                         "type": "origins:resource",
-                        "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "resource": "artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                         "comparison": "==",
                         "compare_to": 1
                       }
@@ -88,7 +89,7 @@
           },
           {
             "type":"origins:resource",
-            "resource":"artificer:essencetoggles_essence",
+            "resource":"artificer:resources/essencetoggles_essence",
             "comparison":">=",
             "compare_to":250
           }
@@ -108,7 +109,7 @@
               {
                 "condition": {
                   "type":"origins:resource",
-                  "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+                  "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
                   "comparison":"==",
                   "compare_to":1
                 },
@@ -118,7 +119,7 @@
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_woodartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
@@ -131,52 +132,52 @@
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_stoneartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-200
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-150
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-100
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-50
                       }
                     }
@@ -186,7 +187,7 @@
               {
                 "condition": {
                   "type":"origins:resource",
-                  "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+                  "resource":"artificer:resources/equipmenttoggles_shockingkeystonemainhand",
                   "comparison":"==",
                   "compare_to":1
                 },
@@ -196,39 +197,39 @@
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-350
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-250
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-150
                       }
                     }
@@ -238,7 +239,7 @@
               {
                 "condition": {
                   "type": "origins:resource",
-                  "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+                  "resource": "artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
                   "comparison": "==",
                   "compare_to": 1
                 },
@@ -248,26 +249,26 @@
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-550
                       }
                     },
                     {
                       "condition": {
                         "type":"origins:resource",
-                        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                        "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                         "comparison":"==",
                         "compare_to":1
                       },
                       "action": {
                         "type":"origins:change_resource",
-                        "resource":"artificer:essencetoggles_essence",
+                        "resource":"artificer:resources/essencetoggles_essence",
                         "change":-350
                       }
                     }
@@ -278,7 +279,7 @@
           },
           {
             "type": "origins:delay",
-            "ticks": 25,
+            "ticks": 20,
             "action": {
               "type": "origins:and",
               "actions": [
@@ -304,7 +305,7 @@
       "bar_index": 1
     },
     "key": {
-      "key": "key.used",
+      "key": "key.use",
       "continuous": false
     }
   },
@@ -321,7 +322,7 @@
     },
     "count": 1,
     "interval": 1,
-    "start_delay": 15,
+    "start_delay": 10,
     "tag": "{CustomName:\"\\\"Staticy Clockwork Spider\\\"\",Team:\"artificer\",Tags:[\"Artifact_Creature\"],Attributes:[{Name:\"generic.max_health\",Base:200},{Name:\"generic.follow_range\",Base:32},{Name:\"generic.knockback_resistance\",Base:1},{Name:\"generic.attack_damage\",Base:3},{Name:\"generic.armor\",Base:4}]}",
     "key": {
       "key": "key.use",
@@ -332,13 +333,13 @@
       "conditions": [
         {
               "type":"origins:resource",
-              "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+              "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
               "comparison":"==",
               "compare_to":1
         },
         {
           "type":"origins:resource",
-          "resource":"artificer:essencetoggles_essence",
+          "resource":"artificer:resources/essencetoggles_essence",
           "comparison":">=",
           "compare_to":250
         }
@@ -371,7 +372,7 @@
           "conditions": [
             {
               "type": "origins:resource",
-              "resource": "artificer:equipmenttoggles_shockingkeystonemainhand",
+              "resource": "artificer:resources/equipmenttoggles_shockingkeystonemainhand",
               "comparison": "==",
               "compare_to": 1
             },
@@ -380,19 +381,19 @@
               "conditions": [
                 {
                   "type":"origins:resource",
-                  "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+                  "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
                   "comparison":"==",
                   "compare_to":1
                 },
                 {
                   "type":"origins:resource",
-                  "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                  "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                   "comparison":"==",
                   "compare_to":1
                 },
                 {
                   "type": "origins:resource",
-                  "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                  "resource": "artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                   "comparison": "==",
                   "compare_to": 1
                 }
@@ -402,7 +403,7 @@
         },
         {
           "type":"origins:resource",
-          "resource":"artificer:essencetoggles_essence",
+          "resource":"artificer:resources/essencetoggles_essence",
           "comparison":">=",
           "compare_to":250
         }
@@ -434,7 +435,7 @@
           "conditions": [
             {
               "type": "origins:resource",
-              "resource": "artificer:equipmenttoggles_electricutingkeystonemainhand",
+              "resource": "artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
               "comparison": "==",
               "compare_to": 1
             },
@@ -443,13 +444,13 @@
               "conditions": [
                 {
                   "type":"origins:resource",
-                  "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+                  "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
                   "comparison":"==",
                   "compare_to":1
                 },
                 {
                   "type": "origins:resource",
-                  "resource": "artificer:equipmenttoggles_netheriteartificerstooloffhand",
+                  "resource": "artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
                   "comparison": "==",
                   "compare_to": 1
                 }
@@ -459,7 +460,7 @@
         },
         {
           "type":"origins:resource",
-          "resource":"artificer:essencetoggles_essence",
+          "resource":"artificer:resources/essencetoggles_essence",
           "comparison":">=",
           "compare_to":250
         }

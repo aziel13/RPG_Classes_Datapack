@@ -1,0 +1,50 @@
+[
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/soldering_beam",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/soldering_heatburst",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/freeze_ray",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/frost_shot",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/launchthorn",
+		"slot": "mainhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/repairitems",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/repairself",
+		"slot": "offhand",
+		"negative": false
+	},
+	{
+		"function": "apoli:add_power",
+		"power": "artificer:crafteditempowers/toolpowers/netheritemultitool",
+		"slot": "mainhand",
+		"negative": false
+	}
+]

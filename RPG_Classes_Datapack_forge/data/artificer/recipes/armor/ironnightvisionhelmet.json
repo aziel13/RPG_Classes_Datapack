@@ -1,14 +1,22 @@
 {
 	"type":"minecraft:crafting_shaped",
 	"pattern":[
-		"***",
-		"*@*",
-		"***"
+		"$*$",
+		"#@#",
+		"*&*"
 	],
 	"key":{
-
+		"#":{
+			"item":"minecraft:glass"
+		},
 		"@":{
 			"item":"minecraft:iron_helmet"
+		},
+		"$":{
+			"item":"minecraft:glow_ink_sac"
+		},
+		"&":{
+			"item":"minecraft:leather"
 		},
 		"*":{
 			"item":"minecraft:iron_ingot"

@@ -1,14 +1,22 @@
 {
 	"type":"minecraft:crafting_shaped",
 	"pattern":[
-		"***",
-		"*@*",
-		"***"
+		"$*$",
+		"#@#",
+		"*#*"
 	],
 	"key":{
-
+		"#":{
+			"item":"minecraft:amethyst_shard"
+		},
 		"@":{
 			"item":"minecraft:diamond_helmet"
+		},
+		"$":{
+			"item":"minecraft:glowstone_dust"
+		},
+		"&":{
+			"item":"minecraft:leather"
 		},
 		"*":{
 			"item":"minecraft:diamond"

@@ -11,14 +11,14 @@
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_climbtoggle",
+                    "resource":"artificer:resources/powertoggles_climbtoggle",
                     "comparison":"==",
                     "compare_to":1
 
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_master",
+                    "resource":"artificer:resources/powertoggles_master",
                     "comparison":"==",
                     "compare_to":1
                 }
@@ -34,14 +34,14 @@
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_climbtoggle",
+                    "resource":"artificer:resources/powertoggles_climbtoggle",
                     "comparison":"==",
                     "compare_to":1
 
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_master",
+                    "resource":"artificer:resources/powertoggles_master",
                     "comparison":"==",
                     "compare_to":1
                 }

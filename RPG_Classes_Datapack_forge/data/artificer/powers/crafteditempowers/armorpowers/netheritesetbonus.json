@@ -25,25 +25,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritehelmet",
+                    "resource":"artificer:resources/equipmenttoggles_netheritehelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheritechestplate",
+                    "resource":"artificer:resources/equipmenttoggles_netheritechestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteleggings",
+                    "resource":"artificer:resources/equipmenttoggles_netheriteleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_netheriteboots",
+                    "resource":"artificer:resources/equipmenttoggles_netheriteboots",
                     "comparison":"==",
                     "compare_to":1
                 }

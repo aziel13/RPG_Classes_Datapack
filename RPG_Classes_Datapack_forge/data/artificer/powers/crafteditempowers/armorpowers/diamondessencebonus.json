@@ -12,7 +12,7 @@
             "actions": [
                 {
                     "type":"origins:change_resource",
-                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "resource":"artificer:resources/essencetoggles_netheriteessencesetbonus",
                     "operation": "set",
                     "change":1
                 },
@@ -26,7 +26,7 @@
             "type": "origins:if_else",
             "condition": {
                 "type":"origins:resource",
-                "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                "resource":"artificer:resources/essencetoggles_netheriteessencesetbonus",
                 "comparison":"==",
                 "compare_to":0
             },
@@ -35,7 +35,7 @@
                 "actions": [
                     {
                         "type": "origins:execute_command",
-                        "command": "resource set @p artificer:essencetoggles_netheriteessencesetbonus 1"
+                        "command": "resource set @p artificer:resources/essencetoggles_netheriteessencesetbonus 1"
 
                     },
                     {
@@ -50,7 +50,7 @@
             "actions": [
                 {
                     "type":"origins:change_resource",
-                    "resource":"artificer:essencetoggles_netheriteessencesetbonus",
+                    "resource":"artificer:resources/essencetoggles_netheriteessencesetbonus",
                     "operation": "set",
                     "change":0
                 },
@@ -66,25 +66,25 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_diamondhelmet",
+                    "resource":"artificer:resources/equipmenttoggles_diamondhelmet",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_diamondchestplate",
+                    "resource":"artificer:resources/equipmenttoggles_diamondchestplate",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_diamondleggings",
+                    "resource":"artificer:resources/equipmenttoggles_diamondleggings",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:equipmenttoggles_diamondboots",
+                    "resource":"artificer:resources/equipmenttoggles_diamondboots",
                     "comparison":"==",
                     "compare_to":1
                 }

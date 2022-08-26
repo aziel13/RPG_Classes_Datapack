@@ -8,19 +8,19 @@
         "conditions": [
           {
             "type":"origins:resource",
-            "resource":"artificer:powertoggles_hoverstate",
+            "resource":"artificer:resources/powertoggles_hoverstate",
             "comparison":"==",
             "compare_to":0
           },
           {
             "type":"origins:resource",
-            "resource":"artificer:powertoggles_gliderstate",
+            "resource":"artificer:resources/powertoggles_gliderstate",
             "comparison":"==",
             "compare_to":1
           },
           {
             "type":"origins:resource",
-            "resource":"artificer:powertoggles_flapstate",
+            "resource":"artificer:resources/powertoggles_flapstate",
             "comparison":"==",
             "compare_to":1
           }
@@ -31,19 +31,19 @@
         "actions": [
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_hoverstate",
+            "resource":"artificer:resources/powertoggles_hoverstate",
             "operation": "set",
             "change":1
           },
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_gliderstate",
+            "resource":"artificer:resources/powertoggles_gliderstate",
             "operation": "set",
             "change":0
           },
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_flapstate",
+            "resource":"artificer:resources/powertoggles_flapstate",
             "operation": "set",
             "change":0
           }
@@ -54,19 +54,19 @@
         "actions": [
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_hoverstate",
+            "resource":"artificer:resources/powertoggles_hoverstate",
             "operation": "set",
             "change":0
           },
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_gliderstate",
+            "resource":"artificer:resources/powertoggles_gliderstate",
             "operation": "set",
             "change":1
           },
           {
             "type":"origins:change_resource",
-            "resource":"artificer:powertoggles_flapstate",
+            "resource":"artificer:resources/powertoggles_flapstate",
             "operation": "set",
             "change":1
           }

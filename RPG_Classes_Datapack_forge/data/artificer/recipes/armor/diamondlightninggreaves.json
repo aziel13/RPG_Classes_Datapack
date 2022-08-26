@@ -1,19 +1,29 @@
 {
 	"type":"minecraft:crafting_shaped",
 	"pattern":[
-		"$$$",
-		"$@$",
-		"$$$"
+		"$%$",
+		"*@*",
+		"&#&"
 	],
 	"key":{
-
+		"#":{
+			"item":"minecraft:piston"
+		},
+		"%":{
+			"item":"minecraft:repeater"
+		},
 		"@":{
 			"item":"minecraft:diamond_leggings"
 		},
 		"$":{
+			"item":"minecraft:clock"
+		},
+		"&":{
+			"item":"minecraft:dispenser"
+		},
+		"*":{
 			"item":"minecraft:sugar"
 		}
-
 	},
 	"result":{
 		"item":"minecraft:diamond_leggings",

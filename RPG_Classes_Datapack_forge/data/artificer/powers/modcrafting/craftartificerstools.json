@@ -1,0 +1,68 @@
+{   "type": "origins:multiple",
+    "add_recipie_woodmultipurposeartificertool": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:tools/woodmultipurposeartificertool",
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "artificer:tools/woodartificertoolpowers"
+        },
+        "result": {
+            "item": "warped_fungus_on_a_stick",
+            "amount": 1,
+            "tag": "{ Enchantments:[{id:\"vanishing_curse\",lvl:1}],display:{Name:'{\"text\":\"Wooden Artificers Many-Purpose Tool\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A tool\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" used to \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"manipulate magic\",\"italic\":false,\"color\":\"white\"}]']},HideFlags:122,Unbreakable:1b,CustomModelData:1}"
+
+        }
+    },
+    "add_recipie_stonemultipurposeartificertool": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:tools/stonemultipurposeartificertool",
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "artificer:tools/stoneartificertoolpowers"
+        },
+        "result": {
+            "item": "warped_fungus_on_a_stick",
+            "amount": 1,
+            "tag": "{ Enchantments:[{id:\"vanishing_curse\",lvl:1}],display:{Name:'{\"text\":\"Stone Artificers Many-Purpose Tool\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A tool\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" used to \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"manipulate magic\",\"italic\":false,\"color\":\"white\"}]']},HideFlags:122,Unbreakable:1b,CustomModelData:2}"
+        }
+    },
+    "add_recipie_ironmultipurposeartificertool": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:tools/ironmultipurposeartificertool",
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "artificer:tools/ironartificertoolpowers"
+        },
+        "result": {
+            "item": "warped_fungus_on_a_stick",
+            "amount": 1,
+            "tag": "{ Enchantments:[{id:\"vanishing_curse\",lvl:1}],display:{Name:'{\"text\":\"Iron Artificers Many-Purpose Tool\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A tool\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" used to \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"manipulate magic\",\"italic\":false,\"color\":\"white\"}]']},HideFlags:122,Unbreakable:1b,CustomModelData:3}"
+        }
+    },
+    "add_recipie_diamondmultipurposeartificertool": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:tools/diamondmultipurposeartificertool",
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "artificer:tools/diamondartificertoolpowers"
+        },
+        "result": {
+            "item": "warped_fungus_on_a_stick",
+            "amount": 1,
+            "tag": "{ Enchantments:[{id:\"vanishing_curse\",lvl:1}],display:{Name:'{\"text\":\"Diamond Artificers Many-Purpose Tool\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A tool\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" used to \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"manipulate magic\",\"italic\":false,\"color\":\"white\"}]']},HideFlags:122,Unbreakable:1b,CustomModelData:4}"
+        }
+    },
+    "add_recipie_netheritemultipurposeartificertool": {
+        "type": "origins:modify_crafting",
+        "recipe": "artificer:tools/netheritemultipurposeartificertool",
+        "item_action": {
+            "type": "origins:modify",
+            "modifier": "artificer:tools/netheriteartificertoolpowers"
+        },
+        "result": {
+            "item": "warped_fungus_on_a_stick",
+            "amount": 1,
+            "tag": "{ Enchantments:[{id:\"vanishing_curse\",lvl:1}],display:{Name:'{\"text\":\"Netherite Artificers Many-Purpose Tool\",\"color\":\"aqua\",\"bold\":false}',Lore:['[{\"text\":\"A tool\",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\" used to \",\"italic\":false,\"color\":\"white\"}]','[{\"text\":\"manipulate magic\",\"italic\":false,\"color\":\"white\"}]']},HideFlags:122,Unbreakable:1b,CustomModelData:5}"
+        }
+    }
+}

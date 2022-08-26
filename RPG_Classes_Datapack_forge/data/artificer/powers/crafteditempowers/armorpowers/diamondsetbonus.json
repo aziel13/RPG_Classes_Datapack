@@ -23,25 +23,25 @@
         "conditions": [
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_diamondhelmet",
+                "resource":"artificer:resources/equipmenttoggles_diamondhelmet",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_diamondchestplate",
+                "resource":"artificer:resources/equipmenttoggles_diamondchestplate",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_diamondleggings",
+                "resource":"artificer:resources/equipmenttoggles_diamondleggings",
                 "comparison":"==",
                 "compare_to":1
             },
             {
                 "type":"origins:resource",
-                "resource":"artificer:equipmenttoggles_diamondboots",
+                "resource":"artificer:resources/equipmenttoggles_diamondboots",
                 "comparison":"==",
                 "compare_to":1
             }

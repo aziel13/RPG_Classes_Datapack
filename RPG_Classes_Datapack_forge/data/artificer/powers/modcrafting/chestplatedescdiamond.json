@@ -6,10 +6,10 @@
 
     "diamondomnithopterchestplate":{
         "type": "origins:modify_crafting",
-        "recipe": "artificer:diamondomnithopterchestplate",
+        "recipe": "artificer:armor/diamondomnithopterchestplate",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:diamondomnithopterpowers"
+            "modifier": "artificer:armor/diamondomnithopterpowers"
         },
         "result": {
             "item": "diamond_chestplate",

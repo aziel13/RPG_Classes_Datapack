@@ -8,7 +8,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_woodartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
@@ -22,7 +22,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
+        "resource":"artificer:resources/equipmenttoggles_woodartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -31,7 +31,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_woodartificerstoolmainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_woodartificerstoolmainhand 1"
 
           },
           {
@@ -46,7 +46,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_woodartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_woodartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
@@ -86,7 +86,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_woodartificerstooloffhand",
           "operation": "set",
           "change":1
         },
@@ -100,7 +100,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+        "resource":"artificer:resources/equipmenttoggles_woodartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -109,7 +109,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_fungusonstickoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_fungusonstickoffhand 1"
 
           },
           {
@@ -124,7 +124,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_woodartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_woodartificerstooloffhand",
           "operation": "set",
           "change":0
         },
@@ -164,7 +164,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_stoneartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
@@ -178,7 +178,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
+        "resource":"artificer:resources/equipmenttoggles_stoneartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -187,7 +187,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_stoneartificerstoolmainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_stoneartificerstoolmainhand 1"
 
           },
           {
@@ -202,7 +202,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_stoneartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_stoneartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
@@ -242,7 +242,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_stoneartificerstooloffhand",
           "operation": "set",
           "change":1
         },
@@ -256,7 +256,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+        "resource":"artificer:resources/equipmenttoggles_stoneartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -265,7 +265,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_stoneartificerstooloffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_stoneartificerstooloffhand 1"
 
           },
           {
@@ -280,7 +280,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_stoneartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_stoneartificerstooloffhand",
           "operation": "set",
           "change":0
         },
@@ -320,7 +320,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_ironartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
@@ -334,7 +334,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+        "resource":"artificer:resources/equipmenttoggles_ironartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -343,7 +343,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironartificerstoolmainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironartificerstoolmainhand 1"
 
           },
           {
@@ -358,7 +358,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_ironartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
@@ -398,7 +398,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
           "operation": "set",
           "change":1
         },
@@ -412,7 +412,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+        "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -421,7 +421,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_ironartificerstooloffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_ironartificerstooloffhand 1"
 
           },
           {
@@ -436,7 +436,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_ironartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_ironartificerstooloffhand",
           "operation": "set",
           "change":0
         },
@@ -476,7 +476,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_diamondartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
@@ -490,7 +490,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+        "resource":"artificer:resources/equipmenttoggles_diamondartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -499,7 +499,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_diamondartificerstoolmainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_diamondartificerstoolmainhand 1"
 
           },
           {
@@ -514,7 +514,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_diamondartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_diamondartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
@@ -554,7 +554,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
           "operation": "set",
           "change":1
         },
@@ -568,7 +568,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+        "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -577,7 +577,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_diamondartificerstooloffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_diamondartificerstooloffhand 1"
 
           },
           {
@@ -592,7 +592,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_diamondartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_diamondartificerstooloffhand",
           "operation": "set",
           "change":0
         },
@@ -632,7 +632,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_netheriteartificerstoolmainhand",
           "operation": "set",
           "change":1
         },
@@ -646,7 +646,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+        "resource":"artificer:resources/equipmenttoggles_netheriteartificerstoolmainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -655,7 +655,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheriteartificerstoolmainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheriteartificerstoolmainhand 1"
 
           },
           {
@@ -670,7 +670,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteartificerstoolmainhand",
+          "resource":"artificer:resources/equipmenttoggles_netheriteartificerstoolmainhand",
           "operation": "set",
           "change":0
         },
@@ -710,7 +710,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
           "operation": "set",
           "change":1
         },
@@ -724,7 +724,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+        "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -733,7 +733,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheriteartificerstooloffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheriteartificerstooloffhand 1"
 
           },
           {
@@ -748,7 +748,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteartificerstooloffhand",
+          "resource":"artificer:resources/equipmenttoggles_netheriteartificerstooloffhand",
           "operation": "set",
           "change":0
         },
@@ -789,7 +789,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_warmkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -803,7 +803,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_warmkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -812,7 +812,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_warmkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_warmkeystonemainhand 1"
 
           },
           {
@@ -827,7 +827,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_warmkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_warmkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -867,7 +867,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_warmkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -881,7 +881,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_warmkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -890,7 +890,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_warmkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_warmkeystoneoffhand 1"
 
           },
           {
@@ -905,7 +905,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_warmkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_warmkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -945,7 +945,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_hotkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -959,7 +959,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_hotkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -968,7 +968,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_hotkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_hotkeystonemainhand 1"
 
           },
           {
@@ -983,7 +983,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_hotkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_hotkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1023,7 +1023,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_hotkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1037,7 +1037,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_hotkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1046,7 +1046,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_hotkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_hotkeystoneoffhand 1"
 
           },
           {
@@ -1061,7 +1061,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_hotkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_hotkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1100,7 +1100,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_pyretickeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1114,7 +1114,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_pyretickeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1123,7 +1123,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_pyretickeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_pyretickeystonemainhand 1"
 
           },
           {
@@ -1138,7 +1138,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_pyretickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_pyretickeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1178,7 +1178,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_pyretickeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1192,7 +1192,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_pyretickeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1201,7 +1201,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_pyretickeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_pyretickeystoneoffhand 1"
 
           },
           {
@@ -1216,7 +1216,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_pyretickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_pyretickeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1256,7 +1256,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_coldkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1270,7 +1270,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_coldkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1279,7 +1279,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_coldkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_coldkeystonemainhand 1"
 
           },
           {
@@ -1294,7 +1294,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_coldkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_coldkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1334,7 +1334,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_coldkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1348,7 +1348,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_coldkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1357,7 +1357,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_coldkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_coldkeystoneoffhand 1"
 
           },
           {
@@ -1372,7 +1372,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_coldkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_coldkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1412,7 +1412,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_glacialkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1426,7 +1426,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_glacialkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1435,7 +1435,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_glacialkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_glacialkeystonemainhand 1"
 
           },
           {
@@ -1450,7 +1450,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_glacialkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_glacialkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1490,7 +1490,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_glacialkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1504,7 +1504,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_glacialkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1513,7 +1513,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_glacialkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_glacialkeystoneoffhand 1"
 
           },
           {
@@ -1528,7 +1528,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_glacialkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_glacialkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1569,7 +1569,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_arctickeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1583,7 +1583,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_arctickeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1592,7 +1592,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_arctickeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_arctickeystonemainhand 1"
 
           },
           {
@@ -1607,7 +1607,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_arctickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_arctickeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1647,7 +1647,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_arctickeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1661,7 +1661,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_arctickeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1670,7 +1670,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_arctickeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_arctickeystoneoffhand 1"
 
           },
           {
@@ -1685,7 +1685,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_arctickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_arctickeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1725,7 +1725,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_mossykeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1739,7 +1739,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_mossykeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1748,7 +1748,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_mossykeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_mossykeystonemainhand 1"
 
           },
           {
@@ -1763,7 +1763,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_mossykeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_mossykeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1803,7 +1803,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_mossykeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_mossykeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -1817,7 +1817,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_greendyeoffhand",
+        "resource":"artificer:resources/equipmenttoggles_greendyeoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1826,7 +1826,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_mossykeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_mossykeystoneoffhand 1"
 
           },
           {
@@ -1841,7 +1841,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_mossykeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_mossykeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -1881,7 +1881,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_verdantkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -1895,7 +1895,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_verdantkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1904,7 +1904,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_verdantkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_verdantkeystonemainhand 1"
 
           },
           {
@@ -1919,7 +1919,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_verdantkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_verdantkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -1959,7 +1959,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_greendyeoffhand",
+          "resource":"artificer:resources/equipmenttoggles_greendyeoffhand",
           "operation": "set",
           "change":1
         },
@@ -1973,7 +1973,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_greendyeoffhand",
+        "resource":"artificer:resources/equipmenttoggles_greendyeoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -1982,7 +1982,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_greendyeoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_greendyeoffhand 1"
 
           },
           {
@@ -1997,7 +1997,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_greendyeoffhand",
+          "resource":"artificer:resources/equipmenttoggles_greendyeoffhand",
           "operation": "set",
           "change":0
         },
@@ -2037,7 +2037,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_overgrownkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -2051,7 +2051,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_overgrownkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2060,7 +2060,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_overgrownkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_overgrownkeystonemainhand 1"
 
           },
           {
@@ -2075,7 +2075,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_overgrownkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_overgrownkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -2115,7 +2115,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_overgrownkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -2129,7 +2129,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_overgrownkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2138,7 +2138,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_overgrownkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_overgrownkeystoneoffhand 1"
 
           },
           {
@@ -2153,7 +2153,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_overgrownkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_overgrownkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -2193,7 +2193,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -2207,7 +2207,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2216,7 +2216,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_statickeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_statickeystonemainhand 1"
 
           },
           {
@@ -2231,7 +2231,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_statickeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_statickeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -2271,7 +2271,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_statickeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -2285,7 +2285,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_lightgraydyeoffhand",
+        "resource":"artificer:resources/equipmenttoggles_lightgraydyeoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2294,7 +2294,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_statickeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_statickeystoneoffhand 1"
 
           },
           {
@@ -2309,7 +2309,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_statickeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_statickeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -2349,7 +2349,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_shockingkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -2363,7 +2363,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_shockingkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2372,7 +2372,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_shockingkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_shockingkeystonemainhand 1"
 
           },
           {
@@ -2387,7 +2387,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_shockingkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_shockingkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -2427,7 +2427,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_shockingkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -2441,7 +2441,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_shockingkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2450,7 +2450,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_shockingkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_shockingkeystoneoffhand 1"
 
           },
           {
@@ -2465,7 +2465,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_shockingkeystoneoffhand",
           "operation": "set",
           "change":0
         },
@@ -2505,7 +2505,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
           "operation": "set",
           "change":1
         },
@@ -2519,7 +2519,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+        "resource":"artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2528,7 +2528,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_electricutingkeystonemainhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_electricutingkeystonemainhand 1"
 
           },
           {
@@ -2543,7 +2543,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_electricutingkeystonemainhand",
+          "resource":"artificer:resources/equipmenttoggles_electricutingkeystonemainhand",
           "operation": "set",
           "change":0
         },
@@ -2583,7 +2583,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_shockingkeystoneoffhand",
           "operation": "set",
           "change":1
         },
@@ -2597,7 +2597,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_shockingkeystoneoffhand",
+        "resource":"artificer:resources/equipmenttoggles_shockingkeystoneoffhand",
         "comparison":"==",
         "compare_to":0
       },
@@ -2606,7 +2606,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_shockingkeystoneoffhand 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_shockingkeystoneoffhand 1"
 
           },
           {
@@ -2621,7 +2621,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_electricutingkeystoneoffhand",
+          "resource":"artificer:resources/equipmenttoggles_electricutingkeystoneoffhand",
           "operation": "set",
           "change":0
         },

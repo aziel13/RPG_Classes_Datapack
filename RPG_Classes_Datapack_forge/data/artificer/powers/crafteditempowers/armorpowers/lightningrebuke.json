@@ -49,13 +49,13 @@
             "conditions": [
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_master",
+                    "resource":"artificer:resources/powertoggles_master",
                     "comparison":"==",
                     "compare_to":1
                 },
                 {
                     "type":"origins:resource",
-                    "resource":"artificer:powertoggles_lightningrebuketoggle",
+                    "resource":"artificer:resources/powertoggles_lightningrebuketoggle",
                     "comparison":"==",
                     "compare_to":1
                 }

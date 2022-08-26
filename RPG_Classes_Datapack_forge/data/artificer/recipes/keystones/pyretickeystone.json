@@ -1,0 +1,23 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"pattern":[
+		"*#*",
+		"#@#",
+		"*#*"
+	],
+	"key":{
+		"#":{
+			"item":"minecraft:lava_bucket"
+		},
+		"@":{
+			"item":"minecraft:music_disc_blocks"
+		},
+		"*":{
+			"item":"minecraft:blaze_rod"
+		}
+	},
+	"result":{
+		"item":"minecraft:music_disc_blocks",
+		"count":1
+	}
+}

@@ -6,10 +6,10 @@
 
     "netheriteomnithopterchestplate":{
         "type": "origins:modify_crafting",
-        "recipe": "artificer:netheriteomnithopterchestplate",
+        "recipe": "artificer:armor/netheriteomnithopterchestplate",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:netheriteomnithopterpowers"
+            "modifier": "artificer:armor/netheriteomnithopterpowers"
         },
         "result": {
             "item": "netherite_chestplate",

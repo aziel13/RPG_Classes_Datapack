@@ -5,10 +5,10 @@
 
     "ironomnithopterchestplate":{
         "type": "origins:modify_crafting",
-        "recipe": "artificer:ironomnithopterchestplate",
+        "recipe": "artificer:armor/ironomnithopterchestplate",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:ironomnithopterpowers"
+            "modifier": "artificer:armor/ironomnithopterpowers"
         },
         "result": {
             "item": "iron_chestplate",

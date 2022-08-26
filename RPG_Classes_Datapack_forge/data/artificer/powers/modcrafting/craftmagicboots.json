@@ -1,7 +1,7 @@
 {   "type": "origins:multiple",
     "add_recipie_ironhookboots": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:ironhookboots",
+        "recipe": "artificer:armor/ironhookboots",
         "item_action": {
             "type": "origins:modify",
             "modifier": "artificer:ironbootspowers"
@@ -15,7 +15,7 @@
     },
     "add_recipie_diamonddisplacementbooks": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:diamonddisplacerboots",
+        "recipe": "artificer:armor/diamonddisplacerboots",
         "item_action": {
             "type": "origins:modify",
             "modifier": "artificer:diamondbootspowers"
@@ -28,10 +28,10 @@
     },
     "add_recipie_netheriteantigravityboots": {
         "type": "origins:modify_crafting",
-        "recipe": "artificer:netheritegravityredirectionboots",
+        "recipe": "artificer:armor/netheritegravityredirectionboots",
         "item_action": {
             "type": "origins:modify",
-            "modifier": "artificer:netheritebootspowers"
+            "modifier": "artificer:armor/netheritebootspowers"
         },
         "result": {
             "item": "netherite_boots",

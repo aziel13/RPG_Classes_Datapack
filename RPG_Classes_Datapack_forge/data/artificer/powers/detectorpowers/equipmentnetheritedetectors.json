@@ -9,7 +9,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheritehelmet",
+          "resource":"artificer:resources/equipmenttoggles_netheritehelmet",
           "operation": "set",
           "change":1
         },
@@ -23,7 +23,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheritehelmet",
+        "resource":"artificer:resources/equipmenttoggles_netheritehelmet",
         "comparison":"==",
         "compare_to":0
       },
@@ -32,7 +32,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheritehelmet 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheritehelmet 1"
 
           },
           {
@@ -47,7 +47,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheritehelmet",
+          "resource":"artificer:resources/equipmenttoggles_netheritehelmet",
           "operation": "set",
           "change":0
         },
@@ -86,7 +86,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheritechestplate",
+          "resource":"artificer:resources/equipmenttoggles_netheritechestplate",
           "operation": "set",
           "change":1
         },
@@ -100,7 +100,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheritechestplate",
+        "resource":"artificer:resources/equipmenttoggles_netheritechestplate",
         "comparison":"==",
         "compare_to":0
       },
@@ -109,7 +109,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheritechestplate 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheritechestplate 1"
 
           },
           {
@@ -124,7 +124,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheritechestplate",
+          "resource":"artificer:resources/equipmenttoggles_netheritechestplate",
           "operation": "set",
           "change":0
         },
@@ -164,7 +164,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteleggings",
+          "resource":"artificer:resources/equipmenttoggles_netheriteleggings",
           "operation": "set",
           "change":1
         },
@@ -178,7 +178,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheriteleggings",
+        "resource":"artificer:resources/equipmenttoggles_netheriteleggings",
         "comparison":"==",
         "compare_to":0
       },
@@ -187,7 +187,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheriteleggings 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheriteleggings 1"
 
           },
           {
@@ -202,7 +202,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteleggings",
+          "resource":"artificer:resources/equipmenttoggles_netheriteleggings",
           "operation": "set",
           "change":0
         },
@@ -242,7 +242,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteboots",
+          "resource":"artificer:resources/equipmenttoggles_netheriteboots",
           "operation": "set",
           "change":1
         },
@@ -256,7 +256,7 @@
       "type": "origins:if_else",
       "condition": {
         "type":"origins:resource",
-        "resource":"artificer:equipmenttoggles_netheriteboots",
+        "resource":"artificer:resources/equipmenttoggles_netheriteboots",
         "comparison":"==",
         "compare_to":0
       },
@@ -265,7 +265,7 @@
         "actions": [
           {
             "type": "origins:execute_command",
-            "command": "resource set @p artificer:equipmenttoggles_netheriteboots 1"
+            "command": "resource set @p artificer:resources/equipmenttoggles_netheriteboots 1"
 
           },
           {
@@ -280,7 +280,7 @@
       "actions": [
         {
           "type":"origins:change_resource",
-          "resource":"artificer:equipmenttoggles_netheriteboots",
+          "resource":"artificer:resources/equipmenttoggles_netheriteboots",
           "operation": "set",
           "change":0
         },
